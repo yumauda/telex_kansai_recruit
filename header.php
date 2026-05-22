@@ -78,7 +78,7 @@
                             </a>
                         </li>
                         <li class="p-header__nav-item">
-                            <a class="p-header__nav-link" href="#">
+                            <a class="p-header__nav-link" href="<?php echo esc_url(home_url('/data/')); ?>">
                                 <span class="p-header__nav-ja">数字で見る</span>
                                 <span class="p-header__nav-en">Data</span>
                             </a>

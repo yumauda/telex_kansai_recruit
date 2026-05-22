@@ -154,7 +154,7 @@
             <p class="p-top-data-card__value">100<span>%</span></p>
           </article>
         </div>
-        <a class="p-top-data__link" href="#">
+        <a class="p-top-data__link" href="<?php echo esc_url(home_url('/data/')); ?>">
           <span class="p-top-data__link-text">数字一覧へ</span>
           <span class="p-top-data__link-en">Data</span>
         </a>

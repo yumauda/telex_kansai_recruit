@@ -19,7 +19,7 @@
                 <ul class="p-footer__nav-list">
                     <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="<?php echo esc_url(home_url('/message/')); ?>">採用メッセージ</a></li>
                     <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="<?php echo esc_url(home_url('/advantage/')); ?>">テレックスの優位性</a></li>
-                    <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">数字で見る</a></li>
+                    <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="<?php echo esc_url(home_url('/data/')); ?>">数字で見る</a></li>
                     <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">キャリア/働く環境</a></li>
                 </ul>
                 <ul class="p-footer__nav-list">

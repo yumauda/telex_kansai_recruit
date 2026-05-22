@@ -6,7 +6,25 @@
       <h1 class="p-advantage-mv__title">テレックスの強み</h1>
     </div>
   </section>
-  <section class="p-advantage-culture">
+  <nav class="p-advantage-anchor" aria-label="テレックスの強み内ナビゲーション">
+    <div class="l-inner">
+      <ul class="p-advantage-anchor__list">
+        <li class="p-advantage-anchor__item">
+          <a class="p-advantage-anchor__link" href="#anc01">頑張りが評価され称賛される文化</a>
+        </li>
+        <li class="p-advantage-anchor__item">
+          <a class="p-advantage-anchor__link" href="#anc02">成長を仕組みで支える育成制度</a>
+        </li>
+        <li class="p-advantage-anchor__item">
+          <a class="p-advantage-anchor__link" href="#anc03">安心して働ける環境</a>
+        </li>
+        <li class="p-advantage-anchor__item">
+          <a class="p-advantage-anchor__link" href="#anc04">通信インフラ×関西密着の安定性</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <section class="p-advantage-culture" id="anc01">
     <div class="l-inner">
       <div class="p-advantage-culture__content">
         <div class="p-advantage-culture__body">
@@ -33,7 +51,7 @@
       </div>
     </div>
   </section>
-  <section class="p-advantage-growth">
+  <section class="p-advantage-growth" id="anc02">
     <div class="l-inner">
       <div class="p-advantage-growth__content">
         <div class="p-advantage-growth__body">
@@ -60,7 +78,7 @@
       </div>
     </div>
   </section>
-  <section class="p-advantage-environment">
+  <section class="p-advantage-environment" id="anc03">
     <div class="l-inner">
       <div class="p-advantage-environment__content">
         <div class="p-advantage-environment__body">
@@ -87,7 +105,7 @@
       </div>
     </div>
   </section>
-  <section class="p-advantage-stability">
+  <section class="p-advantage-stability" id="anc04">
     <div class="l-inner">
       <div class="p-advantage-stability__content">
         <div class="p-advantage-stability__body">

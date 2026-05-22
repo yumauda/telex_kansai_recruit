@@ -10,11 +10,16 @@
 
 // Project
 @use "./project/_p-404";
+@use "./project/_p-advantage-anchor";
 @use "./project/_p-advantage-culture";
 @use "./project/_p-advantage-environment";
 @use "./project/_p-advantage-growth";
 @use "./project/_p-advantage-mv";
 @use "./project/_p-advantage-stability";
+@use "./project/_p-data-anchor";
+@use "./project/_p-data-mv";
+@use "./project/_p-data-overview";
+@use "./project/_p-data-voice";
 @use "./project/_p-footer";
 @use "./project/_p-form";
 @use "./project/_p-header";

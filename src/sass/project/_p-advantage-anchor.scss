@@ -1,0 +1,52 @@
+@use "../global" as *;
+
+.p-advantage-anchor {
+  padding-top: rem(28);
+  padding-bottom: rem(28);
+  background-color: $white;
+}
+
+.p-advantage-anchor .l-inner {
+  @include mq(md) {
+    max-width: rem(1064);
+  }
+}
+
+.p-advantage-anchor__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: rem(28);
+  row-gap: rem(12);
+}
+
+.p-advantage-anchor__link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: rem(8);
+  color: #222;
+  font-size: rem(14);
+  font-weight: 400;
+  line-height: calc(29.8 / 16);
+
+  @include mq(md) {
+    font-size: rem(16);
+  }
+}
+
+.p-advantage-anchor__link::after {
+  width: rem(9);
+  height: rem(5);
+  content: "";
+  border-right: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  transform: translateY(rem(-2)) rotate(45deg);
+}
+
+.p-advantage-culture,
+.p-advantage-growth,
+.p-advantage-environment,
+.p-advantage-stability {
+  scroll-margin-top: rem(90);
+}

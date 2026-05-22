@@ -1,0 +1,116 @@
+@use "../global" as *;
+
+.p-data-voice {
+  padding-top: rem(64);
+  padding-bottom: rem(76);
+  background-color: $white;
+
+  @include mq(md) {
+    padding-top: rem(104);
+    padding-bottom: rem(114);
+  }
+}
+
+.p-data-voice .l-inner {
+  @include mq(md) {
+    max-width: rem(1077);
+  }
+}
+
+.p-data-voice__title {
+  color: #000;
+  font-size: rem(30);
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+
+  @include mq(md) {
+    font-size: rem(42);
+    line-height: calc(39 / 42);
+  }
+}
+
+.p-data-voice__list {
+  display: flex;
+  flex-direction: column;
+  gap: rem(30);
+  margin-top: rem(48);
+
+  @include mq(md) {
+    gap: rem(56);
+    margin-top: rem(92);
+  }
+}
+
+.p-data-voice__balloon {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: rem(130);
+  padding: rem(30) rem(28);
+  color: #000;
+  font-size: rem(18);
+  font-weight: 700;
+  line-height: 1.7;
+  background-color: #e9e9e9;
+
+  @include mq(md) {
+    width: rem(968);
+    min-height: rem(183);
+    padding: rem(45) rem(70);
+    font-size: rem(24);
+    line-height: calc(39 / 24);
+  }
+}
+
+.p-data-voice__balloon:first-child {
+  @include mq(md) {
+    min-height: rem(129);
+    justify-content: center;
+  }
+}
+
+.p-data-voice__balloon::after {
+  position: absolute;
+  bottom: rem(-20);
+  width: 0;
+  height: 0;
+  content: "";
+  border-style: solid;
+
+  @include mq(md) {
+    bottom: rem(-28);
+  }
+}
+
+.p-data-voice__balloon--left {
+  align-self: flex-start;
+}
+
+.p-data-voice__balloon--left::after {
+  left: rem(34);
+  border-width: rem(24) rem(24) 0 0;
+  border-color: #e9e9e9 transparent transparent transparent;
+
+  @include mq(md) {
+    left: rem(50);
+    border-width: rem(32) rem(32) 0 0;
+  }
+}
+
+.p-data-voice__balloon--right {
+  align-self: flex-end;
+}
+
+.p-data-voice__balloon--right::after {
+  right: rem(34);
+  border-width: 0 rem(24) rem(24) 0;
+  border-color: transparent #e9e9e9 transparent transparent;
+
+  @include mq(md) {
+    right: rem(50);
+    border-width: 0 rem(32) rem(32) 0;
+  }
+}

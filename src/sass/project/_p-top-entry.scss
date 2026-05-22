@@ -11,12 +11,6 @@
   }
 }
 
-.p-top-entry .l-inner {
-  @include mq(md) {
-    max-width: rem(1248);
-  }
-}
-
 .p-top-entry__content {
   display: grid;
   gap: rem(40);

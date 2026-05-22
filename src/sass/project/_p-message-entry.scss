@@ -1,0 +1,11 @@
+@use "../global" as *;
+
+.p-message-entry {
+  padding-top: rem(64);
+  padding-bottom: rem(64);
+
+  @include mq(md) {
+    padding-top: rem(160);
+    padding-bottom: rem(197);
+  }
+}

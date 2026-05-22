@@ -13,14 +13,21 @@
 }
 
 .p-footer__content {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: rem(40);
 
   @include mq(md) {
-    grid-template-columns: rem(493) rem(482) rem(184);
     align-items: start;
-    justify-content: start;
+    flex-direction: row;
     gap: rem(20);
+  }
+}
+
+.p-footer__brand-area {
+  @include mq(md) {
+    flex: 1 1 auto;
+    min-width: 0;
   }
 }
 
@@ -94,6 +101,7 @@
   }
 
   @include mq(md) {
+    flex: 0 0 rem(482);
     gap: rem(48);
   }
 }
@@ -106,7 +114,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  justify-self: start;
+  align-self: flex-start;
   min-width: rem(184);
   min-height: rem(42);
   padding: rem(11) rem(17);
@@ -117,7 +125,8 @@
   gap: rem(8);
 
   @include mq(md) {
-    justify-self: end;
+    align-self: flex-start;
+    flex: 0 0 rem(184);
   }
 }
 

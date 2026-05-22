@@ -6,65 +6,42 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no" />
     <!-- meta情報 -->
-    <?php if (is_home() || is_front_page()) : ?>
-        <title>さくら法律事務所</title>
-        <meta name="description" content="横浜市港北区大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザライン)なども子供から大人まで安心の定額制です。" />
-        <meta name="keywords" content="矯正歯科,港北区,大倉山" />
-        <meta property="og:title" content="横浜市港北区大倉山の矯正専門歯科｜大倉山ファミリア矯正歯科（横浜市港北区）" />
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://familiar-kyousei.com/">
-        <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/images/common/ogp.jpg" />
-        <meta property="og:site_name" content="大倉山ファミリア矯正歯科（横浜市港北区）" />
-        <meta property="og:description" content="横浜市大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザラン)なども子供から大人まで安心の定額制です。" />
-    <?php elseif (is_page('adult')) : ?>
-        <title>大人の矯正・成人矯正｜大倉山ファミリア矯正歯科（横浜市港北区）</title>
-        <meta name="description" content="横浜市港北区大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザライン)なども子供から大人まで安心の定額制です。" />
-        <meta name="keywords" content="矯正歯科,港北区,大倉山" />
-        <meta property="og:title" content="大人の矯正｜大倉山ファミリア矯正歯科（横浜市港北区）" />
-        <meta property="og:type" content="article">
-        <meta property="og:url" content="https://familiar-kyousei.com/adult">
-        <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/images/common/ogp.jpg" />
-        <meta property="og:site_name" content="大倉山ファミリア矯正歯科（横浜市港北区）" />
-        <meta property="og:description" content="横浜市大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザラン)なども子供から大人まで安心の定額制です。" />
-    <?php elseif (is_page((array('contact', 'confirm')))) : ?>
-        <title>お問い合わせ｜大倉山ファミリア矯正歯科（横浜市港北区）</title>
-        <meta name="description" content="横浜市港北区大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザライン)なども子供から大人まで安心の定額制です。" />
-        <meta name="keywords" content="矯正歯科,港北区,大倉山" />
-        <meta property="og:title" content="お問い合わせ｜大倉山ファミリア矯正歯科（横浜市港北区）" />
-        <meta property="og:type" content="article">
-        <meta property="og:url" content="https://familiar-kyousei.com/contact">
-        <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/images/common/ogp.jpg" />
-        <meta property="og:site_name" content="大倉山ファミリア矯正歯科（横浜市港北区）" />
-        <meta property="og:description" content="横浜市大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザラン)なども子供から大人まで安心の定額制です。" />
-    <?php elseif (is_page('thanks')) : ?>
-        <title>送信完了｜大倉山ファミリア矯正歯科（横浜市港北区）</title>
-        <meta name="description" content="横浜市港北区大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザライン)なども子供から大人まで安心の定額制です。" />
-        <meta name="keywords" content="矯正歯科,港北区,大倉山" />
-        <meta property="og:title" content="送信完了｜大倉山ファミリア矯正歯科（横浜市港北区）" />
-        <meta property="og:type" content="article">
-        <meta property="og:url" content="https://familiar-kyousei.com/thanks">
-        <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/images/common/ogp.jpg" />
-        <meta property="og:site_name" content="大倉山ファミリア矯正歯科（横浜市港北区）" />
-        <meta property="og:description" content="横浜市大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザラン)なども子供から大人まで安心の定額制です。" />
-    <?php elseif (is_single()) : ?>
-        <title><?php the_title() ?>｜大倉山ファミリア矯正歯科（横浜市港北区）</title>
-        <meta name="description" content="横浜市港北区大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザライン)なども子供から大人まで安心の定額制です。" />
-        <meta name="keywords" content="矯正歯科,港北区,大倉山" />
-        <meta property="og:title" content="<?php the_title() ?>｜大倉山ファミリア矯正歯科（横浜市港北区）" />
-        <meta property="og:type" content="article">
-        <meta property="og:url" content="https://familiar-kyousei.com/adult">
-        <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/images/common/ogp.jpg" />
-        <meta property="og:site_name" content="大倉山ファミリア矯正歯科（横浜市港北区）" />
-        <meta property="og:description" content="横浜市大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザラン)なども子供から大人まで安心の定額制です。" />
+    <?php
+    $site_name = 'テレックス関西 採用サイト';
+    $site_description = 'テレックス関西の採用サイトです。モバイル販売・法人営業・イベント事業で、未来のあたりまえをともにつくる仲間を募集しています。仕事、制度、キャリア、社員の声を紹介します。';
+    $page_title = $site_name;
 
-    <?php endif; ?>
+    if (is_front_page() || is_home()) {
+        $page_title = 'テレックス関西 採用サイト｜未来のあたりまえをつくる仲間を募集';
+    } elseif (is_404()) {
+        $page_title = 'ページが見つかりません｜' . $site_name;
+    } elseif (is_archive()) {
+        $page_title = wp_strip_all_tags(get_the_archive_title()) . '｜' . $site_name;
+    } elseif (is_singular()) {
+        $page_title = get_the_title() . '｜' . $site_name;
+    }
+
+    $og_type = (is_front_page() || is_home()) ? 'website' : 'article';
+    $og_url = home_url($_SERVER['REQUEST_URI'] ?? '/');
+    $og_image = get_template_directory_uri() . '/images/common/ogp.png';
+    ?>
+    <title><?php echo esc_html($page_title); ?></title>
+    <meta name="description" content="<?php echo esc_attr($site_description); ?>" />
+    <meta name="keywords" content="テレックス関西,採用,求人,新卒採用,中途採用,モバイル販売,法人営業,イベント事業,関西" />
+    <meta property="og:title" content="<?php echo esc_attr($page_title); ?>" />
+    <meta property="og:type" content="<?php echo esc_attr($og_type); ?>">
+    <meta property="og:url" content="<?php echo esc_url($og_url); ?>">
+    <meta property="og:image" content="<?php echo esc_url($og_image); ?>" />
+    <meta property="og:site_name" content="<?php echo esc_attr($site_name); ?>" />
+    <meta property="og:description" content="<?php echo esc_attr($site_description); ?>" />
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="<?php echo get_template_directory_uri() ?>/images/common/ogp.jpg">
+    <meta name="twitter:image" content="<?php echo esc_url($og_image); ?>">
 
     <!-- ogp -->
     <!-- ファビコン -->
-    <link rel="icon" href="<?php echo get_template_directory_uri() ?>/images/common/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri() ?>/images/common/apple-touch-icon.png">
+    <link rel="icon" href="<?php echo esc_url(get_template_directory_uri()); ?>/images/common/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="<?php echo esc_url(get_template_directory_uri()); ?>/images/common/favicon-32x32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url(get_template_directory_uri()); ?>/images/common/apple-touch-icon.png">
     <!-- css -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -89,13 +66,13 @@
                 <nav class="p-header__nav" aria-label="グローバルナビゲーション">
                     <ul class="p-header__nav-list">
                         <li class="p-header__nav-item">
-                            <a class="p-header__nav-link" href="#">
+                            <a class="p-header__nav-link" href="<?php echo esc_url(home_url('/message/')); ?>">
                                 <span class="p-header__nav-ja">採用メッセージ</span>
                                 <span class="p-header__nav-en">Message</span>
                             </a>
                         </li>
                         <li class="p-header__nav-item">
-                            <a class="p-header__nav-link" href="#">
+                            <a class="p-header__nav-link" href="<?php echo esc_url(home_url('/advantage/')); ?>">
                                 <span class="p-header__nav-ja">テレックスの強み</span>
                                 <span class="p-header__nav-en">Advantage</span>
                             </a>

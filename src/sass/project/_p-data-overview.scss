@@ -48,13 +48,13 @@
 }
 
 .p-data-overview-card {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: rem(62) minmax(0, 1fr) rem(40) rem(24);
   align-items: center;
-  justify-content: center;
+  justify-items: center;
   height: clamp(rem(280), 76vw, rem(358));
   min-width: 0;
-  padding: rem(22) rem(14);
+  padding: rem(18) rem(14) rem(14);
   color: $white;
   text-align: center;
   background-color: #222;
@@ -62,15 +62,23 @@
   border-radius: rem(8);
 
   @include mq(md) {
+    grid-template-rows: rem(78) rem(150) rem(44) rem(34);
     height: rem(358);
-    padding: rem(30) rem(20) rem(28);
+    padding: rem(22) rem(4) rem(16);
   }
 }
 
 .p-data-overview-card__title {
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   font-size: clamp(rem(17), 5vw, rem(24));
   font-weight: 700;
-  line-height: 1.45;
+  line-height: 1.4;
+  letter-spacing: 0.05em;
 
   @include mq(md) {
     font-size: rem(32);
@@ -78,15 +86,11 @@
 }
 
 .p-data-overview-card__icon {
+  grid-row: 2;
   display: block;
   width: min(42%, rem(150));
   height: auto;
-  margin-top: rem(18);
   object-fit: contain;
-
-  @include mq(md) {
-    margin-top: rem(28);
-  }
 }
 
 .p-data-overview-card__icon--building {
@@ -127,15 +131,11 @@
 }
 
 .p-data-overview-card__gender {
+  grid-row: 2;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   width: 100%;
-  margin-top: rem(16);
-
-  @include mq(md) {
-    margin-top: rem(22);
-  }
 }
 
 .p-data-overview-card__gender img {
@@ -174,74 +174,53 @@
 }
 
 .p-data-overview-card__manager {
-  position: relative;
+  display: grid;
+  grid-row: 2;
   width: min(43%, rem(143));
-  margin-top: rem(16);
-
-  @include mq(md) {
-    margin-top: rem(22);
-  }
 }
 
 .p-data-overview-card__manager-person {
+  grid-area: 1 / 1;
   display: block;
   width: 100%;
   height: auto;
 }
 
 .p-data-overview-card__manager-medal {
-  position: absolute;
-  right: rem(-12);
-  bottom: rem(8);
+  grid-area: 1 / 1;
+  align-self: start;
+  justify-self: end;
   width: min(38%, rem(47));
   height: auto;
+  transform: translate(35%, -18%);
 }
 
 .p-data-overview-card__value {
+  grid-row: 3;
   display: flex;
   align-items: baseline;
   justify-content: center;
   gap: rem(6);
-  margin-top: rem(14);
+  width: 100%;
   color: $white;
   font-weight: 700;
   line-height: 1;
-
-  @include mq(md) {
-    margin-top: rem(20);
-  }
 }
 
-.p-data-overview-card__value span {
-  font-size: clamp(rem(32), 10vw, rem(48));
-  line-height: 1;
+.p-data-overview-card__number {
+  font-size: clamp(rem(28), 8vw, rem(36));
+  line-height: calc(28 / 36);
+  letter-spacing: rem(-1);
 }
 
-.p-data-overview-card__value small {
+.p-data-overview-card__unit {
   font-size: clamp(rem(16), 5vw, rem(24));
-  line-height: 1.2;
-}
-
-.p-data-overview-card__value--ratio span {
-  font-size: clamp(rem(36), 11vw, rem(48));
+  line-height: calc(28 / 24);
+  letter-spacing: rem(-1);
 }
 
 .p-data-overview-card__value--ranking {
-  gap: rem(8);
-}
-
-.p-data-overview-card__value--ranking span {
-  font-size: clamp(rem(38), 11vw, rem(56));
-}
-
-.p-data-overview-card__value--ranking small {
-  font-size: clamp(rem(15), 4vw, rem(20));
-}
-
-.p-data-overview-card__value--text {
-  display: block;
-  font-size: clamp(rem(24), 7vw, rem(36));
-  line-height: 1.45;
+  gap: rem(3);
 }
 
 .p-data-overview-card__value--vacation {
@@ -252,24 +231,19 @@
   line-height: calc(28 / 36);
 }
 
-.p-data-overview-card__value--vacation span {
-  font-size: clamp(rem(28), 8vw, rem(36));
-  line-height: calc(28 / 36);
-}
-
-.p-data-overview-card__value--vacation small {
-  font-size: clamp(rem(18), 5vw, rem(24));
-  line-height: calc(28 / 24);
+.p-data-overview-card__value--event {
+  gap: rem(3);
 }
 
 .p-data-overview-card__note {
-  margin-top: rem(8);
+  grid-row: 4;
   color: $white;
-  font-size: rem(11);
-  font-weight: 500;
-  line-height: 1.5;
+  font-size: rem(10);
+  font-weight: 700;
+  line-height: calc(28 / 16);
+  letter-spacing: rem(-1);
 
   @include mq(md) {
-    font-size: rem(13);
+    font-size: rem(16);
   }
 }

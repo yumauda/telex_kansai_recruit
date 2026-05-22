@@ -1,0 +1,134 @@
+@use "../global" as *;
+
+.p-mv {
+  overflow-x: clip;
+}
+
+.p-mv__content {
+  position: relative;
+}
+
+.p-mv__bg {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+.p-mv__bg img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.p-mv__body {
+  position: absolute;
+  right: rem(30);
+  bottom: rem(178);
+  left: rem(30);
+  z-index: 1;
+
+  @include mq(md) {
+    bottom: rem(92);
+  }
+}
+
+.p-mv__title {
+  font-size: rem(34);
+  font-weight: 700;
+  line-height: 1.24;
+  color: $white;
+
+  @include mq(md) {
+    font-size: rem(50);
+    line-height: calc(62 / 50);
+  }
+}
+
+.p-mv__title span,
+.p-mv__text span {
+  display: block;
+}
+
+.p-mv__text {
+  margin-top: rem(28);
+  font-size: rem(13);
+  font-weight: 500;
+  line-height: 1.7;
+  color: #cecece;
+
+  @include mq(md) {
+    margin-top: rem(27);
+    font-size: rem(15);
+    line-height: calc(25.5 / 15);
+  }
+}
+
+.p-mv__entry {
+  position: absolute;
+  bottom: rem(58);
+  z-index: 1;
+
+  @include mq(md) {
+    bottom: rem(29);
+    right: 0;
+    width: rem(400);
+  }
+}
+
+.p-mv__entry-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: rem(53);
+  padding: rem(16) rem(20);
+  color: #111;
+  background-color: $white;
+  border-radius: rem(8);
+}
+
+.p-mv__entry-text {
+  position: relative;
+  padding-left: rem(32);
+  font-size: rem(14);
+  font-weight: 700;
+  line-height: 1.4;
+
+  @include mq(md) {
+    font-size: rem(15);
+  }
+}
+
+.p-mv__entry-text::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: rem(12);
+  height: rem(12);
+  content: "";
+  background-color: currentColor;
+  clip-path: polygon(16% 0, 100% 0, 100% 84%, 82% 84%, 82% 31%, 12% 100%, 0 88%, 70% 18%, 16% 18%);
+  transform: translateY(-50%);
+}
+
+.p-mv__entry-en {
+  flex: 0 0 auto;
+  margin-left: rem(16);
+  font-family: "Inter", $base-font-family;
+  font-size: rem(11);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.p-mv__entry-note {
+  display: inline-block;
+  margin-top: rem(18);
+  padding: rem(2) rem(3);
+  font-family: "Inter", $base-font-family;
+  font-size: rem(11);
+  font-weight: 400;
+  line-height: 1;
+  color: #eaeaea;
+  background-color: #222;
+}

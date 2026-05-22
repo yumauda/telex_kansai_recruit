@@ -1,0 +1,145 @@
+@use "../global" as *;
+
+.p-footer {
+  padding-top: rem(64);
+  padding-bottom: rem(28);
+  color: $white;
+  background-color: #222;
+
+  @include mq(md) {
+    padding-top: rem(56);
+    padding-bottom: rem(28);
+  }
+}
+
+.p-footer__content {
+  display: grid;
+  gap: rem(40);
+
+  @include mq(md) {
+    grid-template-columns: rem(493) rem(482) rem(184);
+    align-items: start;
+    justify-content: start;
+    gap: rem(20);
+  }
+}
+
+.p-footer__brand {
+  display: inline-flex;
+  align-items: baseline;
+  gap: rem(10);
+  color: $white;
+  white-space: nowrap;
+}
+
+.p-footer__brand-name {
+  font-size: rem(24);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.p-footer__brand-sub {
+  font-family: "Inter", $base-font-family;
+  font-size: rem(10);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.p-footer__utility {
+  margin-top: rem(30);
+}
+
+.p-footer__utility-item + .p-footer__utility-item {
+  margin-top: rem(16);
+}
+
+.p-footer__utility-link,
+.p-footer__nav-link {
+  color: $white;
+  font-size: rem(16);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.p-footer__utility-link--external {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding-right: rem(28);
+}
+
+.p-footer__utility-link--external::after,
+.p-footer__entry::before {
+  width: rem(12);
+  height: rem(12);
+  content: "";
+  background-color: currentColor;
+  clip-path: polygon(16% 0, 100% 0, 100% 84%, 82% 84%, 82% 31%, 12% 100%, 0 88%, 70% 18%, 16% 18%);
+}
+
+.p-footer__utility-link--external::after {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.p-footer__nav {
+  display: grid;
+  gap: rem(28);
+
+  @include mq(sm) {
+    grid-template-columns: repeat(3, max-content);
+    gap: rem(48);
+  }
+
+  @include mq(md) {
+    gap: rem(48);
+  }
+}
+
+.p-footer__nav-item + .p-footer__nav-item {
+  margin-top: rem(18);
+}
+
+.p-footer__entry {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: start;
+  min-width: rem(184);
+  min-height: rem(42);
+  padding: rem(11) rem(17);
+  color: #222;
+  background-color: $white;
+  border: 1px solid #222;
+  border-radius: rem(6);
+  gap: rem(8);
+
+  @include mq(md) {
+    justify-self: end;
+  }
+}
+
+.p-footer__entry-text {
+  font-size: rem(13);
+  font-weight: 700;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.p-footer__copyright {
+  margin-top: rem(64);
+  padding-top: rem(24);
+  border-top: 1px solid rgba($white, 0.72);
+  color: $white;
+  font-size: rem(14);
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+
+  @include mq(md) {
+    margin-top: rem(88);
+    font-size: rem(16);
+  }
+}

@@ -1,0 +1,235 @@
+@use "../global" as *;
+
+.p-top-data {
+  padding-top: rem(86);
+  padding-bottom: rem(86);
+  color: $white;
+  background-color: #222;
+
+  @include mq(md) {
+    padding-top: rem(130);
+    padding-bottom: rem(130);
+  }
+}
+
+.p-top-data__heading {
+
+  @include mq(md) {
+    display: flex;
+    align-items: center;
+    gap: rem(80);    
+  }
+}
+
+.p-top-data__title-block {
+  color: $white;
+  width: fit-content;
+}
+
+.p-top-data__en {
+  font-family: "Inter", $base-font-family;
+  font-size: rem(20);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.p-top-data__title {
+  margin-top: rem(18);
+  font-size: rem(34);
+  font-weight: 700;
+  line-height: 1.4;
+
+  @include mq(md) {
+    font-size: rem(42);
+  }
+}
+
+.p-top-data__lead {
+  font-size: rem(15);
+  font-weight: 400;
+  line-height: calc(23.8 / 16);
+
+  @include mq(md) {
+    font-size: rem(16);
+  }
+}
+
+.p-top-data__cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: rem(24);
+  margin-top: rem(64);
+
+  @include mq(sm) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @include mq(lg) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: rem(52) rem(63);
+    margin-top: rem(76);
+  }
+}
+
+.p-top-data-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: rem(358);
+  padding: rem(44) rem(28) rem(32);
+  text-align: center;
+  background-color: #222;
+  border: 2px solid $white;
+  border-radius: rem(8);
+}
+
+.p-top-data-card__title {
+  font-size: rem(28);
+  font-weight: 700;
+  line-height: 1.25;
+  color: $white;
+
+  @include mq(md) {
+    font-size: rem(32);
+  }
+}
+
+.p-top-data-card__icon {
+  width: rem(130);
+  height: rem(130);
+  object-fit: contain;
+}
+
+.p-top-data-card__icon--team,
+.p-top-data-card__icon--family {
+  width: rem(166);
+  height: rem(166);
+}
+
+.p-top-data-card__value {
+  font-size: rem(34);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: $white;
+}
+
+.p-top-data-card__value span {
+  margin-left: rem(4);
+  font-size: rem(24);
+}
+
+.p-top-data-card__note {
+  margin-top: rem(10);
+  font-size: rem(14);
+  font-weight: 700;
+  line-height: 1.4;
+  color: $white;
+}
+
+.p-top-data-card__gender {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(14);
+}
+
+.p-top-data-card__gender img {
+  width: rem(128);
+  height: rem(128);
+  object-fit: contain;
+}
+
+.p-top-data-card__gender span {
+  position: relative;
+  width: rem(10);
+  height: rem(51);
+}
+
+.p-top-data-card__gender span::before,
+.p-top-data-card__gender span::after {
+  position: absolute;
+  left: 0;
+  width: rem(10);
+  height: rem(10);
+  content: "";
+  background-color: $white;
+  border-radius: 50%;
+}
+
+.p-top-data-card__gender span::before {
+  top: 0;
+}
+
+.p-top-data-card__gender span::after {
+  bottom: 0;
+}
+
+.p-top-data-card__manager {
+  position: relative;
+  width: rem(168);
+  height: rem(152);
+}
+
+.p-top-data-card__manager-person {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: rem(143);
+  height: rem(143);
+  object-fit: contain;
+}
+
+.p-top-data-card__manager-medal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: rem(47);
+  height: rem(47);
+  object-fit: contain;
+}
+
+.p-top-data__link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: rem(404);
+  min-height: rem(55);
+  margin: rem(94) auto 0;
+  padding: rem(15) rem(18);
+  color: $white;
+  border: 2px solid $white;
+  border-radius: rem(8);
+}
+
+.p-top-data__link-text {
+  position: relative;
+  padding-left: rem(32);
+  font-size: rem(15);
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.p-top-data__link-text::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: rem(12);
+  height: rem(12);
+  content: "";
+  background-color: currentColor;
+  clip-path: polygon(16% 0, 100% 0, 100% 84%, 82% 84%, 82% 31%, 12% 100%, 0 88%, 70% 18%, 16% 18%);
+  transform: translateY(-50%);
+}
+
+.p-top-data__link-en {
+  flex: 0 0 auto;
+  margin-left: rem(16);
+  font-family: "Inter", $base-font-family;
+  font-size: rem(11);
+  font-weight: 400;
+  line-height: 1;
+}

@@ -4875,6 +4875,126 @@ input::placeholder {
   background-color: #222;
 }
 
+.p-people-list {
+  padding-top: 3.5rem;
+  padding-bottom: 4.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-people-list {
+    padding-top: 4.5rem;
+    padding-bottom: 6.5rem;
+  }
+}
+
+.p-people-list__cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .p-people-list__cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5.375rem 4.875rem;
+  }
+}
+
+.p-people-card__image {
+  overflow: hidden;
+  aspect-ratio: 348/414;
+  border-radius: 0.5rem;
+  background-color: #f2f2f2;
+}
+
+.p-people-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.p-people-card__body {
+  margin-top: 1.125rem;
+}
+@media screen and (min-width: 768px) {
+  .p-people-card__body {
+    margin-top: 1.25rem;
+  }
+}
+
+.p-people-card__name {
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: 1.45;
+  letter-spacing: 0;
+}
+@media screen and (min-width: 768px) {
+  .p-people-card__name {
+    font-size: 1.5rem;
+  }
+}
+
+.p-people-card__meta {
+  margin-top: 0.4375rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+@media screen and (min-width: 768px) {
+  .p-people-card__meta {
+    font-size: 1.125rem;
+    line-height: 1.322;
+  }
+}
+
+.p-people-card__meta span {
+  display: block;
+}
+
+.p-people-mv {
+  display: grid;
+  place-items: center;
+  min-height: 20rem;
+  color: #fff;
+  text-align: center;
+  background-color: #1b1b1b;
+}
+@media screen and (min-width: 768px) {
+  .p-people-mv {
+    min-height: 30rem;
+    margin-top: 4.625rem;
+  }
+}
+
+.p-people-mv__content {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.p-people-mv__en {
+  margin-top: 0.5rem;
+  font-family: "Inter", "Noto Sans JP", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+@media screen and (min-width: 768px) {
+  .p-people-mv__en {
+    font-size: 1.25rem;
+  }
+}
+
+.p-people-mv__title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+@media screen and (min-width: 768px) {
+  .p-people-mv__title {
+    font-size: 2.625rem;
+  }
+}
+
 .p-single-topics {
   padding-top: 5rem;
   padding-bottom: 5rem;

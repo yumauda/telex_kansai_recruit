@@ -1,75 +1,95 @@
 <?php get_header(); ?>
 <main>
-  <div class="p-scroll-text wrapper js-scroll-text p-mv__scroll-text">
-    <div class="loop">
-      <img src="<?php echo get_template_directory_uri() ?>/images/common/loop4.svg" alt="" width="3006" height="160">
+  <section class="p-people-mv">
+    <div class="p-people-mv__content">
+      <p class="p-people-mv__en">People</p>
+      <h1 class="p-people-mv__title">人を知る</h1>
     </div>
-    <div class="loop loop2">
-      <img src="<?php echo get_template_directory_uri() ?>/images/common/loop4.svg" alt="" width="3006" height="160">
-    </div>
-  </div>
+  </section>
 
-  <div class="p-home-topics__box">
-
-    <section class="p-home-topics">
-      <div class="l-inner">
-        <div class="p-home-topics__content">
-          <div class="p-home-topics__title">
-            <h2 class="c-main-title">
-              <span class="c-main-title__ja">トピックス</span>
-              <span class="c-main-title__en">Topics</span>
-            </h2>
+  <section class="p-people-list">
+    <div class="l-inner">
+      <div class="p-people-list__cards">
+        <article class="p-people-card">
+          <figure class="p-people-card__image">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/people/yamada-saki.webp" alt="山田 紗季">
+          </figure>
+          <div class="p-people-card__body">
+            <h2 class="p-people-card__name">山田 紗季</h2>
+            <p class="p-people-card__meta">
+              <span>2022年 新卒入社</span>
+              <span>モバイル事業部 店長</span>
+            </p>
           </div>
-          <div class="p-home-topics__block">
-            <?php if (have_posts()) : ?>
-              <?php while (have_posts()) : ?>
-                <?php the_post(); ?>
-                <a href="<?php the_permalink(); ?>" class="p-home-topics__row">
-                  <div class="p-home-topics__metaBlock">
-                    <time datetime="<?php the_time('Y-m-d'); ?>" class="p-home-topics__time"><?php the_time('Y.m.d'); ?></time>
-                    <p class="p-home-topics__category">
-                      <?php
-                      $categories = get_the_category();
-                      if (! empty($categories)) {
-                        $cat_names = array_map(function ($cat) {
-                          return esc_html($cat->name);
-                        }, $categories);
-                        echo implode(', ', $cat_names);
-                      }
-                      ?>
-                    </p>
-                  </div>
-                  <p class="p-home-topics__blockTitle"><?php the_title(); ?></p>
-                </a>
-              <?php endwhile; ?>
-            <?php endif; ?>
+        </article>
+        <article class="p-people-card">
+          <figure class="p-people-card__image">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/people/kawamoto-daichi.webp" alt="川本 大地">
+          </figure>
+          <div class="p-people-card__body">
+            <h2 class="p-people-card__name">川本 大地</h2>
+            <p class="p-people-card__meta">
+              <span>2021年 新卒入社</span>
+              <span>モバイル事業部 店長</span>
+            </p>
           </div>
-          <div class="p-home-topics__pagination">
-            <?php
-            $pagination_links = paginate_links(array(
-              'type'      => 'array',
-              'prev_text' => '&lt;',
-              'next_text' => '&gt;',
-              'end_size'  => 1,
-              'mid_size'  => 2,
-              'before_page_number' => '',
-              'after_page_number'  => '',
-            ));
-            if ($pagination_links) : ?>
-              <ul class="p-home-topics__lists">
-                <?php foreach ($pagination_links as $link) : ?>
-                  <li class="p-home-topics__list">
-                    <?php echo str_replace('page-numbers', 'p-home-topics__pagination-link', $link); ?>
-                  </li>
-                <?php endforeach; ?>
-              </ul>
-            <?php endif; ?>
+        </article>
+        <article class="p-people-card">
+          <figure class="p-people-card__image">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/people/sakamoto-genki.webp" alt="坂本 元貴">
+          </figure>
+          <div class="p-people-card__body">
+            <h2 class="p-people-card__name">坂本 元貴</h2>
+            <p class="p-people-card__meta">
+              <span>2024年 中途入社</span>
+              <span>イベント事業部 リーダー</span>
+            </p>
           </div>
-        </div>
+        </article>
+        <article class="p-people-card">
+          <figure class="p-people-card__image">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/people/yano-kana.webp" alt="矢野 夏菜">
+          </figure>
+          <div class="p-people-card__body">
+            <h2 class="p-people-card__name">矢野 夏菜</h2>
+            <p class="p-people-card__meta">
+              <span>2023年 中途入社</span>
+              <span>モバイル事業部</span>
+            </p>
+          </div>
+        </article>
+        <article class="p-people-card">
+          <figure class="p-people-card__image">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/people/nishikawa-honoka.webp" alt="西川 帆香">
+          </figure>
+          <div class="p-people-card__body">
+            <h2 class="p-people-card__name">西川 帆香</h2>
+            <p class="p-people-card__meta">
+              <span>2025年 新卒入社</span>
+              <span>モバイル事業部</span>
+            </p>
+          </div>
+        </article>
+        <article class="p-people-card">
+          <figure class="p-people-card__image">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/people/muto-ren.webp" alt="武藤 蓮">
+          </figure>
+          <div class="p-people-card__body">
+            <h2 class="p-people-card__name">武藤 蓮</h2>
+            <p class="p-people-card__meta">
+              <span>2025年 新卒入社</span>
+              <span>モバイル事業部</span>
+            </p>
+          </div>
+        </article>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 
-
+  <section class="p-message-entry">
+    <div class="l-inner">
+      <?php get_template_part('includes/entry'); ?>
+    </div>
+  </section>
 </main>
-<?php get_footer() ?>
+<?php get_footer(); ?>

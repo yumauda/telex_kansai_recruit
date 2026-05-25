@@ -1,0 +1,43 @@
+@use "../global" as *;
+
+.p-people-mv {
+  display: grid;
+  place-items: center;
+  min-height: rem(320);
+  color: $white;
+  text-align: center;
+  background-color: #1b1b1b;
+
+  @include mq(md) {
+    min-height: rem(480);
+    margin-top: rem(74);
+  }
+}
+
+.p-people-mv__content {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.p-people-mv__en {
+  margin-top: rem(8);
+  font-family: "Inter", $base-font-family;
+  font-size: rem(16);
+  font-weight: 600;
+  line-height: 1.4;
+
+  @include mq(md) {
+    font-size: rem(20);
+  }
+}
+
+.p-people-mv__title {
+  font-size: rem(28);
+  font-weight: 700;
+  line-height: 1.4;
+
+  @include mq(md) {
+    font-size: rem(42);
+  }
+}

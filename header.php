@@ -104,7 +104,7 @@
                             </div>
                         </li>
                         <li class="p-header__nav-item">
-                            <a class="p-header__nav-link" href="#">
+                            <a class="p-header__nav-link" href="<?php echo esc_url(home_url('/people/')); ?>">
                                 <span class="p-header__nav-ja">人を知る</span>
                                 <span class="p-header__nav-en">People</span>
                             </a>

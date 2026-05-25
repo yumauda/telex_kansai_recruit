@@ -84,7 +84,7 @@
                             </a>
                         </li>
                         <li class="p-header__nav-item">
-                            <a class="p-header__nav-link" href="#">
+                            <a class="p-header__nav-link" href="<?php echo esc_url(home_url('/mobile_business/')); ?>">
                                 <span class="p-header__nav-ja">仕事を知る</span>
                                 <span class="p-header__nav-en">Work</span>
                             </a>

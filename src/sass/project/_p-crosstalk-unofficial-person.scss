@@ -1,0 +1,35 @@
+@use "../global" as *;
+
+.p-crosstalk-unofficial-mv .p-crosstalk-event-mv__detail {
+  @include mq(md) {
+    width: rem(424);
+  }
+}
+
+.p-crosstalk-unofficial-mv .p-crosstalk-event-mv__lead {
+  @include mq(md) {
+    margin-top: rem(10);
+    line-height: 1.4;
+  }
+}
+
+.p-crosstalk-unofficial-message-title {
+  margin-top: rem(64);
+
+  @include mq(md) {
+    margin-top: rem(80);
+  }
+}
+
+.p-crosstalk-unofficial-mv .p-crosstalk-event-mv__image img {
+  object-position: center center;
+}
+
+.p-crosstalk-unofficial-future-image {
+  margin-top: rem(48);
+  margin-bottom: 0;
+
+  @include mq(md) {
+    margin-top: rem(58);
+  }
+}

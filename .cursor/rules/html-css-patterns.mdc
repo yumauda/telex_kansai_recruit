@@ -1,0 +1,63 @@
+---
+description: HTML/CSSコーディング基準（p-crosstalk-event-mv 準拠）
+alwaysApply: true
+---
+
+# HTML/CSS コーディング基準
+
+参照実装: `page-crosstalk_event.php` + `src/sass/project/_p-crosstalk-event-mv.scss`
+
+## HTML
+
+- セクションは `<section class="p-[page]-[block]">` で開始。`<main>` 直下に並べ、`l-inner` はフル幅MVには使わない
+- BEM: `p-` ブロック / `__` 子要素 / `--` 修飾。クラス名はブロック名をプレフィックスに含める（例: `p-crosstalk-event-mv__title`）
+- 背景画像は `<picture>` + WebP `<source>` + JPG `<img>` フォールバック
+- テキスト階層: `__content`（配置用）→ `__label`（カテゴリ）→ `__detail`（タイトル群ラッパー）→ `__title`（h1）→ `__lead`（p）
+- 関連テキストは `__detail` のようなラッパーでグループ化する
+- PHP: `esc_url(get_template_directory_uri())` で画像パス、`get_header()` / `get_footer()` 使用
+
+```html
+<section class="p-crosstalk-event-mv">
+  <picture class="p-crosstalk-event-mv__image">
+    <source srcset=".../main.webp" type="image/webp">
+    <img src=".../main.jpg" alt="">
+  </picture>
+  <div class="p-crosstalk-event-mv__content">
+    <p class="p-crosstalk-event-mv__label">クロストーク</p>
+    <div class="p-crosstalk-event-mv__detail">
+      <h1 class="p-crosstalk-event-mv__title">タイトル</h1>
+      <p class="p-crosstalk-event-mv__lead">リード文</p>
+    </div>
+  </div>
+</section>
+```
+
+## SCSS
+
+- ファイル: `src/sass/project/_p-[name].scss`、`@use "../global" as *;` を先頭に記述
+- モバイルファースト。PC差分は `@include mq(md)` のみで上書き
+- サイズは `rem()`、色は `$white` 等の変数を優先
+- 縦余白は `margin-top`、横余白は `padding-inline` または `padding-left` / `padding-right`
+- **`gap` は使わない**（`flex-direction: column` でも `margin-top` で調整）
+- **`position` / `top` / `left` の乱用を避ける**。MVの3層構成のみ例外
+
+### MV 3層レイアウト
+
+1. **ブロック** — `position: relative; min-height; overflow: hidden; background-color`
+2. **画像** — `position: absolute; inset: 0` → `img` は `object-fit: cover` + `object-position`
+3. **コンテンツ** — `position: relative; z-index: 1`、親と同じ `min-height`、`padding-top` で縦位置決め
+
+### テキストボックス
+
+- ラベル: `display: inline-flex; align-items: center; min-height; padding; background-color`
+- 詳細群: `width: fit-content; max-width: 100%; margin-top; padding; background-color`
+- PC固定幅が必要な場合のみ `width: rem(661)` 等を `@include mq(md)` 内で指定
+
+### タイポグラフィ
+
+- `font-weight: 700` を基本、`line-height` は SP は小数（例: `1.35`）、PC はデザイン値比率（例: `calc(52 / 42)`）
+- 見出し・本文とも要素ごとにクラスを分け、ネストセレクタに依存しない
+
+### PC共通
+
+- ヘッダー分オフセット: `@include mq(md) { margin-top: rem(74); }`

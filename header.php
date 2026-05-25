@@ -95,11 +95,21 @@
                                 <span class="p-header__nav-en">People</span>
                             </a>
                         </li>
-                        <li class="p-header__nav-item">
-                            <a class="p-header__nav-link" href="#">
+                        <li class="p-header__nav-item p-header__nav-item--mega">
+                            <button class="p-header__nav-link p-header__nav-link--button" type="button" aria-haspopup="true">
                                 <span class="p-header__nav-ja">クロストーク</span>
                                 <span class="p-header__nav-en">Cross talk</span>
-                            </a>
+                            </button>
+                            <div class="p-header__mega" aria-label="クロストークメニュー">
+                                <a class="p-header__mega-link" href="<?php echo esc_url(home_url('/crosstalk_event/')); ?>">
+                                    <span class="p-header__mega-title">イノベーションセレモニー対談</span>
+                                    <span class="p-header__mega-en">Innovation Ceremony</span>
+                                </a>
+                                <a class="p-header__mega-link" href="<?php echo esc_url(home_url('/crosstalk_unofficial-person/')); ?>">
+                                    <span class="p-header__mega-title">内定者対談</span>
+                                    <span class="p-header__mega-en">Prospective Employees</span>
+                                </a>
+                            </div>
                         </li>
                         <li class="p-header__nav-item">
                             <a class="p-header__nav-link" href="#">

@@ -1,0 +1,67 @@
+@use "../global" as *;
+
+.p-crosstalk-event-speakers {
+  padding-top: rem(48);
+  padding-bottom: rem(64);
+  background-color: $white;
+
+  @include mq(md) {
+    padding-top: rem(58);
+    padding-bottom: rem(80);
+  }
+}
+
+.p-crosstalk-event-speakers__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: rem(44);
+  justify-items: center;
+
+  @include mq(md) {
+    grid-template-columns: repeat(2, rem(222));
+    gap: rem(122);
+    justify-content: center;
+  }
+}
+
+.p-crosstalk-event-speakers__item {
+  width: min(100%, rem(260));
+  text-align: center;
+
+  @include mq(md) {
+    width: rem(222);
+  }
+}
+
+.p-crosstalk-event-speakers__image {
+  width: rem(222);
+  aspect-ratio: 1;
+  margin-inline: auto;
+}
+
+.p-crosstalk-event-speakers__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.p-crosstalk-event-speakers__body {
+  margin-top: rem(22);
+}
+
+.p-crosstalk-event-speakers__name {
+  font-size: rem(24);
+  font-weight: 700;
+  line-height: calc(58.8 / 24);
+}
+
+.p-crosstalk-event-speakers__profile {
+  margin-top: rem(4);
+  font-size: rem(18);
+  font-weight: 400;
+  line-height: calc(23.8 / 18);
+}
+
+.p-crosstalk-event-speakers__profile span {
+  display: block;
+}

@@ -1,0 +1,123 @@
+@use "../global" as *;
+
+.p-crosstalk-event-talk {
+  padding-top: rem(56);
+  padding-bottom: rem(72);
+  color: #222;
+  background-color: $white;
+
+  @include mq(md) {
+    padding-top: rem(28);
+    padding-bottom: rem(82);
+  }
+}
+
+.p-crosstalk-event-talk__head {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: rem(34);
+
+  @include mq(md) {
+    grid-template-columns: minmax(0, rem(539)) minmax(0, rem(599));
+    gap: rem(61);
+    align-items: start;
+  }
+}
+
+.p-crosstalk-event-talk__title {
+  font-size: rem(22);
+  font-weight: 700;
+  line-height: 1.55;
+
+  @include mq(md) {
+    font-size: rem(24);
+    line-height: calc(40 / 24);
+  }
+}
+
+.p-crosstalk-event-talk__title span {
+  display: block;
+}
+
+.p-crosstalk-event-talk__question {
+  margin-top: rem(24);
+  font-size: rem(15);
+  font-weight: 400;
+  line-height: 1.86;
+
+  @include mq(md) {
+    font-size: rem(16);
+    line-height: calc(30 / 16);
+  }
+}
+
+.p-crosstalk-event-talk__image {
+  overflow: hidden;
+  border-radius: rem(8);
+  aspect-ratio: 599 / 402;
+}
+
+.p-crosstalk-event-talk__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.p-crosstalk-event-talk__items {
+  display: grid;
+  gap: rem(34);
+}
+
+.p-crosstalk-event-talk__items--narrow {
+  margin-top: rem(28);
+
+  @include mq(md) {
+    margin-top: rem(24);
+    gap: rem(37);
+  }
+}
+
+.p-crosstalk-event-talk__items--wide {
+  margin-top: rem(38);
+
+  @include mq(md) {
+    margin-top: rem(67);
+    gap: rem(46);
+  }
+}
+
+.p-crosstalk-event-talk__item {
+  display: grid;
+  grid-template-columns: rem(61) minmax(0, 1fr);
+  gap: rem(13);
+  align-items: start;
+}
+
+.p-crosstalk-event-talk__speaker {
+  text-align: center;
+}
+
+.p-crosstalk-event-talk__speaker img {
+  width: rem(61);
+  height: rem(61);
+  object-fit: contain;
+}
+
+.p-crosstalk-event-talk__speaker span {
+  display: block;
+  margin-top: rem(6);
+  font-size: rem(16);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.p-crosstalk-event-talk__text {
+  font-size: rem(15);
+  font-weight: 400;
+  line-height: 1.86;
+
+  @include mq(md) {
+    font-size: rem(16);
+    line-height: calc(29.8 / 16);
+  }
+}

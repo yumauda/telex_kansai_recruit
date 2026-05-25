@@ -21,6 +21,12 @@
   }
 }
 
+.p-people-card__link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
 .p-people-card__image {
   overflow: hidden;
   aspect-ratio: 348 / 414;
@@ -32,6 +38,11 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.p-people-card__link:hover .p-people-card__image img {
+  transform: scale(1.04);
 }
 
 .p-people-card__body {

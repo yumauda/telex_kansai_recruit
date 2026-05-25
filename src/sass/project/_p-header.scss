@@ -14,6 +14,12 @@
   border-bottom: 1px solid rgba($white, 0.28);
 }
 
+.p-header--light {
+  color: #000;
+  background-color: $white;
+  border-bottom-color: rgba(#000, 0.16);
+}
+
 .p-header .l-inner {
   max-width: none;
   padding-right: rem(18);
@@ -65,6 +71,11 @@
   white-space: nowrap;
 }
 
+.p-header--light .p-header__brand-copy {
+  color: #000;
+}
+
+
 .p-header__brand-name {
   font-size: rem(22);
   font-weight: 700;
@@ -114,6 +125,10 @@
   white-space: nowrap;
 }
 
+.p-header--light .p-header__nav-link {
+  color: #000;
+}
+
 .p-header__nav-link--button {
   padding: 0;
   font: inherit;
@@ -136,6 +151,10 @@
   font-weight: 400;
   line-height: 1.4;
   color: #eaeaea;
+}
+
+.p-header--light .p-header__nav-en {
+  color: #000;
 }
 
 .p-header__mega {

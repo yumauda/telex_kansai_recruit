@@ -53,7 +53,13 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <header class="l-header p-header">
+    <?php
+    $header_classes = 'l-header p-header';
+    if (is_single() || is_page(array('crosstalk_event', 'crosstalk_unofficial-person'))) {
+        $header_classes .= ' p-header--light';
+    }
+    ?>
+    <header class="<?php echo esc_attr($header_classes); ?>">
         <div class="l-inner">
             <div class="p-header__content">
                 <a class="p-header__brand" href="<?php echo esc_url(home_url('/')); ?>" aria-label="Telex Kansai Recruit Site">

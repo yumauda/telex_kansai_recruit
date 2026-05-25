@@ -1,0 +1,53 @@
+@use "../global" as *;
+
+.p-environment-anchor {
+  padding-top: rem(28);
+  padding-bottom: rem(28);
+  background-color: $white;
+
+  @include mq(md) {
+    padding-top: rem(38);
+    padding-bottom: rem(38);
+  }
+}
+
+.p-environment-anchor__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: rem(18) rem(40);
+
+  @include mq(md) {
+    gap: rem(104);
+  }
+}
+
+.p-environment-anchor__link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: rem(7);
+  color: #222;
+  font-size: rem(15);
+  font-weight: 400;
+  line-height: calc(29.8 / 16);
+  transition: opacity 0.2s ease;
+
+  @include mq(md) {
+    font-size: rem(16);
+  }
+}
+
+.p-environment-anchor__link::after {
+  width: rem(8);
+  height: rem(8);
+  content: "";
+  border-right: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  transform: translateY(rem(-2)) rotate(45deg);
+}
+
+.p-environment-anchor__link:hover,
+.p-environment-anchor__link:focus-visible {
+  opacity: 0.72;
+}

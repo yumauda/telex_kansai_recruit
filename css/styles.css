@@ -1393,13 +1393,13 @@ select::-ms-expand {
 
 .p-career-path__jobs,
 .p-career-path__plans {
-  margin-top: 1.75rem;
+  margin-top: 1rem;
 }
 @media screen and (min-width: 768px) {
   .p-career-path__jobs,
   .p-career-path__plans {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    margin-top: 1.5rem;
+    margin-top: 0;
     column-gap: 2.5rem;
   }
 }
@@ -1444,13 +1444,13 @@ select::-ms-expand {
 
 @media screen and (min-width: 768px) {
   .p-career-path__arrow--entry {
-    margin-top: 1.8125rem;
+    margin-top: 0.625rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   .p-career-path__arrow--plan {
-    margin-top: 1.5rem;
+    margin-top: 0.625rem;
   }
 }
 
@@ -2923,6 +2923,300 @@ select::-ms-expand {
     right: 3.125rem;
     border-width: 0 2rem 2rem 0;
   }
+}
+
+.p-environment-anchor {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+  background-color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .p-environment-anchor {
+    padding-top: 2.375rem;
+    padding-bottom: 2.375rem;
+  }
+}
+
+.p-environment-anchor__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.125rem 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-environment-anchor__list {
+    gap: 6.5rem;
+  }
+}
+
+.p-environment-anchor__link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4375rem;
+  color: #222;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.8625;
+  transition: opacity 0.2s ease;
+}
+@media screen and (min-width: 768px) {
+  .p-environment-anchor__link {
+    font-size: 1rem;
+  }
+}
+
+.p-environment-anchor__link::after {
+  width: 0.5rem;
+  height: 0.5rem;
+  content: "";
+  border-right: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  transform: translateY(-0.125rem) rotate(45deg);
+}
+
+.p-environment-anchor__link:hover,
+.p-environment-anchor__link:focus-visible {
+  opacity: 0.72;
+}
+
+.p-environment-system,
+.p-environment-benefit {
+  padding-top: 3rem;
+  padding-bottom: 4.5rem;
+  color: #000;
+  background-color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .p-environment-system,
+  .p-environment-benefit {
+    padding-top: 3.1875rem;
+    padding-bottom: 5.625rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-environment-benefit {
+    padding-top: 0.125rem;
+  }
+}
+
+.p-environment-card-section__title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .p-environment-card-section__title {
+    font-size: 2.625rem;
+    line-height: 1.4;
+  }
+}
+
+.p-environment-card-section__list {
+  display: grid;
+  gap: 2.625rem;
+  margin-top: 2.625rem;
+}
+@media screen and (min-width: 768px) {
+  .p-environment-card-section__list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 3.9375rem;
+    row-gap: 4rem;
+    margin-top: 4.5rem;
+  }
+}
+
+.p-environment-card__image {
+  overflow: hidden;
+  border: 2px solid #fff;
+  border-radius: 0.5rem;
+  aspect-ratio: 358/240;
+}
+
+.p-environment-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .p-environment-card--no-image {
+    padding-top: 15rem;
+  }
+}
+
+.p-environment-card__title {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.45;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .p-environment-card__title {
+    margin-top: 1.125rem;
+  }
+}
+
+.p-environment-card--no-image .p-environment-card__title {
+  margin-top: 0;
+}
+
+.p-environment-card__text {
+  margin-top: 0.625rem;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .p-environment-card__text {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    font-size: 1rem;
+  }
+}
+
+.p-environment-mv {
+  display: grid;
+  place-items: center;
+  min-height: 20rem;
+  color: #fff;
+  text-align: center;
+  background-color: #1b1b1b;
+}
+@media screen and (min-width: 768px) {
+  .p-environment-mv {
+    min-height: 30rem;
+    margin-top: 4.625rem;
+  }
+}
+
+.p-environment-mv__content {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.p-environment-mv__en {
+  margin-top: 0.5rem;
+  font-family: "Inter", "Noto Sans JP", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+@media screen and (min-width: 768px) {
+  .p-environment-mv__en {
+    font-size: 1.25rem;
+  }
+}
+
+.p-environment-mv__title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+@media screen and (min-width: 768px) {
+  .p-environment-mv__title {
+    font-size: 2.625rem;
+  }
+}
+
+.p-environment-workplace {
+  padding-top: 3rem;
+  padding-bottom: 4.5rem;
+  color: #000;
+  background-color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .p-environment-workplace {
+    padding-top: 0.5rem;
+    padding-bottom: 5.625rem;
+  }
+}
+
+.p-environment-workplace__title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .p-environment-workplace__title {
+    font-size: 2.625rem;
+    line-height: 1.4;
+  }
+}
+
+.p-environment-workplace__subtitle {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .p-environment-workplace__subtitle {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    line-height: 1.8375;
+  }
+}
+
+.p-environment-workplace__gallery {
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 1.125rem;
+}
+@media screen and (min-width: 768px) {
+  .p-environment-workplace__gallery {
+    gap: 0.625rem;
+    margin-top: 0.9375rem;
+  }
+}
+
+.p-environment-workplace__gallery + .p-environment-workplace__subtitle {
+  margin-top: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .p-environment-workplace__gallery + .p-environment-workplace__subtitle {
+    margin-top: 5.125rem;
+  }
+}
+
+.p-environment-workplace__row {
+  display: grid;
+  gap: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-environment-workplace__row {
+    grid-template-columns: minmax(0, 760fr) minmax(0, 432fr);
+    gap: 0.5rem;
+  }
+}
+
+.p-environment-workplace__image {
+  overflow: hidden;
+}
+
+.p-environment-workplace__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.p-environment-workplace__image--wide {
+  aspect-ratio: 1200/676;
+}
+
+.p-environment-workplace__image--large {
+  aspect-ratio: 760/434;
+}
+
+.p-environment-workplace__image--small {
+  aspect-ratio: 432/434;
 }
 
 .p-footer {

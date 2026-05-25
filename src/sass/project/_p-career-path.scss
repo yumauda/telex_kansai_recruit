@@ -73,11 +73,11 @@
 
 .p-career-path__jobs,
 .p-career-path__plans {
-  margin-top: rem(28);
+  margin-top: rem(16);
 
   @include mq(md) {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    margin-top: rem(24);
+    margin-top: 0;
     column-gap: rem(40);
   }
 }
@@ -120,13 +120,13 @@
 
 .p-career-path__arrow--entry {
   @include mq(md) {
-    margin-top: rem(29);
+    margin-top: rem(10);
   }
 }
 
 .p-career-path__arrow--plan {
   @include mq(md) {
-    margin-top: rem(24);
+    margin-top: rem(10);
   }
 }
 

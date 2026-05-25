@@ -52,6 +52,22 @@
   }
 }
 
+.p-mobile-business-intro__body {
+  order: 2;
+
+  @include mq(md) {
+    order: initial;
+  }
+}
+
+.p-mobile-business-intro__image {
+  order: 1;
+
+  @include mq(md) {
+    order: initial;
+  }
+}
+
 .p-mobile-business-intro__heading {
   color: #000;
   font-size: rem(26);

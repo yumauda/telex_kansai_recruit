@@ -35,7 +35,7 @@
 
 .p-mobile-business-flow__item {
   display: grid;
-  grid-template-columns: rem(52) rem(72) minmax(0, 1fr);
+  grid-template-columns: rem(52) rem(40) minmax(0, 1fr);
   align-items: center;
   column-gap: rem(18);
   min-height: rem(104);
@@ -43,7 +43,7 @@
   border-bottom: 1px solid #b9b9b9;
 
   @include mq(md) {
-    grid-template-columns: rem(62) rem(92) minmax(0, 1fr);
+    grid-template-columns: rem(62) rem(200) minmax(0, 1fr);
     column-gap: rem(86);
     min-height: rem(104);
     padding: rem(20) rem(24);

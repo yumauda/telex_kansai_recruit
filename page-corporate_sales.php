@@ -2,41 +2,41 @@
 <main>
   <section class="p-mobile-business-mv">
     <div class="p-mobile-business-mv__content">
-      <p class="p-mobile-business-mv__en">Mobile business</p>
-      <h1 class="p-mobile-business-mv__title">モバイル事業部</h1>
+      <p class="p-mobile-business-mv__en">Corporate sales</p>
+      <h1 class="p-mobile-business-mv__title">法人営業</h1>
     </div>
   </section>
   <section class="p-mobile-business-intro">
     <div class="l-inner">
-      <h2 class="p-mobile-business-intro__title">モバイル事業部の仕事紹介</h2>
+      <h2 class="p-mobile-business-intro__title">法人事業の仕事紹介</h2>
       <div class="p-mobile-business-intro__content p-mobile-business-intro__content--work">
         <div class="p-mobile-business-intro__body">
           <h3 class="p-mobile-business-intro__heading">仕事内容</h3>
           <div class="p-mobile-business-intro__text">
-            <p>モバイル事業は、ドコモ・auのキャリアショップ運営を通じ、通信を「売る」のではなく「活かす」価値を提供する営業です。AIによる業務効率化で生み出した時間を、お客様一人ひとりの生活に寄り添う「本質的な接客」に充て、最適な選択を共に考えるパートナーを目指します。</p>
+            <p>法人営業部は、ドコモの法人向けモバイル通信サービスを軸に、クラウドPBXや生成AI、管理業務のDX化など、企業の「未来のあたりまえ」となるソリューションを提案しています。2010年の設立以来、京阪神エリアを中心に430社以上の企業様を担当し、通信インフラから業務効率化までを幅広く支えるパートナーとして活動しています。</p>
             <p><strong>具体的な業務例</strong></p>
             <ul>
-              <li><strong>相談しやすい接客の提供：</strong>「何が自分に合うか分からない」というお客様に対し、売ることを前提とせず、状況を丁寧に伺いながら理解と納得を重ねる対話を行います。</li>
-              <li><strong>人による最適提案：</strong>AIやシステムで分析したデータに、お客様のライフスタイルや価値観を掛け合わせ、スマートフォンからプラン、周辺機器まで総合的に提案・実行します。</li>
-              <li><strong>継続的なライフサポート：</strong>購入後の使い方相談や機種変更、ウェアラブル端末の活用提案など、ライフスタイルの変化に合わせて長く頼っていただける関係性を築きます。</li>
+              <li><strong>通信コストの最適化と基盤整備：</strong>NTTドコモの法人限定プランによる最大6割のコスト削減提案や、事務所・物流倉庫など様々な施設における光回線・Wi-Fi環境の改善・構築をおこなっています。</li>
+              <li><strong>次世代ワークスタイルの提案：</strong>クラウドPBXの導入により、固定電話設備のクラウド化やスマホでの発着信を実現し、テレワークやシェアオフィス活用といった柔軟な働き方を支援しています。</li>
+              <li><strong>伴走型のDX支援：</strong>勤怠管理システムの導入による業務効率化や生成AIの活用提案など、導入後も専任担当者として「社内の通信・IT担当者」のような距離感で迅速なサポートをおこなっています。</li>
             </ul>
           </div>
         </div>
         <figure class="p-mobile-business-intro__image">
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/mobile_business/work-intro.webp" alt="">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/corporate_sales/work-intro.webp" alt="">
         </figure>
       </div>
       <div class="p-mobile-business-intro__content p-mobile-business-intro__content--reverse">
         <figure class="p-mobile-business-intro__image">
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/mobile_business/reward.webp" alt="">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/corporate_sales/reward.webp" alt="">
         </figure>
         <div class="p-mobile-business-intro__body">
           <h3 class="p-mobile-business-intro__heading">魅力・やりがい</h3>
           <div class="p-mobile-business-intro__text">
             <ul>
-              <li>全国トップクラスの実績に基づく成長環境： 全国販売台数1位（2025年12月度）や5年連続優秀ショップ選出など、全国レベルの実績を生み出す教育体制とその仲間と共に成長できる。</li>
-              <li>「個の力」が直接感謝に繋がる手応え： AIにはできない「人ならではの感性」を活かした提案で、お客様の日常を便利に変えていく喜びをダイレクトに実感できる。</li>
-              <li>拡大し続けるキャリアのフィールド： 3年間で店舗数が倍増し、修理事業や外販事業も拡大中。急成長を続ける組織で、多様なキャリアチャンスに挑戦できる。</li>
+              <li><strong>企業の経営課題をダイレクトに解決する実感：</strong>最大6割のコスト削減や劇的な業務効率化など、自身の提案が顧客企業の利益や働き方改革に直結する手応えを感じられる。</li>
+              <li><strong>「未来のあたりまえ」を届ける先駆者としての誇り：</strong>クラウドPBXや生成AIなど、これから普及していく最先端サービスをいち早く提案し、地域のビジネスイノベーションを牽引できる。</li>
+              <li><strong>ワンストップで応える圧倒的な解決力：</strong>OA機器、端末買取、助成金など多数の提携先企業と連携しており、専任担当者としてあらゆる課題に対して一窓口で応えられる信頼感がある。</li>
             </ul>
           </div>
         </div>
@@ -46,14 +46,14 @@
           <h3 class="p-mobile-business-intro__heading">身に付くスキル・マインド</h3>
           <div class="p-mobile-business-intro__text">
             <ul>
-              <li><strong>AIを使いこなし、付加価値を創る力：</strong>最新システムを業務に活用しながら、データだけでは見えない「人のニーズ」を汲み取り、最終的な判断・提案を行う高度な営業スキル。</li>
-              <li><strong>深い製品知識と理解力：</strong>Apple・Google・Samsungといった主要メーカーの思想やOSの特性まで深く理解し、プロとして比較検討をリードする専門性。</li>
-              <li><strong>信頼を積み重ねる提案力：</strong>その場限りの契約ではなく、誠実な提案を通じて「次もあなたにお願いしたい」と言っていただける信頼構築の姿勢。</li>
+              <li><strong>多角的なITコンサルティング能力：</strong>モバイル、ネットワークインフラ、クラウド、DXツールなど、多岐にわたるソリューションを組み合わせて最適な解決策を設計する力。</li>
+              <li><strong>変化を先取りする先見性とビジネス力：</strong>生成AIや管理業務のDX化など、日々進化するテクノロジーを素早く吸収し、顧客のビジネスにどう還元できるかを考え抜く姿勢。</li>
+              <li><strong>高いホスピタリティと対応力：</strong>導入して終わりではなく、顧客企業の「通信・IT担当」として深く入り込み、トラブルにも迅速に対応して長期的な信頼関係を構築するマインド。</li>
             </ul>
           </div>
         </div>
         <figure class="p-mobile-business-intro__image">
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/mobile_business/skill.webp" alt="">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/corporate_sales/skill.webp" alt="">
         </figure>
       </div>
     </div>
@@ -65,52 +65,52 @@
         <li class="p-mobile-business-flow__item">
           <figure class="p-mobile-business-flow__icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/mobile_business/flow-icon-morning.webp" alt=""></figure>
           <time class="p-mobile-business-flow__time" datetime="09:00">9:00</time>
-          <div class="p-mobile-business-flow__body"><p>出勤・開店準備</p><p>・店内清掃/カウンター準備</p><p>・予約状況/当日の目標確認</p><p>・朝礼(共有事項・KPI確認)</p></div>
+          <div class="p-mobile-business-flow__body"><p>出勤</p><p>・部署内情報共有</p><p>・本体発注</p><p>・申込書の登録前チェック</p></div>
         </li>
         <li class="p-mobile-business-flow__item">
           <figure class="p-mobile-business-flow__icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/mobile_business/flow-icon-morning.webp" alt=""></figure>
           <time class="p-mobile-business-flow__time" datetime="10:00">10:00</time>
-          <div class="p-mobile-business-flow__body"><p>開店・接客スタート</p><p>・来店受付/ヒアリング</p><p>・料金相談/操作説明対応</p></div>
+          <div class="p-mobile-business-flow__body"><p>お客様先訪問①</p><p>・商談（提案/申込/納品）</p><p>・アフターフォロー(設定・保守)</p></div>
         </li>
         <li class="p-mobile-business-flow__item">
           <figure class="p-mobile-business-flow__icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/mobile_business/flow-icon-morning.webp" alt=""></figure>
           <time class="p-mobile-business-flow__time" datetime="11:00">11:00</time>
-          <div class="p-mobile-business-flow__body"><p>提案業務（メイン時間①）</p><p>・プラン見直し提案</p><p>・スマホ/オプション商材の提案(セキュリティ、でんき等)</p></div>
+          <div class="p-mobile-business-flow__body"><p>・移動</p><p>・電話/メール対応</p><p>・確認事項をサポート窓口に問い合わせ</p></div>
         </li>
         <li class="p-mobile-business-flow__item">
           <figure class="p-mobile-business-flow__icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/mobile_business/flow-icon-day.webp" alt=""></figure>
           <time class="p-mobile-business-flow__time" datetime="12:00">12:00</time>
-          <div class="p-mobile-business-flow__body"><p>昼休憩（交代制）</p><p>・スタッフ同士で調整しながら休憩</p></div>
+          <div class="p-mobile-business-flow__body"><p>・休憩(現地周辺で昼食)</p></div>
         </li>
         <li class="p-mobile-business-flow__item">
           <figure class="p-mobile-business-flow__icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/mobile_business/flow-icon-day.webp" alt=""></figure>
           <time class="p-mobile-business-flow__time" datetime="13:00">13:00</time>
-          <div class="p-mobile-business-flow__body"><p>接客・手続き対応</p><p>・新規契約/機種変更/MNP対応</p><p>・登録業務や事務処理</p></div>
+          <div class="p-mobile-business-flow__body"><p>お客様先訪問②</p><p>・商談（提案/申込/納品）</p><p>・アフターフォロー(設定・保守)</p></div>
         </li>
         <li class="p-mobile-business-flow__item">
           <figure class="p-mobile-business-flow__icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/mobile_business/flow-icon-day.webp" alt=""></figure>
           <time class="p-mobile-business-flow__time" datetime="14:00">14:00</time>
-          <div class="p-mobile-business-flow__body"><p>提案業務（メイン時間②）</p><p>・家族まとめ提案(割家族解消)</p><p>・固定回線/決済サービスの案内</p></div>
+          <div class="p-mobile-business-flow__body"><p>・移動</p><p>・電話/メール対応</p><p>・確認事項をサポート窓口に問い合わせ</p></div>
         </li>
         <li class="p-mobile-business-flow__item">
           <figure class="p-mobile-business-flow__icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/mobile_business/flow-icon-day.webp" alt=""></figure>
           <time class="p-mobile-business-flow__time" datetime="15:00">15:00</time>
-          <div class="p-mobile-business-flow__body"><p>フォロー/架電業務</p><p>・過去来店顧客へのフォロー連絡</p><p>・予約顧客への事前確認</p></div>
+          <div class="p-mobile-business-flow__body"><p>お客様先訪問③</p><p>・商談（提案/申込/納品）</p><p>・アフターフォロー(設定・保守)</p></div>
         </li>
         <li class="p-mobile-business-flow__item">
           <figure class="p-mobile-business-flow__icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/mobile_business/flow-icon-day.webp" alt=""></figure>
           <time class="p-mobile-business-flow__time" datetime="16:00">16:00</time>
-          <div class="p-mobile-business-flow__body"><p>接客/ピーク対応</p><p>・夕方の来店ピークに対応</p><p>・待ち時間を意識した効率的な案内</p></div>
+          <div class="p-mobile-business-flow__body"><p>・移動</p><p>・電話/メール対応</p><p>・確認事項をサポート窓口に問い合わせ</p></div>
         </li>
         <li class="p-mobile-business-flow__item">
           <figure class="p-mobile-business-flow__icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/mobile_business/flow-icon-day.webp" alt=""></figure>
           <time class="p-mobile-business-flow__time" datetime="17:00">17:00</time>
-          <div class="p-mobile-business-flow__body"><p>締め作業/振り返り</p><p>・売上/KPI進捗確認</p><p>・成功事例/改善点の共有</p></div>
+          <div class="p-mobile-business-flow__body"><p>事務作業</p><p>・提案書/申込書/見積書/請求書の作成</p><p>・プラン変更等の登録業務</p><p>・本体キッティング作業</p></div>
         </li>
         <li class="p-mobile-business-flow__item">
           <figure class="p-mobile-business-flow__icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/mobile_business/flow-icon-night.webp" alt=""></figure>
           <time class="p-mobile-business-flow__time" datetime="18:00">18:00</time>
-          <div class="p-mobile-business-flow__body"><p>退勤</p><p>・日報入力</p><p>・翌日の準備をして退勤</p></div>
+          <div class="p-mobile-business-flow__body"><p>退勤</p><p>・各種申請業務</p><p>・メール対応</p><p>・日報入力</p></div>
         </li>
       </ol>
     </div>
@@ -121,20 +121,20 @@
       <div class="p-mobile-business-other__list">
         <article class="p-mobile-business-other__card">
           <figure class="p-mobile-business-other__image">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/mobile_business/other-corporate-sales.webp" alt="">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/corporate_sales/other-mobile-business.webp" alt="">
           </figure>
-          <h3 class="p-mobile-business-other__heading">法人営業</h3>
-          <a class="p-mobile-business-other__link" href="<?php echo esc_url(home_url('/event_business/')); ?>">
+          <h3 class="p-mobile-business-other__heading">モバイル事業部</h3>
+          <a class="p-mobile-business-other__link" href="<?php echo esc_url(home_url('/mobile_business/')); ?>">
             <span class="p-mobile-business-other__arrow">→</span>
             <span>仕事を見る</span>
           </a>
         </article>
         <article class="p-mobile-business-other__card">
           <figure class="p-mobile-business-other__image">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/mobile_business/other-event-business-photo.webp" alt="">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/corporate_sales/other-event-business-photo.webp" alt="">
           </figure>
           <h3 class="p-mobile-business-other__heading">イベント事業部</h3>
-          <a class="p-mobile-business-other__link" href="<?php echo esc_url(home_url('/corporate_sales/')); ?>">
+          <a class="p-mobile-business-other__link" href="<?php echo esc_url(home_url('/event_business/')); ?>">
             <span class="p-mobile-business-other__arrow">→</span>
             <span>仕事を見る</span>
           </a>

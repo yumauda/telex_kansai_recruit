@@ -83,11 +83,25 @@
                                 <span class="p-header__nav-en">Data</span>
                             </a>
                         </li>
-                        <li class="p-header__nav-item">
-                            <a class="p-header__nav-link" href="<?php echo esc_url(home_url('/mobile_business/')); ?>">
+                        <li class="p-header__nav-item p-header__nav-item--mega">
+                            <button class="p-header__nav-link p-header__nav-link--button" type="button" aria-haspopup="true">
                                 <span class="p-header__nav-ja">仕事を知る</span>
                                 <span class="p-header__nav-en">Work</span>
-                            </a>
+                            </button>
+                            <div class="p-header__mega" aria-label="仕事を知るメニュー">
+                                <a class="p-header__mega-link" href="<?php echo esc_url(home_url('/mobile_business/')); ?>">
+                                    <span class="p-header__mega-title">モバイル事業部</span>
+                                    <span class="p-header__mega-en">Mobile business</span>
+                                </a>
+                                <a class="p-header__mega-link" href="<?php echo esc_url(home_url('/corporate_sales/')); ?>">
+                                    <span class="p-header__mega-title">法人営業</span>
+                                    <span class="p-header__mega-en">Corporate sales</span>
+                                </a>
+                                <a class="p-header__mega-link" href="<?php echo esc_url(home_url('/event_business/')); ?>">
+                                    <span class="p-header__mega-title">イベント事業部</span>
+                                    <span class="p-header__mega-en">Event business</span>
+                                </a>
+                            </div>
                         </li>
                         <li class="p-header__nav-item">
                             <a class="p-header__nav-link" href="#">

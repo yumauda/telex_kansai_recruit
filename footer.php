@@ -27,8 +27,8 @@
                 <ul class="p-footer__nav-list">
                     <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="<?php echo esc_url(home_url('/mobile_business/')); ?>">仕事を知る</a></li>
                     <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="<?php echo esc_url(home_url('/mobile_business/')); ?>">-モバイル事業</a></li>
-                    <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">-法人営業部</a></li>
-                    <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">-イベント営業部</a></li>
+                    <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="<?php echo esc_url(home_url('/corporate_sales/')); ?>">-法人営業部</a></li>
+                    <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="<?php echo esc_url(home_url('/event_business/')); ?>">-イベント事業部</a></li>
                 </ul>
                 <ul class="p-footer__nav-list">
                     <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="#">人を知る</a></li>

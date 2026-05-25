@@ -1,0 +1,68 @@
+@use "../global" as *;
+
+.p-career-training {
+  padding-top: rem(28);
+  padding-bottom: rem(80);
+  color: #000;
+  background-color: $white;
+
+  @include mq(md) {
+    padding-top: rem(55);
+    padding-bottom: rem(104);
+  }
+}
+
+.p-career-training__title {
+  font-size: rem(30);
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+
+  @include mq(md) {
+    font-size: rem(42);
+    line-height: calc(58.8 / 42);
+  }
+}
+
+.p-career-training__list {
+  display: grid;
+  gap: rem(34);
+  margin-top: rem(42);
+
+  @include mq(md) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: rem(55);
+    row-gap: rem(66);
+    margin-top: rem(60);
+  }
+}
+
+.p-career-training__item-title {
+  display: grid;
+  place-items: center;
+  min-height: rem(46);
+  padding: rem(8) rem(16);
+  color: $white;
+  font-size: rem(19);
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: center;
+  background-color: #222;
+  border-radius: rem(8);
+
+  @include mq(md) {
+    font-size: rem(20);
+  }
+}
+
+.p-career-training__text {
+  margin-top: rem(14);
+  font-size: rem(15);
+  font-weight: 400;
+  line-height: calc(20 / 16);
+
+  @include mq(md) {
+    margin-top: rem(16);
+    font-size: rem(16);
+  }
+}

@@ -1,0 +1,205 @@
+@use "../global" as *;
+
+.p-career-example {
+  padding-top: rem(8);
+  padding-bottom: rem(80);
+  color: #222;
+  background-color: $white;
+
+  @include mq(md) {
+    padding-top: rem(64);
+    padding-bottom: rem(104);
+  }
+}
+
+.p-career-example--seki,
+.p-career-example--kaneman,
+.p-career-example--tanaka,
+.p-career-example--matsumoto {
+  padding-top: 0;
+}
+
+.p-career-example__title {
+  color: #000;
+  font-size: rem(30);
+  font-weight: 700;
+  line-height: 1.4;
+
+  @include mq(md) {
+    font-size: rem(42);
+  }
+}
+
+.p-career-example__heading {
+  margin-top: rem(46);
+  color: #000;
+  font-size: rem(24);
+  font-weight: 700;
+  line-height: 1.45;
+
+  @include mq(md) {
+    margin-top: rem(68);
+    font-size: rem(32);
+  }
+}
+
+.p-career-example__profile {
+  display: grid;
+  gap: rem(20);
+  margin-top: rem(24);
+  padding: rem(28) rem(20);
+  background-color: #f7f7f5;
+  border: 1px solid #000;
+  border-radius: rem(8);
+
+  @include mq(md) {
+    grid-template-columns: rem(141) minmax(0, 1fr);
+    align-items: center;
+    gap: rem(62);
+    margin-top: rem(22);
+    padding: rem(36) rem(59);
+  }
+}
+
+.p-career-example__portrait {
+  width: rem(112);
+  overflow: hidden;
+  border-radius: 50%;
+
+  @include mq(md) {
+    width: rem(141);
+  }
+}
+
+.p-career-example__portrait img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.p-career-example__name {
+  color: #000;
+  font-size: rem(22);
+  font-weight: 700;
+  line-height: 1.45;
+
+  @include mq(md) {
+    font-size: rem(24);
+  }
+}
+
+.p-career-example__summary {
+  margin-top: rem(14);
+  padding-top: rem(14);
+  font-size: rem(15);
+  font-weight: 400;
+  line-height: calc(23.8 / 16);
+  border-top: 1px solid #000;
+
+  @include mq(md) {
+    margin-top: rem(12);
+    padding-top: rem(17);
+    font-size: rem(16);
+  }
+}
+
+.p-career-example__timeline {
+  display: grid;
+  gap: rem(16);
+  margin-top: rem(32);
+
+  @include mq(md) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: end;
+    gap: 0;
+    margin-top: rem(58);
+  }
+}
+
+.p-career-example__step {
+  position: relative;
+
+  @include mq(md) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+
+.p-career-example__step--middle {
+  @include mq(md) {
+    min-height: rem(212);
+  }
+}
+
+.p-career-example__step--current {
+  @include mq(md) {
+    min-height: rem(244);
+  }
+}
+
+.p-career-example__period {
+  color: #000;
+  font-size: rem(15);
+  font-weight: 700;
+  line-height: 1.45;
+
+  @include mq(md) {
+    font-size: rem(16);
+  }
+}
+
+.p-career-example__step-title {
+  margin-top: rem(8);
+  color: #000;
+  font-size: rem(22);
+  font-weight: 700;
+  line-height: calc(26.8 / 24);
+
+  @include mq(md) {
+    font-size: rem(24);
+  }
+}
+
+.p-career-example__step-title span {
+  display: block;
+}
+
+.p-career-example__text {
+  margin-top: rem(20);
+  padding: rem(20) rem(16);
+  color: #222;
+  font-size: rem(15);
+  font-weight: 400;
+  line-height: calc(23.8 / 16);
+  background-color: #f7f7f5;
+  border: 1px solid #000;
+
+  @include mq(md) {
+    display: flex;
+    align-items: center;
+    min-height: rem(130);
+    margin-top: rem(31);
+    padding: rem(20) rem(18);
+    font-size: rem(16);
+    border-right: 0;
+  }
+}
+
+.p-career-example__step--middle .p-career-example__text {
+  background-color: #c7c7c7;
+
+  @include mq(md) {
+    min-height: rem(160);
+  }
+}
+
+.p-career-example__step--current .p-career-example__text {
+  color: $white;
+  background-color: #6e6e6d;
+
+  @include mq(md) {
+    min-height: rem(192);
+    border-right: 1px solid #000;
+  }
+}

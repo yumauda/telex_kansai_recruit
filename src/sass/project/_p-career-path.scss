@@ -1,0 +1,182 @@
+@use "../global" as *;
+
+.p-career-path {
+  padding-top: rem(46);
+  padding-bottom: rem(72);
+  color: #222;
+  background-color: $white;
+
+  @include mq(md) {
+    padding-top: rem(51);
+    padding-bottom: rem(96);
+  }
+}
+
+.p-career-path__title {
+  font-size: rem(30);
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+
+  @include mq(md) {
+    font-size: rem(42);
+  }
+}
+
+.p-career-path__panel {
+  margin-top: rem(34);
+  padding: rem(30) rem(18);
+  border: 1px solid #000;
+  border-radius: rem(8);
+
+  @include mq(md) {
+    margin-top: rem(47);
+    padding: rem(55) rem(59) rem(68);
+  }
+}
+
+.p-career-path__lead {
+  font-size: rem(15);
+  font-weight: 400;
+  line-height: calc(22.8 / 16);
+
+  @include mq(md) {
+    font-size: rem(16);
+  }
+}
+
+.p-career-path__flow {
+  margin-top: rem(38);
+
+  @include mq(md) {
+    margin-top: rem(67);
+  }
+}
+
+.p-career-path__entry,
+.p-career-path__jobs,
+.p-career-path__plans {
+  display: grid;
+  gap: rem(16);
+
+  @include mq(md) {
+    gap: rem(40);
+  }
+}
+
+.p-career-path__entry {
+  @include mq(md) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: rem(119);
+  }
+}
+
+.p-career-path__jobs,
+.p-career-path__plans {
+  margin-top: rem(28);
+
+  @include mq(md) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: rem(24);
+    column-gap: rem(40);
+  }
+}
+
+.p-career-path__box {
+  display: grid;
+  place-items: center;
+  min-height: rem(58);
+  padding: rem(11) rem(14);
+  color: #000;
+  font-size: rem(18);
+  font-weight: 700;
+  line-height: 1.45;
+  text-align: center;
+  background-color: #f7f7f5;
+  border: 1px solid #000;
+  border-radius: rem(8);
+
+  @include mq(md) {
+    min-height: rem(70);
+    font-size: rem(24);
+  }
+}
+
+.p-career-path__box--entry {
+  @include mq(md) {
+    max-width: rem(480);
+  }
+}
+
+.p-career-path__arrow {
+  display: none;
+
+  @include mq(md) {
+    display: block;
+    width: min(100%, rem(774));
+    margin-inline: auto;
+  }
+}
+
+.p-career-path__arrow--entry {
+  @include mq(md) {
+    margin-top: rem(29);
+  }
+}
+
+.p-career-path__arrow--plan {
+  @include mq(md) {
+    margin-top: rem(24);
+  }
+}
+
+.p-career-path__arrow img {
+  width: 100%;
+  height: auto;
+}
+
+.p-career-path__plan {
+  padding: rem(22) rem(12) rem(16);
+  background-color: #f7f7f5;
+  border: 1px solid #000;
+  border-radius: rem(8);
+
+  @include mq(md) {
+    min-height: rem(484);
+    padding: rem(31) rem(13) rem(29);
+  }
+}
+
+.p-career-path__plan-title {
+  font-size: rem(20);
+  font-weight: 700;
+  line-height: 1.45;
+  text-align: center;
+
+  @include mq(md) {
+    font-size: rem(24);
+  }
+}
+
+.p-career-path__plan-text {
+  margin-top: rem(18);
+  font-size: rem(15);
+  font-weight: 400;
+  line-height: calc(22.8 / 16);
+
+  @include mq(md) {
+    margin-top: rem(21);
+    font-size: rem(16);
+  }
+}
+
+.p-career-path__step-list {
+  display: grid;
+  gap: rem(14);
+  margin-top: rem(22);
+
+  @include mq(md) {
+    gap: rem(18);
+    margin-top: rem(28);
+  }
+}

@@ -111,11 +111,21 @@
                                 </a>
                             </div>
                         </li>
-                        <li class="p-header__nav-item">
-                            <a class="p-header__nav-link" href="#">
+                        <li class="p-header__nav-item p-header__nav-item--mega">
+                            <button class="p-header__nav-link p-header__nav-link--button" type="button" aria-haspopup="true">
                                 <span class="p-header__nav-ja">キャリア/働く環境</span>
                                 <span class="p-header__nav-en">Career / Environment</span>
-                            </a>
+                            </button>
+                            <div class="p-header__mega" aria-label="キャリア/働く環境メニュー">
+                                <a class="p-header__mega-link" href="<?php echo esc_url(home_url('/career/')); ?>">
+                                    <span class="p-header__mega-title">キャリア</span>
+                                    <span class="p-header__mega-en">Career</span>
+                                </a>
+                                <a class="p-header__mega-link" href="<?php echo esc_url(home_url('/environment/')); ?>">
+                                    <span class="p-header__mega-title">働く環境</span>
+                                    <span class="p-header__mega-en">Environment</span>
+                                </a>
+                            </div>
                         </li>
                     </ul>
                 </nav>

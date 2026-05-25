@@ -168,6 +168,39 @@ function my_excerpt_more($more)
 }
 add_filter('excerpt_more', 'my_excerpt_more');
 
+function telex_disable_comments()
+{
+	foreach (array('post', 'page') as $post_type) {
+		remove_post_type_support($post_type, 'comments');
+		remove_post_type_support($post_type, 'trackbacks');
+	}
+}
+add_action('init', 'telex_disable_comments');
+
+add_filter('comments_open', '__return_false', 20, 2);
+add_filter('pings_open', '__return_false', 20, 2);
+add_filter('comments_array', '__return_empty_array', 10, 2);
+add_filter('pre_option_default_comment_status', function () {
+	return 'closed';
+});
+add_filter('pre_option_default_ping_status', function () {
+	return 'closed';
+});
+
+function telex_disable_comments_admin()
+{
+	remove_menu_page('edit-comments.php');
+	remove_meta_box('dashboard_recent_comments', 'dashboard', 'normal');
+}
+add_action('admin_menu', 'telex_disable_comments_admin');
+add_action('wp_dashboard_setup', 'telex_disable_comments_admin');
+
+function telex_disable_comments_admin_bar($wp_admin_bar)
+{
+	$wp_admin_bar->remove_node('comments');
+}
+add_action('admin_bar_menu', 'telex_disable_comments_admin_bar', 999);
+
 function breadcrumb()
 {
 	$home = '<li class="c-breadcrumbs__list"><a class="c-breadcrumbs__link" href="' . get_bloginfo('url') . '" >HOME</a></li>';

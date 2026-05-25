@@ -10,90 +10,37 @@
   <section class="p-people-list">
     <div class="l-inner">
       <div class="p-people-list__cards">
-        <article class="p-people-card">
-          <a class="p-people-card__link" href="<?php the_permalink(); ?>">
-            <figure class="p-people-card__image">
-              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/people/yamada-saki.webp" alt="山田 紗季">
-            </figure>
-            <div class="p-people-card__body">
-              <h2 class="p-people-card__name">山田 紗季</h2>
-              <p class="p-people-card__meta">
-                <span>2022年 新卒入社</span>
-                <span>モバイル事業部 店長</span>
-              </p>
-            </div>
-          </a>
-        </article>
-        <article class="p-people-card">
-          <a class="p-people-card__link" href="<?php echo esc_url(home_url('/people/kawamoto-daichi/')); ?>">
-            <figure class="p-people-card__image">
-              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/people/kawamoto-daichi.webp" alt="川本 大地">
-            </figure>
-            <div class="p-people-card__body">
-              <h2 class="p-people-card__name">川本 大地</h2>
-              <p class="p-people-card__meta">
-                <span>2021年 新卒入社</span>
-                <span>モバイル事業部 店長</span>
-              </p>
-            </div>
-          </a>
-        </article>
-        <article class="p-people-card">
-          <a class="p-people-card__link" href="<?php echo esc_url(home_url('/people/sakamoto-genki/')); ?>">
-            <figure class="p-people-card__image">
-              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/people/sakamoto-genki.webp" alt="坂本 元貴">
-            </figure>
-            <div class="p-people-card__body">
-              <h2 class="p-people-card__name">坂本 元貴</h2>
-              <p class="p-people-card__meta">
-                <span>2024年 中途入社</span>
-                <span>イベント事業部 リーダー</span>
-              </p>
-            </div>
-          </a>
-        </article>
-        <article class="p-people-card">
-          <a class="p-people-card__link" href="<?php echo esc_url(home_url('/people/yano-kana/')); ?>">
-            <figure class="p-people-card__image">
-              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/people/yano-kana.webp" alt="矢野 夏菜">
-            </figure>
-            <div class="p-people-card__body">
-              <h2 class="p-people-card__name">矢野 夏菜</h2>
-              <p class="p-people-card__meta">
-                <span>2023年 中途入社</span>
-                <span>モバイル事業部</span>
-              </p>
-            </div>
-          </a>
-        </article>
-        <article class="p-people-card">
-          <a class="p-people-card__link" href="<?php echo esc_url(home_url('/people/nishikawa-honoka/')); ?>">
-            <figure class="p-people-card__image">
-              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/people/nishikawa-honoka.webp" alt="西川 帆香">
-            </figure>
-            <div class="p-people-card__body">
-              <h2 class="p-people-card__name">西川 帆香</h2>
-              <p class="p-people-card__meta">
-                <span>2025年 新卒入社</span>
-                <span>モバイル事業部</span>
-              </p>
-            </div>
-          </a>
-        </article>
-        <article class="p-people-card">
-          <a class="p-people-card__link" href="<?php echo esc_url(home_url('/people/muto-ren/')); ?>">
-            <figure class="p-people-card__image">
-              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/people/muto-ren.webp" alt="武藤 蓮">
-            </figure>
-            <div class="p-people-card__body">
-              <h2 class="p-people-card__name">武藤 蓮</h2>
-              <p class="p-people-card__meta">
-                <span>2025年 新卒入社</span>
-                <span>モバイル事業部</span>
-              </p>
-            </div>
-          </a>
-        </article>
+        <?php if (have_posts()) : ?>
+          <?php while (have_posts()) : ?>
+            <?php the_post(); ?>
+            <?php
+            $card_image_id = get_post_meta(get_the_ID(), 'people_single_profile_image', true);
+            $card_image = $card_image_id ? wp_get_attachment_image_url((int) $card_image_id, 'large') : '';
+            $entry_date = function_exists('get_field') ? get_field('entry_date') : get_post_meta(get_the_ID(), 'entry_date', true);
+            $position = function_exists('get_field') ? get_field('position') : get_post_meta(get_the_ID(), 'position', true);
+            ?>
+            <article class="p-people-card">
+              <a class="p-people-card__link" href="<?php the_permalink(); ?>">
+                <figure class="p-people-card__image">
+                  <img src="<?php echo esc_url($card_image ?: get_template_directory_uri() . '/images/people/yamada-saki.webp'); ?>" alt="<?php the_title_attribute(); ?>">
+                </figure>
+                <div class="p-people-card__body">
+                  <h2 class="p-people-card__name"><?php the_title(); ?></h2>
+                  <p class="p-people-card__meta">
+                    <?php if ($entry_date) : ?>
+                      <span><?php echo esc_html($entry_date); ?></span>
+                    <?php endif; ?>
+                    <?php if ($position) : ?>
+                      <span><?php echo esc_html($position); ?></span>
+                    <?php endif; ?>
+                  </p>
+                </div>
+              </a>
+            </article>
+          <?php endwhile; ?>
+        <?php endif; ?>
+
+        
       </div>
     </div>
   </section>

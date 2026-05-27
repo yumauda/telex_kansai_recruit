@@ -149,6 +149,50 @@
                         </li>
                     </ul>
                 </nav>
+                <button class="p-header__drawer p-drawer-icon">
+                    <span class="p-drawer-icon__bars">
+                        <span class="p-drawer-icon__bar1"></span>
+                        <span class="p-drawer-icon__bar3"></span>
+                    </span>
+                </button>
+                <div class="p-header__drawer-content p-drawer-content">
+                    <div class="p-drawer-content__items">
+                        <ul class="p-drawer-content__lists">
+                            <li class="p-drawer-content__list">
+                                <a href="<?php echo esc_url(home_url('/')); ?>" class="p-drawer-content__link">トップ</a>
+                            </li>
+                            <li class="p-drawer-content__list">
+                                <a href="<?php echo esc_url(home_url('/about')); ?>" class="p-drawer-content__link">TRUXiAについて</a>
+                            </li>
+                            <li class="p-drawer-content__list">
+                                <a href="<?php echo esc_url(home_url('/business')); ?>" class="p-drawer-content__link">事業紹介</a>
+                            </li>
+                            <li class="p-drawer-content__list">
+                                <a href="<?php echo esc_url(home_url('/talent')); ?>" class="p-drawer-content__link">タレント紹介</a>
+                            </li>
+                            <li class="p-drawer-content__list">
+                                <a href="<?php echo esc_url(home_url('/news')); ?>" class="p-drawer-content__link">お知らせ</a>
+                            </li>
+                        </ul>
+                        <div class="p-drawer-content__sns">
+                            <p class="p-drawer-content__sns-text">FOLLOW US</p>
+                            <a href="https://www.instagram.com/truxia.management/" class="p-drawer-content__sns-link" target="_blank">
+                                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/instagram.svg" alt="インスタグラム" width="30" height="30">
+                            </a>
+                            <a href="https://x.com/truxia_mg" class="p-drawer-content__sns-link" target="_blank">
+                                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/x.svg" alt="x" width="30" height="30">
+                            </a>
+                        </div>
+                        <div class="p-drawer-content__contact-wrapper">
+                            <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-drawer-content__contact">
+                                <p class="p-drawer-content__contact-text">お問い合わせ</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15.5" height="4.81">
+                                    <path d="M.75 4.06h14l-2.831-3" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <a class="p-header__entry" href="#">
                     <span class="p-header__entry-text">募集要項・エントリー</span>
                 </a>

@@ -121,7 +121,7 @@
       <div class="p-mobile-business-other__list">
         <article class="p-mobile-business-other__card">
           <figure class="p-mobile-business-other__image">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/event_business/other-mobile-business.webp" alt="">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/corporate_sales/other-mobile-business.webp" alt="">
           </figure>
           <h3 class="p-mobile-business-other__heading">モバイル事業部</h3>
           <a class="p-mobile-business-other__link" href="<?php echo esc_url(home_url('/mobile_business/')); ?>">

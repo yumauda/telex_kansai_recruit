@@ -48,8 +48,11 @@
   display: flex;
   flex: 0 0 auto;
   align-items: center;
-  gap: rem(13);
-  min-width: 0;
+  gap: rem(8);
+  @include mq(md){
+    gap: rem(13);
+    
+  }
 }
 
 .p-header__award {
@@ -81,7 +84,7 @@
 
 
 .p-header__brand-name {
-  font-size: rem(20);
+  font-size: rem(18);
   font-weight: 700;
   line-height: 1;
 

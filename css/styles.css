@@ -4021,8 +4021,12 @@ input::placeholder {
   display: flex;
   flex: 0 0 auto;
   align-items: center;
-  gap: 0.8125rem;
-  min-width: 0;
+  gap: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-header__brand {
+    gap: 0.8125rem;
+  }
 }
 
 .p-header__award {
@@ -4054,7 +4058,7 @@ input::placeholder {
 }
 
 .p-header__brand-name {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 700;
   line-height: 1;
 }

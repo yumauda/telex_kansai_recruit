@@ -80,12 +80,16 @@ $story_sections = array(
 ?>
 <main>
   <section class="p-people-single-mv">
-    <figure class="p-people-single-mv__image">
-      <img src="<?php echo esc_url(telex_people_single_image_url('people_single_mv_image', '/images/people-single/yamada-saki-mv-bg.webp')); ?>" alt="">
-    </figure>
-    <div class="p-people-single-mv__body">
-      <p class="p-people-single-mv__label"><?php echo esc_html($mv_label); ?></p>
-      <h1 class="p-people-single-mv__title"><?php telex_people_single_render_lines($mv_title); ?></h1>
+    <div class="l-inner">
+      <div class="p-people-single-mv__content">
+        <figure class="p-people-single-mv__image">
+          <img src="<?php echo esc_url(telex_people_single_image_url('people_single_mv_image', '/images/people-single/yamada-saki-mv-bg.webp')); ?>" alt="">
+        </figure>
+        <div class="p-people-single-mv__body">
+          <p class="p-people-single-mv__label"><?php echo esc_html($mv_label); ?></p>
+          <h1 class="p-people-single-mv__title"><?php telex_people_single_render_lines($mv_title); ?></h1>
+        </div>
+      </div>
     </div>
   </section>
 

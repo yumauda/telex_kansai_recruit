@@ -4,7 +4,7 @@
     <div class="l-inner">
       <div class="p-mv__content">
         <figure class="p-mv__bg">
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/mv/mv-bg.jpg" alt="">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/mv/mv-bg.webp" alt="">
         </figure>
         <div class="p-mv__body">
           <h1 class="p-mv__title">

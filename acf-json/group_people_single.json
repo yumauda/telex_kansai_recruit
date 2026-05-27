@@ -28,6 +28,31 @@
             "mime_types": ""
         },
         {
+            "key": "field_people_archive_thumbnail_image",
+            "label": "一覧サムネイル画像",
+            "name": "people_archive_thumbnail_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "人を知る一覧ページのカード画像として表示します。未設定の場合はプロフィール画像を使用します。",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": 0,
+            "min_height": 0,
+            "min_size": 0,
+            "max_width": 0,
+            "max_height": 0,
+            "max_size": 0,
+            "mime_types": ""
+        },
+        {
             "key": "field_people_single_mv_label",
             "label": "MVラベル",
             "name": "people_single_mv_label",
@@ -449,5 +474,5 @@
     "display_title": "",
     "allow_ai_access": false,
     "ai_description": "",
-    "modified": 1779686000
+    "modified": 1779858966
 }

@@ -312,6 +312,33 @@ function Change_objectlabel()
 add_action('init', 'Change_objectlabel');
 add_action('admin_menu', 'Change_menulabel');
 
+function telex_people_post_permalink($permalink, $post)
+{
+	if ($post->post_type !== 'post' || $post->post_status === 'auto-draft') {
+		return $permalink;
+	}
+
+	return home_url('/people/' . $post->post_name . '/');
+}
+add_filter('post_link', 'telex_people_post_permalink', 10, 2);
+
+function telex_people_post_rewrite_rules()
+{
+	add_rewrite_rule('^people/([^/]+)/?$', 'index.php?name=$matches[1]', 'top');
+}
+add_action('init', 'telex_people_post_rewrite_rules');
+
+function telex_people_flush_rewrite_rules_once()
+{
+	if (get_option('telex_people_rewrite_flushed') === '1') {
+		return;
+	}
+
+	flush_rewrite_rules(false);
+	update_option('telex_people_rewrite_flushed', '1');
+}
+add_action('init', 'telex_people_flush_rewrite_rules_once', 20);
+
 //ログイン画面のロゴ変更
 function login_logo()
 {
@@ -323,7 +350,7 @@ function login_logo()
 		height: 70px; //ログインの高さ
 	  }
 	  body{
-		background: url(' . get_template_directory_uri() . '/images/common/mv_bg.jpg) no-repeat top center;
+		background: url(' . get_template_directory_uri() . '/images/mv/mv-bg.webp) no-repeat top center;
 		background-color:rgba(255,255,255,0.5);
 		background-blend-mode:lighten;
 		background-size: cover;
@@ -454,3 +481,159 @@ function webp_is_displayable($result, $path)
 	return $result;
 }
 add_filter('file_is_displayable_image', 'webp_is_displayable', 10, 2);
+
+/**
+ * 動画ギャラリー投稿タイプ
+ */
+function telex_register_movie_post_type()
+{
+	register_post_type(
+		'movie',
+		array(
+			'labels' => array(
+				'name' => '動画ギャラリー',
+				'singular_name' => '動画',
+				'add_new' => '新規追加',
+				'add_new_item' => '動画を追加',
+				'edit_item' => '動画を編集',
+				'new_item' => '新規動画',
+				'view_item' => '動画を表示',
+				'search_items' => '動画を検索',
+				'not_found' => '動画が見つかりませんでした',
+				'not_found_in_trash' => 'ゴミ箱に動画は見つかりませんでした',
+				'all_items' => '動画一覧',
+				'menu_name' => '動画ギャラリー',
+			),
+			'public' => true,
+			'has_archive' => true,
+			'rewrite' => array(
+				'slug' => 'movie',
+				'with_front' => false,
+			),
+			'menu_position' => 6,
+			'menu_icon' => 'dashicons-video-alt3',
+			'supports' => array('title', 'thumbnail', 'page-attributes'),
+			'show_in_rest' => true,
+		)
+	);
+
+	register_post_meta(
+		'movie',
+		'telex_movie_url',
+		array(
+			'type' => 'string',
+			'single' => true,
+			'sanitize_callback' => 'esc_url_raw',
+			'show_in_rest' => true,
+			'auth_callback' => function () {
+				return current_user_can('edit_posts');
+			},
+		)
+	);
+}
+add_action('init', 'telex_register_movie_post_type');
+
+function telex_movie_flush_rewrite_rules_once()
+{
+	if (get_option('telex_movie_rewrite_flushed') === '1') {
+		return;
+	}
+
+	flush_rewrite_rules(false);
+	update_option('telex_movie_rewrite_flushed', '1');
+}
+add_action('init', 'telex_movie_flush_rewrite_rules_once', 20);
+
+function telex_movie_add_meta_box()
+{
+	add_meta_box('telex_movie_url', '動画リンク', 'telex_movie_url_meta_box', 'movie', 'normal', 'high');
+}
+add_action('add_meta_boxes', 'telex_movie_add_meta_box');
+
+function telex_movie_url_meta_box($post)
+{
+	$movie_url = get_post_meta($post->ID, 'telex_movie_url', true);
+	wp_nonce_field('telex_movie_url_save', 'telex_movie_url_nonce');
+?>
+	<p>
+		<label for="telex_movie_url_field">YouTubeなどの動画URL</label>
+	</p>
+	<input id="telex_movie_url_field" class="widefat" type="url" name="telex_movie_url" value="<?php echo esc_attr($movie_url); ?>" placeholder="https://www.youtube.com/watch?v=..." />
+	<p class="description">一覧ページではこのURLへリンクします。アイキャッチ画像を設定するとサムネイルとして優先表示されます。</p>
+<?php
+}
+
+function telex_movie_save_meta($post_id)
+{
+	if (!isset($_POST['telex_movie_url_nonce']) || !wp_verify_nonce(sanitize_text_field(wp_unslash($_POST['telex_movie_url_nonce'])), 'telex_movie_url_save')) {
+		return;
+	}
+
+	if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) {
+		return;
+	}
+
+	if (!current_user_can('edit_post', $post_id)) {
+		return;
+	}
+
+	if (isset($_POST['telex_movie_url'])) {
+		update_post_meta($post_id, 'telex_movie_url', esc_url_raw(wp_unslash($_POST['telex_movie_url'])));
+	}
+}
+add_action('save_post_movie', 'telex_movie_save_meta');
+
+function telex_movie_youtube_id($url)
+{
+	$parts = wp_parse_url($url);
+
+	if (empty($parts['host'])) {
+		return '';
+	}
+
+	$host = preg_replace('/^www\./', '', strtolower($parts['host']));
+
+	if ($host === 'youtu.be' && !empty($parts['path'])) {
+		return trim($parts['path'], '/');
+	}
+
+	if (in_array($host, array('youtube.com', 'm.youtube.com', 'music.youtube.com'), true)) {
+		if (!empty($parts['query'])) {
+			parse_str($parts['query'], $query);
+			if (!empty($query['v'])) {
+				return sanitize_text_field($query['v']);
+			}
+		}
+
+		if (!empty($parts['path']) && preg_match('#/(embed|shorts)/([^/?]+)#', $parts['path'], $matches)) {
+			return sanitize_text_field($matches[2]);
+		}
+	}
+
+	return '';
+}
+
+function telex_movie_thumbnail_url($post_id)
+{
+	if (has_post_thumbnail($post_id)) {
+		return get_the_post_thumbnail_url($post_id, 'large');
+	}
+
+	$movie_url = get_post_meta($post_id, 'telex_movie_url', true);
+	$youtube_id = $movie_url ? telex_movie_youtube_id($movie_url) : '';
+
+	if ($youtube_id) {
+		return 'https://img.youtube.com/vi/' . rawurlencode($youtube_id) . '/hqdefault.jpg';
+	}
+
+	return '';
+}
+
+function telex_movie_archive_query($query)
+{
+	if (!is_admin() && $query->is_main_query() && $query->is_post_type_archive('movie')) {
+		$query->set('posts_per_page', 6);
+		$query->set('orderby', array('menu_order' => 'ASC', 'date' => 'DESC'));
+	}
+}
+add_action('pre_get_posts', 'telex_movie_archive_query');

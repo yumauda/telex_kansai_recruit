@@ -63,6 +63,10 @@
   }
 }
 
+.p-header--light .p-header__award {
+  display: none;
+}
+
 .p-header__brand-copy {
   display: flex;
   align-items: baseline;

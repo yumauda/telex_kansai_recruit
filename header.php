@@ -149,46 +149,78 @@
                         </li>
                     </ul>
                 </nav>
-                <button class="p-header__drawer p-drawer-icon">
+                <button class="p-header__drawer p-drawer-icon" type="button" aria-controls="drawer-menu" aria-expanded="false" aria-label="メニューを開く">
                     <span class="p-drawer-icon__bars">
                         <span class="p-drawer-icon__bar1"></span>
                         <span class="p-drawer-icon__bar3"></span>
                     </span>
                 </button>
-                <div class="p-header__drawer-content p-drawer-content">
+                <div class="p-header__drawer-content p-drawer-content" id="drawer-menu" aria-hidden="true">
                     <div class="p-drawer-content__items">
-                        <ul class="p-drawer-content__lists">
+                        <div class="p-drawer-content__head">
+                            <p class="p-drawer-content__label">Recruit Menu</p>
+                            <p class="p-drawer-content__lead">テレックス関西の仕事、制度、人を知る</p>
+                        </div>
+                        <ul class="p-drawer-content__lists" aria-label="スマートフォン用ナビゲーション">
                             <li class="p-drawer-content__list">
-                                <a href="<?php echo esc_url(home_url('/')); ?>" class="p-drawer-content__link">トップ</a>
+                                <a href="<?php echo esc_url(home_url('/message/')); ?>" class="p-drawer-content__link">
+                                    <span class="p-drawer-content__link-ja">採用メッセージ</span>
+                                    <span class="p-drawer-content__link-en">Message</span>
+                                </a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="<?php echo esc_url(home_url('/about')); ?>" class="p-drawer-content__link">TRUXiAについて</a>
+                                <a href="<?php echo esc_url(home_url('/advantage/')); ?>" class="p-drawer-content__link">
+                                    <span class="p-drawer-content__link-ja">テレックスの強み</span>
+                                    <span class="p-drawer-content__link-en">Advantage</span>
+                                </a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="<?php echo esc_url(home_url('/business')); ?>" class="p-drawer-content__link">事業紹介</a>
+                                <a href="<?php echo esc_url(home_url('/data/')); ?>" class="p-drawer-content__link">
+                                    <span class="p-drawer-content__link-ja">数字で見る</span>
+                                    <span class="p-drawer-content__link-en">Data</span>
+                                </a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="<?php echo esc_url(home_url('/talent')); ?>" class="p-drawer-content__link">タレント紹介</a>
+                                <a href="<?php echo esc_url(home_url('/people/')); ?>" class="p-drawer-content__link">
+                                    <span class="p-drawer-content__link-ja">人を知る</span>
+                                    <span class="p-drawer-content__link-en">People</span>
+                                </a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="<?php echo esc_url(home_url('/news')); ?>" class="p-drawer-content__link">お知らせ</a>
+                                <a href="<?php echo esc_url(home_url('/movie/')); ?>" class="p-drawer-content__link">
+                                    <span class="p-drawer-content__link-ja">動画ギャラリー</span>
+                                    <span class="p-drawer-content__link-en">Movie</span>
+                                </a>
                             </li>
                         </ul>
-                        <div class="p-drawer-content__sns">
-                            <p class="p-drawer-content__sns-text">FOLLOW US</p>
-                            <a href="https://www.instagram.com/truxia.management/" class="p-drawer-content__sns-link" target="_blank">
-                                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/instagram.svg" alt="インスタグラム" width="30" height="30">
-                            </a>
-                            <a href="https://x.com/truxia_mg" class="p-drawer-content__sns-link" target="_blank">
-                                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/x.svg" alt="x" width="30" height="30">
-                            </a>
+                        <div class="p-drawer-content__groups">
+                            <section class="p-drawer-content__group" aria-labelledby="drawer-work-title">
+                                <h2 class="p-drawer-content__group-title" id="drawer-work-title">仕事を知る</h2>
+                                <div class="p-drawer-content__sub-links">
+                                    <a class="p-drawer-content__sub-link" href="<?php echo esc_url(home_url('/mobile_business/')); ?>">モバイル事業部</a>
+                                    <a class="p-drawer-content__sub-link" href="<?php echo esc_url(home_url('/corporate_sales/')); ?>">法人営業</a>
+                                    <a class="p-drawer-content__sub-link" href="<?php echo esc_url(home_url('/event_business/')); ?>">イベント事業部</a>
+                                </div>
+                            </section>
+                            <section class="p-drawer-content__group" aria-labelledby="drawer-crosstalk-title">
+                                <h2 class="p-drawer-content__group-title" id="drawer-crosstalk-title">クロストーク</h2>
+                                <div class="p-drawer-content__sub-links">
+                                    <a class="p-drawer-content__sub-link" href="<?php echo esc_url(home_url('/crosstalk_event/')); ?>">イノベーションセレモニー対談</a>
+                                    <a class="p-drawer-content__sub-link" href="<?php echo esc_url(home_url('/crosstalk_unofficial-person/')); ?>">内定者対談</a>
+                                </div>
+                            </section>
+                            <section class="p-drawer-content__group" aria-labelledby="drawer-career-title">
+                                <h2 class="p-drawer-content__group-title" id="drawer-career-title">キャリア/働く環境</h2>
+                                <div class="p-drawer-content__sub-links">
+                                    <a class="p-drawer-content__sub-link" href="<?php echo esc_url(home_url('/career/')); ?>">キャリア</a>
+                                    <a class="p-drawer-content__sub-link" href="<?php echo esc_url(home_url('/environment/')); ?>">働く環境</a>
+                                </div>
+                            </section>
                         </div>
-                        <div class="p-drawer-content__contact-wrapper">
-                            <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-drawer-content__contact">
-                                <p class="p-drawer-content__contact-text">お問い合わせ</p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15.5" height="4.81">
-                                    <path d="M.75 4.06h14l-2.831-3" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
-                                </svg>
+                        <div class="p-drawer-content__entry-wrapper">
+                            <a href="#" class="p-drawer-content__entry">
+                                <span class="p-drawer-content__entry-text">募集要項・エントリー</span>
+                                <span class="p-drawer-content__entry-en">Entry</span>
                             </a>
                         </div>
                     </div>

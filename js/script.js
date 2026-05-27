@@ -64,8 +64,8 @@ jQuery(function ($) {
     tab_panel.attr("aria-hidden", true);
     $(tabID).attr("aria-hidden", false);
   }
-  $("#drawer a[href]").on("click", function (event) {
-    $(".p-drawer-icon").trigger("click");
+  $(".p-drawer-content a[href]").on("click", function () {
+    closeDrawer();
   });
 });
 
@@ -173,12 +173,37 @@ const openingAnimKeyframes = (content) => [
     opacity: 1,
   },
 ];
+function closeDrawer() {
+  jQuery(".p-drawer-icon").removeClass("is-active").attr("aria-expanded", "false").attr("aria-label", "メニューを開く");
+  jQuery(".p-drawer-content").removeClass("is-active").attr("aria-hidden", "true");
+  jQuery("body").removeClass("drawer-open");
+}
+
 jQuery(".p-drawer-icon").on("click", function (e) {
   e.preventDefault();
-  jQuery(".p-drawer-icon").toggleClass("is-active");
-  jQuery(".p-drawer-content").toggleClass("is-active");
-  jQuery(".p-drawer-background").toggleClass("is-active");
+  const isOpen = jQuery(this).hasClass("is-active");
+
+  if (isOpen) {
+    closeDrawer();
+  } else {
+    jQuery(".p-drawer-icon").addClass("is-active").attr("aria-expanded", "true").attr("aria-label", "メニューを閉じる");
+    jQuery(".p-drawer-content").addClass("is-active").attr("aria-hidden", "false");
+    jQuery("body").addClass("drawer-open");
+  }
+
   return false;
+});
+
+jQuery(document).on("keydown", function (e) {
+  if (e.key === "Escape") {
+    closeDrawer();
+  }
+});
+
+jQuery(window).on("resize", function () {
+  if (window.innerWidth >= 1250) {
+    closeDrawer();
+  }
 });
 window.addEventListener("scroll", function () {
   var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
@@ -198,12 +223,6 @@ window.onload = function () {
 };
 
 let scrollPosition = 0; // スクロール位置を記録する変数
-
-jQuery(document).ready(function ($) {
-  $(".p-drawer-icon, .p-drawer-icon--barge").on("click", function () {
-    $("body").toggleClass("drawer-open");
-  });
-});
 
 jQuery(document).ready(function ($) {
   $(".js-btn").on("click", function () {

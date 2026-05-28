@@ -240,7 +240,7 @@
             <div class="p-top-crosstalk-card__body">
               <h3 class="p-top-crosstalk-card__title">内定者対談</h3>
               <p class="p-top-crosstalk-card__text">
-                <span>テレックス関西に内定を決めた学生2名になぜこの会社を</span>
+                <span>テレックス関西に内定を決めた<br class="u-mobile">学生2名になぜこの会社を</span>
                 <span>選んだのか？どんなことが決めて手になったのか</span>
                 <span>リアルな胸の内を語ってもらいました。</span>
               </p>

@@ -134,7 +134,7 @@
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/event_business/other-corporate-sales.webp" alt="">
           </figure>
           <h3 class="p-mobile-business-other__heading">法人営業</h3>
-          <a class="p-mobile-business-other__link" href="<?php echo esc_url(home_url('/corporate_sales/')); ?>">
+          <a class="p-mobile-business-otherbody_link" href="<?php echo esc_url(home_url('/corporate_sales/')); ?>">
             <span class="p-mobile-business-other__arrow">→</span>
             <span>仕事を見る</span>
           </a>

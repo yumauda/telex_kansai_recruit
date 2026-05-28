@@ -15,20 +15,26 @@
 }
 
 .p-mv__bg img {
+  aspect-ratio: 375 / 667;
+  object-fit: cover;
   width: 100%;
   height: auto;
-  object-fit: cover;
-  object-position: center center;
+
+  @include mq(md) {
+    aspect-ratio: initial;
+    object-position: center center;
+
+  }
 }
 
 .p-mv__body {
   position: absolute;
-  right: rem(30);
   bottom: rem(178);
-  left: rem(30);
   z-index: 1;
 
   @include mq(md) {
+    right: rem(30);
+    left: rem(30);
     bottom: rem(92);
   }
 }

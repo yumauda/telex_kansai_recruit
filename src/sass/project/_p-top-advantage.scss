@@ -1,8 +1,8 @@
 @use "../global" as *;
 
 .p-top-advantage {
-  padding-top: rem(80);
-  padding-bottom: rem(80);
+  padding-top: rem(48);
+  padding-bottom: rem(48);
   overflow-x: clip;
 
   @include mq(md) {
@@ -24,18 +24,24 @@
 
 .p-top-advantage__en {
   font-family: "Inter", $base-font-family;
-  font-size: rem(20);
   font-weight: 600;
   line-height: 1.4;
+  font-size: rem(16);
+
+  @include mq(md) {
+    font-size: rem(20);
+
+  }
 }
 
 .p-top-advantage__title {
-  margin-top: rem(18);
-  font-size: rem(34);
+  font-size: rem(28);
   font-weight: 700;
   line-height: 1.4;
+  margin-top: rem(12);
 
   @include mq(md) {
+    margin-top: rem(16);
     font-size: rem(42);
   }
 }
@@ -93,9 +99,14 @@
 }
 
 .p-top-advantage-card__title {
-  font-size: rem(20);
   font-weight: 700;
   line-height: calc(24.8 / 20);
+  font-size: rem(16);
+
+  @include mq(md) {
+
+    font-size: rem(20);
+  }
 }
 
 .p-top-advantage-card__title span {
@@ -103,10 +114,15 @@
 }
 
 .p-top-advantage-card__text {
-  margin-top: rem(20);
-  font-size: rem(16);
   font-weight: 400;
   line-height: 1.25;
+  margin-top: rem(12);
+  font-size: rem(14);
+  @include mq(md){
+    font-size: rem(16);
+    margin-top: rem(20);
+    
+  }
 }
 
 .p-top-advantage__link {
@@ -117,11 +133,14 @@
   width: 100%;
   max-width: rem(400);
   min-height: rem(55);
-  margin: rem(76) auto 0;
+  margin: rem(32) auto 0;
   padding: rem(16) rem(20);
   color: #111;
   border: 1px solid #222;
   border-radius: rem(8);
+  @include mq(md){
+    margin: rem(76) auto 0;
+  }
 }
 
 .p-top-advantage__link-text {

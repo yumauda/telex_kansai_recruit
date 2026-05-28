@@ -1,8 +1,8 @@
 @use "../global" as *;
 
 .p-top-message {
-  padding-top: rem(80);
-  padding-bottom: rem(80);
+  padding-top: rem(48);
+  padding-bottom: rem(48);
   overflow-x: clip;
 
   @include mq(md) {
@@ -14,7 +14,7 @@
 .p-top-message__content {
   display: flex;
   flex-direction: column;
-  gap: rem(40);
+  gap: rem(32);
 
   @include mq(md) {
     flex-direction: row;
@@ -32,15 +32,19 @@
 
 .p-top-message__en {
   font-family: "Inter", $base-font-family;
-  font-size: rem(20);
   font-weight: 600;
   line-height: 1.4;
   color: #222;
+  font-size: rem(16);
+  @include mq(md){
+    font-size: rem(20);
+    
+  }
 }
 
 .p-top-message__title {
-  margin-top: rem(24);
-  font-size: rem(34);
+  margin-top: rem(12);
+  font-size: rem(28);
   font-weight: 700;
   line-height: 1.4;
   color: #222;
@@ -52,10 +56,10 @@
 }
 
 .p-top-message__text {
-  margin-top: rem(64);
-  font-size: rem(15);
+  margin-top: rem(24);
+  font-size: rem(14);
   font-weight: 400;
-  line-height: calc(23.8 / 16);
+  line-height: calc(24 / 16);
   color: #222;
 
   @include mq(md) {

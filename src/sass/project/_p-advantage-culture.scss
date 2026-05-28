@@ -1,8 +1,8 @@
 @use "../global" as *;
 
 .p-advantage-culture {
-  padding-top: rem(76);
-  padding-bottom: rem(86);
+  padding-top: rem(48);
+  padding-bottom: rem(48);
   background-color: $white;
 
   @include mq(md) {
@@ -19,7 +19,7 @@
 
 .p-advantage-culture__content {
   display: grid;
-  gap: rem(40);
+  gap: rem(32);
 
   @include mq(md) {
     grid-template-columns: minmax(0, rem(548)) minmax(0, rem(599));
@@ -33,7 +33,7 @@
 }
 
 .p-advantage-culture__number {
-  font-size: rem(86);
+  font-size: rem(64);
   font-weight: 700;
   line-height: 0.78;
   color: #eaeaea;
@@ -46,7 +46,7 @@
 .p-advantage-culture__title {
   position: relative;
   display: inline;
-  font-size: rem(26);
+  font-size: rem(20);
   font-weight: 700;
   line-height: 1.45;
   color: #000;
@@ -59,19 +59,24 @@
 }
 
 .p-advantage-culture__items {
-  margin-top: rem(38);
+  margin-top: rem(24);
 
   @include mq(md) {
     margin-top: rem(42);
   }
 }
 
-.p-advantage-culture__item + .p-advantage-culture__item {
-  margin-top: rem(34);
+.p-advantage-culture__item+.p-advantage-culture__item {
+  margin-top: rem(20);
+
+  @include mq(md) {
+
+    margin-top: rem(34);
+  }
 }
 
 .p-advantage-culture__item-title {
-  font-size: rem(21);
+  font-size: rem(16);
   font-weight: 700;
   line-height: 1.45;
   color: #000;
@@ -84,7 +89,7 @@
 
 .p-advantage-culture__text {
   margin-top: rem(10);
-  font-size: rem(15);
+  font-size: rem(14);
   font-weight: 400;
   line-height: 1.9;
   color: #222;
@@ -92,7 +97,7 @@
   @include mq(md) {
     margin-top: 0;
     font-size: rem(16);
-    line-height: calc(29.8 / 16);
+    line-height: calc(29 / 16);
   }
 }
 

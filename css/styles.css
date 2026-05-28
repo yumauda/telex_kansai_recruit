@@ -452,8 +452,8 @@ select::-ms-expand {
 }
 
 .p-advantage-culture {
-  padding-top: 4.75rem;
-  padding-bottom: 5.375rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   background-color: #fff;
 }
 @media screen and (min-width: 768px) {
@@ -471,7 +471,7 @@ select::-ms-expand {
 
 .p-advantage-culture__content {
   display: grid;
-  gap: 2.5rem;
+  gap: 2rem;
 }
 @media screen and (min-width: 768px) {
   .p-advantage-culture__content {
@@ -486,7 +486,7 @@ select::-ms-expand {
 }
 
 .p-advantage-culture__number {
-  font-size: 5.375rem;
+  font-size: 4rem;
   font-weight: 700;
   line-height: 0.78;
   color: #eaeaea;
@@ -500,7 +500,7 @@ select::-ms-expand {
 .p-advantage-culture__title {
   position: relative;
   display: inline;
-  font-size: 1.625rem;
+  font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.45;
   color: #000;
@@ -514,7 +514,7 @@ select::-ms-expand {
 }
 
 .p-advantage-culture__items {
-  margin-top: 2.375rem;
+  margin-top: 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .p-advantage-culture__items {
@@ -523,11 +523,16 @@ select::-ms-expand {
 }
 
 .p-advantage-culture__item + .p-advantage-culture__item {
-  margin-top: 2.125rem;
+  margin-top: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-advantage-culture__item + .p-advantage-culture__item {
+    margin-top: 2.125rem;
+  }
 }
 
 .p-advantage-culture__item-title {
-  font-size: 1.3125rem;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 1.45;
   color: #000;
@@ -541,7 +546,7 @@ select::-ms-expand {
 
 .p-advantage-culture__text {
   margin-top: 0.625rem;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.9;
   color: #222;
@@ -550,7 +555,7 @@ select::-ms-expand {
   .p-advantage-culture__text {
     margin-top: 0;
     font-size: 1rem;
-    line-height: 1.8625;
+    line-height: 1.8125;
   }
 }
 
@@ -573,8 +578,8 @@ select::-ms-expand {
 }
 
 .p-advantage-environment {
-  padding-top: 4.75rem;
-  padding-bottom: 5.375rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   background-color: #fff;
 }
 @media screen and (min-width: 768px) {
@@ -592,7 +597,7 @@ select::-ms-expand {
 
 .p-advantage-environment__content {
   display: grid;
-  gap: 2.5rem;
+  gap: 2rem;
 }
 @media screen and (min-width: 768px) {
   .p-advantage-environment__content {
@@ -607,7 +612,7 @@ select::-ms-expand {
 }
 
 .p-advantage-environment__number {
-  font-size: 5.375rem;
+  font-size: 4rem;
   font-weight: 700;
   line-height: 0.78;
   color: #eaeaea;
@@ -621,7 +626,7 @@ select::-ms-expand {
 .p-advantage-environment__title {
   position: relative;
   display: inline;
-  font-size: 1.625rem;
+  font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.45;
   color: #000;
@@ -635,7 +640,7 @@ select::-ms-expand {
 }
 
 .p-advantage-environment__items {
-  margin-top: 2.375rem;
+  margin-top: 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .p-advantage-environment__items {
@@ -644,11 +649,16 @@ select::-ms-expand {
 }
 
 .p-advantage-environment__item + .p-advantage-environment__item {
-  margin-top: 2.125rem;
+  margin-top: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-advantage-environment__item + .p-advantage-environment__item {
+    margin-top: 2.125rem;
+  }
 }
 
 .p-advantage-environment__item-title {
-  font-size: 1.3125rem;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 1.45;
   color: #000;
@@ -662,7 +672,7 @@ select::-ms-expand {
 
 .p-advantage-environment__text {
   margin-top: 0.625rem;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.9;
   color: #222;
@@ -694,8 +704,8 @@ select::-ms-expand {
 }
 
 .p-advantage-growth {
-  padding-top: 4.75rem;
-  padding-bottom: 5.375rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   background-color: #fff;
 }
 @media screen and (min-width: 768px) {
@@ -713,7 +723,7 @@ select::-ms-expand {
 
 .p-advantage-growth__content {
   display: grid;
-  gap: 2.5rem;
+  gap: 2rem;
 }
 @media screen and (min-width: 768px) {
   .p-advantage-growth__content {
@@ -753,7 +763,7 @@ select::-ms-expand {
 }
 
 .p-advantage-growth__number {
-  font-size: 5.375rem;
+  font-size: 4rem;
   font-weight: 700;
   line-height: 0.78;
   color: #eaeaea;
@@ -767,7 +777,7 @@ select::-ms-expand {
 .p-advantage-growth__title {
   position: relative;
   display: inline;
-  font-size: 1.625rem;
+  font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.45;
   color: #000;
@@ -781,7 +791,7 @@ select::-ms-expand {
 }
 
 .p-advantage-growth__items {
-  margin-top: 2.375rem;
+  margin-top: 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .p-advantage-growth__items {
@@ -790,11 +800,16 @@ select::-ms-expand {
 }
 
 .p-advantage-growth__item + .p-advantage-growth__item {
-  margin-top: 2.125rem;
+  margin-top: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-advantage-growth__item + .p-advantage-growth__item {
+    margin-top: 2.125rem;
+  }
 }
 
 .p-advantage-growth__item-title {
-  font-size: 1.3125rem;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 1.45;
   color: #000;
@@ -808,7 +823,7 @@ select::-ms-expand {
 
 .p-advantage-growth__text {
   margin-top: 0.625rem;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.9;
   color: #222;
@@ -828,6 +843,7 @@ select::-ms-expand {
   color: #fff;
   text-align: center;
   background-color: #1b1b1b;
+  margin-top: 4rem;
 }
 @media screen and (min-width: 768px) {
   .p-advantage-mv {
@@ -867,8 +883,8 @@ select::-ms-expand {
 }
 
 .p-advantage-stability {
-  padding-top: 4.75rem;
-  padding-bottom: 5.375rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   background-color: #fff;
 }
 @media screen and (min-width: 768px) {
@@ -886,7 +902,7 @@ select::-ms-expand {
 
 .p-advantage-stability__content {
   display: grid;
-  gap: 2.5rem;
+  gap: 2rem;
 }
 @media screen and (min-width: 768px) {
   .p-advantage-stability__content {
@@ -926,7 +942,7 @@ select::-ms-expand {
 }
 
 .p-advantage-stability__number {
-  font-size: 5.375rem;
+  font-size: 4rem;
   font-weight: 700;
   line-height: 0.78;
   color: #eaeaea;
@@ -940,7 +956,7 @@ select::-ms-expand {
 .p-advantage-stability__title {
   position: relative;
   display: inline;
-  font-size: 1.625rem;
+  font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.45;
   color: #000;
@@ -954,7 +970,7 @@ select::-ms-expand {
 }
 
 .p-advantage-stability__items {
-  margin-top: 2.375rem;
+  margin-top: 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .p-advantage-stability__items {
@@ -963,11 +979,16 @@ select::-ms-expand {
 }
 
 .p-advantage-stability__item + .p-advantage-stability__item {
-  margin-top: 2.125rem;
+  margin-top: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-advantage-stability__item + .p-advantage-stability__item {
+    margin-top: 2.125rem;
+  }
 }
 
 .p-advantage-stability__item-title {
-  font-size: 1.3125rem;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 1.45;
   color: #000;
@@ -981,7 +1002,7 @@ select::-ms-expand {
 
 .p-advantage-stability__text {
   margin-top: 0.625rem;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.9;
   color: #222;
@@ -3042,7 +3063,7 @@ select::-ms-expand {
 
 .p-drawer-content__lead {
   margin-top: 0.5rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 1.45;
 }
@@ -4491,6 +4512,7 @@ input::placeholder {
   min-height: 22.5rem;
   overflow: hidden;
   background-color: #111;
+  margin-top: 4rem;
 }
 @media screen and (min-width: 768px) {
   .p-message-mv {
@@ -4570,8 +4592,8 @@ input::placeholder {
 }
 
 .p-message-statement {
-  padding-top: 4.5rem;
-  padding-bottom: 5.375rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   background-color: #fff;
 }
 @media screen and (min-width: 768px) {
@@ -4607,8 +4629,8 @@ input::placeholder {
 }
 
 .p-message-statement__body {
-  margin-top: 3.375rem;
-  font-size: 0.9375rem;
+  margin-top: 2rem;
+  font-size: 0.875rem;
   font-weight: 400;
   line-height: 2.15;
 }
@@ -4616,7 +4638,7 @@ input::placeholder {
   .p-message-statement__body {
     margin-top: 4.75rem;
     font-size: 1rem;
-    line-height: 2.55;
+    line-height: 2.5;
   }
 }
 
@@ -4630,9 +4652,9 @@ input::placeholder {
 }
 
 .p-message-statement__name {
-  margin-top: 3rem;
+  margin-top: 2rem;
   font-family: "Noto Serif JP", serif;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 1.4;
   color: #313131;
@@ -7125,10 +7147,16 @@ input::placeholder {
 
 .p-top-entry__link-text {
   position: relative;
-  padding-left: 2rem;
-  font-size: 0.9375rem;
   font-weight: 700;
   line-height: 1.4;
+  font-size: 0.875rem;
+  padding-left: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-top-entry__link-text {
+    padding-left: 2rem;
+    font-size: 0.9375rem;
+  }
 }
 
 .p-top-entry__link-text::before {

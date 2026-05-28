@@ -5,6 +5,7 @@
   min-height: rem(360);
   overflow: hidden;
   background-color: #111;
+  margin-top: rem(64);
 
   @include mq(md) {
     margin-top: rem(74);

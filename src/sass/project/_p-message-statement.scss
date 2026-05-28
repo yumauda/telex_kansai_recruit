@@ -1,8 +1,8 @@
 @use "../global" as *;
 
 .p-message-statement {
-  padding-top: rem(72);
-  padding-bottom: rem(86);
+  padding-top: rem(48);
+  padding-bottom: rem(48);
   background-color: $white;
 
   @include mq(md) {
@@ -36,15 +36,15 @@
 }
 
 .p-message-statement__body {
-  margin-top: rem(54);
-  font-size: rem(15);
+  margin-top: rem(32);
+  font-size: rem(14);
   font-weight: 400;
   line-height: 2.15;
 
   @include mq(md) {
     margin-top: rem(76);
     font-size: rem(16);
-    line-height: calc(40.8 / 16);
+    line-height: calc(40 / 16);
   }
 }
 
@@ -57,9 +57,9 @@
 }
 
 .p-message-statement__name {
-  margin-top: rem(48);
+  margin-top: rem(32);
   font-family: $second-font-family;
-  font-size: rem(20);
+  font-size: rem(16);
   font-weight: 700;
   line-height: 1.4;
   color: #313131;

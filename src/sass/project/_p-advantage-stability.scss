@@ -1,8 +1,8 @@
 @use "../global" as *;
 
 .p-advantage-stability {
-  padding-top: rem(76);
-  padding-bottom: rem(86);
+  padding-top: rem(48);
+  padding-bottom: rem(48);
   background-color: $white;
 
   @include mq(md) {
@@ -19,7 +19,7 @@
 
 .p-advantage-stability__content {
   display: grid;
-  gap: rem(40);
+  gap: rem(32);
 
   @include mq(md) {
     grid-template-columns: minmax(0, rem(599)) minmax(0, rem(548));
@@ -56,7 +56,7 @@
 }
 
 .p-advantage-stability__number {
-  font-size: rem(86);
+  font-size: rem(64);
   font-weight: 700;
   line-height: 0.78;
   color: #eaeaea;
@@ -69,7 +69,7 @@
 .p-advantage-stability__title {
   position: relative;
   display: inline;
-  font-size: rem(26);
+  font-size: rem(20);
   font-weight: 700;
   line-height: 1.45;
   color: #000;
@@ -82,7 +82,7 @@
 }
 
 .p-advantage-stability__items {
-  margin-top: rem(38);
+  margin-top: rem(24);
 
   @include mq(md) {
     margin-top: rem(42);
@@ -90,11 +90,15 @@
 }
 
 .p-advantage-stability__item + .p-advantage-stability__item {
-  margin-top: rem(34);
+  margin-top: rem(20);
+
+  @include mq(md) {
+    margin-top: rem(34);
+  }
 }
 
 .p-advantage-stability__item-title {
-  font-size: rem(21);
+  font-size: rem(16);
   font-weight: 700;
   line-height: 1.45;
   color: #000;
@@ -107,7 +111,7 @@
 
 .p-advantage-stability__text {
   margin-top: rem(10);
-  font-size: rem(15);
+  font-size: rem(14);
   font-weight: 400;
   line-height: 1.9;
   color: #222;

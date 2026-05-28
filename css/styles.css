@@ -3163,7 +3163,7 @@ select::-ms-expand {
 .p-environment-system,
 .p-environment-benefit {
   padding-top: 3rem;
-  padding-bottom: 4.5rem;
+  padding-bottom: 3rem;
   color: #000;
   background-color: #fff;
 }
@@ -3182,7 +3182,7 @@ select::-ms-expand {
 }
 
 .p-environment-card-section__title {
-  font-size: 1.875rem;
+  font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.4;
   text-align: center;
@@ -3190,14 +3190,14 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .p-environment-card-section__title {
     font-size: 2.625rem;
-    line-height: 1.4;
+    line-height: 1.4047619048;
   }
 }
 
 .p-environment-card-section__list {
   display: grid;
-  gap: 2.625rem;
-  margin-top: 2.625rem;
+  gap: 1rem;
+  margin-top: 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .p-environment-card-section__list {
@@ -3229,13 +3229,14 @@ select::-ms-expand {
 
 .p-environment-card__title {
   margin-top: 1rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 1.45;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
   .p-environment-card__title {
+    font-size: 1.25rem;
     margin-top: 1.125rem;
   }
 }
@@ -3246,9 +3247,9 @@ select::-ms-expand {
 
 .p-environment-card__text {
   margin-top: 0.625rem;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
-  line-height: 1.25;
+  line-height: 1.7142857143;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
@@ -3266,6 +3267,7 @@ select::-ms-expand {
   color: #fff;
   text-align: center;
   background-color: #1b1b1b;
+  margin-top: 4rem;
 }
 @media screen and (min-width: 768px) {
   .p-environment-mv {
@@ -3306,7 +3308,7 @@ select::-ms-expand {
 
 .p-environment-workplace {
   padding-top: 3rem;
-  padding-bottom: 4.5rem;
+  padding-bottom: 3rem;
   color: #000;
   background-color: #fff;
 }
@@ -3318,7 +3320,7 @@ select::-ms-expand {
 }
 
 .p-environment-workplace__title {
-  font-size: 1.875rem;
+  font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.4;
   text-align: center;
@@ -3332,7 +3334,7 @@ select::-ms-expand {
 
 .p-environment-workplace__subtitle {
   margin-top: 1.5rem;
-  font-size: 1.5rem;
+  font-size: 1.125rem;
   font-weight: 700;
   line-height: 1.5;
   text-align: center;

@@ -3,7 +3,7 @@
 .p-environment-system,
 .p-environment-benefit {
   padding-top: rem(48);
-  padding-bottom: rem(72);
+  padding-bottom: rem(48);
   color: #000;
   background-color: $white;
 
@@ -20,21 +20,21 @@
 }
 
 .p-environment-card-section__title {
-  font-size: rem(30);
+  font-size: rem(20);
   font-weight: 700;
   line-height: 1.4;
   text-align: center;
 
   @include mq(md) {
     font-size: rem(42);
-    line-height: calc(58.8 / 42);
+    line-height: calc(59 / 42);
   }
 }
 
 .p-environment-card-section__list {
   display: grid;
-  gap: rem(42);
-  margin-top: rem(42);
+  gap: rem(16);
+  margin-top: rem(24);
 
   @include mq(md) {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -65,12 +65,13 @@
 
 .p-environment-card__title {
   margin-top: rem(16);
-  font-size: rem(20);
+  font-size: rem(16);
   font-weight: 700;
   line-height: 1.45;
   text-align: center;
 
   @include mq(md) {
+    font-size: rem(20);
     margin-top: rem(18);
   }
 }
@@ -81,9 +82,9 @@
 
 .p-environment-card__text {
   margin-top: rem(10);
-  font-size: rem(15);
+  font-size: rem(14);
   font-weight: 400;
-  line-height: calc(20 / 16);
+  line-height: calc(24 / 14);
   text-align: center;
 
   @include mq(md) {

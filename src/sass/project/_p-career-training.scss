@@ -13,21 +13,21 @@
 }
 
 .p-career-training__title {
-  font-size: rem(30);
+  font-size: rem(20);
   font-weight: 700;
   line-height: 1.4;
   text-align: center;
 
   @include mq(md) {
     font-size: rem(42);
-    line-height: calc(58.8 / 42);
+    line-height: calc(59 / 42);
   }
 }
 
 .p-career-training__list {
   display: grid;
-  gap: rem(34);
-  margin-top: rem(42);
+  gap: rem(16);
+  margin-top: rem(24);
 
   @include mq(md) {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -41,25 +41,26 @@
   display: grid;
   place-items: center;
   min-height: rem(46);
-  padding: rem(8) rem(16);
   color: $white;
-  font-size: rem(19);
+  font-size: rem(16);
   font-weight: 700;
   line-height: 1.35;
   text-align: center;
   background-color: #222;
   border-radius: rem(8);
-
+  padding: rem(8);
+  
   @include mq(md) {
+    padding: rem(8) rem(16);
     font-size: rem(20);
   }
 }
 
 .p-career-training__text {
   margin-top: rem(14);
-  font-size: rem(15);
+  font-size: rem(14);
   font-weight: 400;
-  line-height: calc(20 / 16);
+  line-height: calc(24 / 14);
 
   @include mq(md) {
     margin-top: rem(16);

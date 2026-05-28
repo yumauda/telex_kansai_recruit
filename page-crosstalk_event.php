@@ -349,7 +349,7 @@
         </figure>
         <div class="p-crosstalk-event-other__body">
           <h3 class="p-crosstalk-event-other__title">内定者対談</h3>
-          <p class="p-crosstalk-event-other__text">この会社に内定を決めた2人にその理由を聞いてみました。</p>
+          <p class="p-crosstalk-event-other__text">この会社に内定を決めた2人に<br class="u-mobile">その理由を聞いてみました。</p>
           <a class="p-crosstalk-event-other__link" href="<?php echo esc_url(home_url('/crosstalk/')); ?>">
             <span class="p-crosstalk-event-other__link-text">対談を見る</span>
             <span class="p-crosstalk-event-other__link-en">cross talk</span>

@@ -1072,7 +1072,7 @@ select::-ms-expand {
 
 .p-career-example {
   padding-top: 0.5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
   color: #222;
   background-color: #fff;
 }
@@ -1092,7 +1092,7 @@ select::-ms-expand {
 
 .p-career-example__title {
   color: #000;
-  font-size: 1.875rem;
+  font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.4;
 }
@@ -1103,9 +1103,9 @@ select::-ms-expand {
 }
 
 .p-career-example__heading {
-  margin-top: 2.875rem;
+  margin-top: 1.5rem;
   color: #000;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 1.45;
 }
@@ -1118,7 +1118,7 @@ select::-ms-expand {
 
 .p-career-example__profile {
   display: grid;
-  gap: 1.25rem;
+  gap: 1rem;
   margin-top: 1.5rem;
   padding: 1.75rem 1.25rem;
   background-color: #f7f7f5;
@@ -1136,12 +1136,16 @@ select::-ms-expand {
 }
 
 .p-career-example__portrait {
-  width: 7rem;
+  width: 5.625rem;
   overflow: hidden;
-  border-radius: 50%;
+  border-radius: 9999px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .p-career-example__portrait {
+    margin-left: initial;
+    margin-right: initial;
     width: 8.8125rem;
   }
 }
@@ -1154,12 +1158,14 @@ select::-ms-expand {
 
 .p-career-example__name {
   color: #000;
-  font-size: 1.375rem;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 1.45;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .p-career-example__name {
+    text-align: initial;
     font-size: 1.5rem;
   }
 }
@@ -1167,9 +1173,9 @@ select::-ms-expand {
 .p-career-example__summary {
   margin-top: 0.875rem;
   padding-top: 0.875rem;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
-  line-height: 1.4875;
+  line-height: 1.5;
   border-top: 1px solid #000;
 }
 @media screen and (min-width: 768px) {
@@ -1232,9 +1238,9 @@ select::-ms-expand {
 .p-career-example__step-title {
   margin-top: 0.5rem;
   color: #000;
-  font-size: 1.375rem;
+  font-size: 1rem;
   font-weight: 700;
-  line-height: 1.1166666667;
+  line-height: 1.6875;
 }
 @media screen and (min-width: 768px) {
   .p-career-example__step-title {
@@ -1248,11 +1254,11 @@ select::-ms-expand {
 
 .p-career-example__text {
   margin-top: 1.25rem;
-  padding: 1.25rem 1rem;
+  padding: 1rem;
   color: #222;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
-  line-height: 1.4875;
+  line-height: 1.5;
   background-color: #f7f7f5;
   border: 1px solid #000;
 }
@@ -1295,6 +1301,7 @@ select::-ms-expand {
   color: #fff;
   text-align: center;
   background-color: #1b1b1b;
+  margin-top: 4rem;
 }
 @media screen and (min-width: 768px) {
   .p-career-mv {
@@ -1335,7 +1342,7 @@ select::-ms-expand {
 
 .p-career-path {
   padding-top: 2.875rem;
-  padding-bottom: 4.5rem;
+  padding-bottom: 3rem;
   color: #222;
   background-color: #fff;
 }
@@ -1347,7 +1354,7 @@ select::-ms-expand {
 }
 
 .p-career-path__title {
-  font-size: 1.875rem;
+  font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.4;
   text-align: center;
@@ -1359,8 +1366,8 @@ select::-ms-expand {
 }
 
 .p-career-path__panel {
-  margin-top: 2.125rem;
-  padding: 1.875rem 1.125rem;
+  margin-top: 1.5rem;
+  padding: 1rem;
   border: 1px solid #000;
   border-radius: 0.5rem;
 }
@@ -1372,9 +1379,9 @@ select::-ms-expand {
 }
 
 .p-career-path__lead {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
-  line-height: 1.425;
+  line-height: 1.4375;
 }
 @media screen and (min-width: 768px) {
   .p-career-path__lead {
@@ -1383,7 +1390,7 @@ select::-ms-expand {
 }
 
 .p-career-path__flow {
-  margin-top: 2.375rem;
+  margin-top: 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .p-career-path__flow {
@@ -1429,9 +1436,9 @@ select::-ms-expand {
   display: grid;
   place-items: center;
   min-height: 3.625rem;
-  padding: 0.6875rem 0.875rem;
+  padding: 0.5rem 0.875rem;
   color: #000;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 1.45;
   text-align: center;
@@ -1441,6 +1448,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-career-path__box {
+    padding: 0.6875rem 0.875rem;
     min-height: 4.375rem;
     font-size: 1.5rem;
   }
@@ -1494,7 +1502,7 @@ select::-ms-expand {
 }
 
 .p-career-path__plan-title {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 700;
   line-height: 1.45;
   text-align: center;
@@ -1506,10 +1514,10 @@ select::-ms-expand {
 }
 
 .p-career-path__plan-text {
-  margin-top: 1.125rem;
-  font-size: 0.9375rem;
+  margin-top: 0.75rem;
+  font-size: 0.875rem;
   font-weight: 400;
-  line-height: 1.425;
+  line-height: 1.4375;
 }
 @media screen and (min-width: 768px) {
   .p-career-path__plan-text {
@@ -1532,7 +1540,7 @@ select::-ms-expand {
 
 .p-career-support {
   padding-top: 1.5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
   color: #000;
   background-color: #fff;
 }
@@ -1544,7 +1552,7 @@ select::-ms-expand {
 }
 
 .p-career-support__title {
-  font-size: 1.875rem;
+  font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.4;
   text-align: center;
@@ -1558,8 +1566,8 @@ select::-ms-expand {
 
 .p-career-support__list {
   display: grid;
-  gap: 2.625rem;
-  margin-top: 2.625rem;
+  gap: 1rem;
+  margin-top: 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .p-career-support__list {
@@ -1584,23 +1592,24 @@ select::-ms-expand {
 }
 
 .p-career-support__item-title {
-  margin-top: 1rem;
-  font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.45;
   text-align: center;
+  font-size: 1rem;
+  margin-top: 0.75rem;
 }
 @media screen and (min-width: 768px) {
   .p-career-support__item-title {
     margin-top: 1.125rem;
+    font-size: 1.25rem;
   }
 }
 
 .p-career-support__text {
   margin-top: 0.75rem;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
-  line-height: 1.25;
+  line-height: 1.7142857143;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
@@ -1623,7 +1632,7 @@ select::-ms-expand {
 }
 
 .p-career-training__title {
-  font-size: 1.875rem;
+  font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.4;
   text-align: center;
@@ -1631,14 +1640,14 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .p-career-training__title {
     font-size: 2.625rem;
-    line-height: 1.4;
+    line-height: 1.4047619048;
   }
 }
 
 .p-career-training__list {
   display: grid;
-  gap: 2.125rem;
-  margin-top: 2.625rem;
+  gap: 1rem;
+  margin-top: 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .p-career-training__list {
@@ -1653,26 +1662,27 @@ select::-ms-expand {
   display: grid;
   place-items: center;
   min-height: 2.875rem;
-  padding: 0.5rem 1rem;
   color: #fff;
-  font-size: 1.1875rem;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 1.35;
   text-align: center;
   background-color: #222;
   border-radius: 0.5rem;
+  padding: 0.5rem;
 }
 @media screen and (min-width: 768px) {
   .p-career-training__item-title {
+    padding: 0.5rem 1rem;
     font-size: 1.25rem;
   }
 }
 
 .p-career-training__text {
   margin-top: 0.875rem;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
-  line-height: 1.25;
+  line-height: 1.7142857143;
 }
 @media screen and (min-width: 768px) {
   .p-career-training__text {
@@ -1711,7 +1721,7 @@ select::-ms-expand {
 .p-crosstalk-event-values,
 .p-crosstalk-event-future {
   padding-top: 3rem;
-  padding-bottom: 4.5rem;
+  padding-bottom: 3rem;
   color: #222;
   background-color: #fff;
 }
@@ -2031,8 +2041,8 @@ select::-ms-expand {
 }
 
 .p-crosstalk-event-other {
-  padding-top: 4rem;
-  padding-bottom: 4.5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   color: #363636;
   background-color: #fff;
 }
@@ -2044,7 +2054,7 @@ select::-ms-expand {
 }
 
 .p-crosstalk-event-other__heading {
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.35;
   text-align: center;
@@ -2057,13 +2067,13 @@ select::-ms-expand {
 }
 
 .p-crosstalk-event-other__card {
-  max-width: 36.375rem;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   margin-inline: auto;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
   .p-crosstalk-event-other__card {
+    max-width: 36.375rem;
     margin-top: 2.6875rem;
   }
 }
@@ -2082,18 +2092,28 @@ select::-ms-expand {
 }
 
 .p-crosstalk-event-other__body {
-  margin-top: 1.875rem;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .p-crosstalk-event-other__body {
+    margin-top: 1.875rem;
+  }
 }
 
 .p-crosstalk-event-other__title {
-  font-size: 1.5rem;
   font-weight: 700;
   line-height: 2.45;
+  font-size: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-crosstalk-event-other__title {
+    font-size: 1.5rem;
+  }
 }
 
 .p-crosstalk-event-other__text {
   margin-top: 0.125rem;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.6;
 }

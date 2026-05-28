@@ -2,7 +2,7 @@
 
 .p-career-path {
   padding-top: rem(46);
-  padding-bottom: rem(72);
+  padding-bottom: rem(48);
   color: #222;
   background-color: $white;
 
@@ -13,7 +13,7 @@
 }
 
 .p-career-path__title {
-  font-size: rem(30);
+  font-size: rem(20);
   font-weight: 700;
   line-height: 1.4;
   text-align: center;
@@ -24,8 +24,8 @@
 }
 
 .p-career-path__panel {
-  margin-top: rem(34);
-  padding: rem(30) rem(18);
+  margin-top: rem(24);
+  padding: rem(16);
   border: 1px solid #000;
   border-radius: rem(8);
 
@@ -36,9 +36,9 @@
 }
 
 .p-career-path__lead {
-  font-size: rem(15);
+  font-size: rem(14);
   font-weight: 400;
-  line-height: calc(22.8 / 16);
+  line-height: calc(23 / 16);
 
   @include mq(md) {
     font-size: rem(16);
@@ -46,7 +46,7 @@
 }
 
 .p-career-path__flow {
-  margin-top: rem(38);
+  margin-top: rem(24);
 
   @include mq(md) {
     margin-top: rem(67);
@@ -86,9 +86,10 @@
   display: grid;
   place-items: center;
   min-height: rem(58);
-  padding: rem(11) rem(14);
+  padding: rem(8) rem(14);
+
   color: #000;
-  font-size: rem(18);
+  font-size: rem(16);
   font-weight: 700;
   line-height: 1.45;
   text-align: center;
@@ -97,6 +98,7 @@
   border-radius: rem(8);
 
   @include mq(md) {
+    padding: rem(11) rem(14);
     min-height: rem(70);
     font-size: rem(24);
   }
@@ -148,7 +150,7 @@
 }
 
 .p-career-path__plan-title {
-  font-size: rem(20);
+  font-size: rem(18);
   font-weight: 700;
   line-height: 1.45;
   text-align: center;
@@ -159,10 +161,10 @@
 }
 
 .p-career-path__plan-text {
-  margin-top: rem(18);
-  font-size: rem(15);
+  margin-top: rem(12);
+  font-size: rem(14);
   font-weight: 400;
-  line-height: calc(22.8 / 16);
+  line-height: calc(23 / 16);
 
   @include mq(md) {
     margin-top: rem(21);

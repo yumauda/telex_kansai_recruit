@@ -56,63 +56,63 @@
     <div class="l-inner">
       <div class="p-crosstalk-event-talk__head">
         <div class="p-crosstalk-event-talk__body">
-          <h2 class="p-crosstalk-event-talk__title">
+          <h2 class="p-crosstalk-event-section-title">
             <span>何を基準に大人を目指すか</span>
             <span>二人が掲げた就活の軸</span>
           </h2>
-          <p class="p-crosstalk-event-talk__question">ーまずは、お二人が就職活動を始めた頃のお話を聞かせてください。当時はどのような軸で、どんな業界を見ていたのでしょうか？</p>
-          <div class="p-crosstalk-event-talk__items p-crosstalk-event-talk__items--narrow">
-            <div class="p-crosstalk-event-talk__item">
-              <div class="p-crosstalk-event-talk__speaker">
+          <p class="p-crosstalk-event-question">ーまずは、お二人が就職活動を始めた頃のお話を聞かせてください。当時はどのような軸で、どんな業界を見ていたのでしょうか？</p>
+          <div class="p-crosstalk-event-dialogs p-crosstalk-event-dialogs--side">
+            <div class="p-crosstalk-event-dialog">
+              <div class="p-crosstalk-event-dialog__speaker">
                 <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_unofficial-person/person-kanda.png" alt="">
                 <span>神田</span>
               </div>
-              <p class="p-crosstalk-event-talk__text">僕は大学3年生の春から夏にかけて、とにかくガムシャラにスタートしました。最初はやりたいことが明確になかったので、まずは営業という職種だけ決めて、業界は絞らずに見ていましたね。自分の中での目標は「かっこいい大人になる」ことでした。</p>
+              <p class="p-crosstalk-event-dialog__text">僕は大学3年生の春から夏にかけて、とにかくガムシャラにスタートしました。最初はやりたいことが明確になかったので、まずは営業という職種だけ決めて、業界は絞らずに見ていましたね。自分の中での目標は「かっこいい大人になる」ことでした。</p>
             </div>
-            <div class="p-crosstalk-event-talk__item">
-              <div class="p-crosstalk-event-talk__speaker">
+            <div class="p-crosstalk-event-dialog">
+              <div class="p-crosstalk-event-dialog__speaker">
                 <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_unofficial-person/person-ike.png" alt="">
                 <span>池</span>
               </div>
-              <p class="p-crosstalk-event-talk__text">かっこいい大人、いいね！具体的にはどんなイメージだったんですか？</p>
+              <p class="p-crosstalk-event-dialog__text">かっこいい大人、いいね！具体的にはどんなイメージだったんですか？</p>
             </div>
           </div>
         </div>
-        <figure class="p-crosstalk-event-talk__image">
+        <figure class="p-crosstalk-event-section-image">
           <picture>
             <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_unofficial-person/talk01.webp" type="image/webp">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_unofficial-person/talk01.jpg" alt="">
           </picture>
         </figure>
       </div>
-      <div class="p-crosstalk-event-talk__items p-crosstalk-event-talk__items--wide">
-        <div class="p-crosstalk-event-talk__item">
-          <div class="p-crosstalk-event-talk__speaker">
+      <div class="p-crosstalk-event-dialogs p-crosstalk-event-dialogs--wide">
+        <div class="p-crosstalk-event-dialog">
+          <div class="p-crosstalk-event-dialog__speaker">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_unofficial-person/person-kanda.png" alt="">
             <span>神田</span>
           </div>
-          <p class="p-crosstalk-event-talk__text">実はお金や物ではなくて、相手の人生に本気で関わって、良い影響を与えられる人になりたかったんです。経営者である父が、仕事を通じて色々な人と誠実に向き合っている姿がロールモデルになっていました。</p>
+          <p class="p-crosstalk-event-dialog__text">実はお金や物ではなくて、相手の人生に本気で関わって、良い影響を与えられる人になりたかったんです。経営者である父が、仕事を通じて色々な人と誠実に向き合っている姿がロールモデルになっていました。</p>
         </div>
-        <div class="p-crosstalk-event-talk__item">
-          <div class="p-crosstalk-event-talk__speaker">
+        <div class="p-crosstalk-event-dialog">
+          <div class="p-crosstalk-event-dialog__speaker">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_unofficial-person/person-ike.png" alt="">
             <span>池</span>
           </div>
-          <p class="p-crosstalk-event-talk__text">お父様が目標なんて素敵。私は3年生の11月頃から始めました。私も最初は軸がなかったのですが、アルバイトでお客様から「ありがとう」と笑顔をいただけることに、すごくやりがいを感じていたんです。だから、対お客様で働けるホテルや観光、アミューズメント業界をメインに見ていました。</p>
+          <p class="p-crosstalk-event-dialog__text">お父様が目標なんて素敵。私は3年生の11月頃から始めました。私も最初は軸がなかったのですが、アルバイトでお客様から「ありがとう」と笑顔をいただけることに、すごくやりがいを感じていたんです。だから、対お客様で働けるホテルや観光、アミューズメント業界をメインに見ていました。</p>
         </div>
-        <div class="p-crosstalk-event-talk__item">
-          <div class="p-crosstalk-event-talk__speaker">
+        <div class="p-crosstalk-event-dialog">
+          <div class="p-crosstalk-event-dialog__speaker">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_unofficial-person/person-kanda.png" alt="">
             <span>神田</span>
           </div>
-          <p class="p-crosstalk-event-talk__text">ホスピタリティを大事にしていたんですね。</p>
+          <p class="p-crosstalk-event-dialog__text">ホスピタリティを大事にしていたんですね。</p>
         </div>
-        <div class="p-crosstalk-event-talk__item">
-          <div class="p-crosstalk-event-talk__speaker">
+        <div class="p-crosstalk-event-dialog">
+          <div class="p-crosstalk-event-dialog__speaker">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_unofficial-person/person-ike.png" alt="">
             <span>池</span>
           </div>
-          <p class="p-crosstalk-event-talk__text">そうなんです。でも、テレックス関西の人事の方から「何をするかじゃなく、誰と働くかが一番大切じゃない？」と言われて。そこから「この人たちと一緒にやっていけるか」が、私の最大の軸に変わりました。</p>
+          <p class="p-crosstalk-event-dialog__text">そうなんです。でも、テレックス関西の人事の方から「何をするかじゃなく、誰と働くかが一番大切じゃない？」と言われて。そこから「この人たちと一緒にやっていけるか」が、私の最大の軸に変わりました。</p>
         </div>
       </div>
     </div>
@@ -120,50 +120,50 @@
   <section class="p-crosstalk-event-award">
     <div class="l-inner">
       <div class="p-crosstalk-event-award__head">
-        <figure class="p-crosstalk-event-award__image">
+        <figure class="p-crosstalk-event-section-image">
           <picture>
             <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_unofficial-person/talk02.webp" type="image/webp">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_unofficial-person/talk02.jpg" alt="">
           </picture>
         </figure>
         <div class="p-crosstalk-event-award__body">
-          <h2 class="p-crosstalk-event-award__title">
+          <h2 class="p-crosstalk-event-section-title">
             <span>第一印象は不信感？</span>
             <span>合同説明会での衝撃的な出会い</span>
           </h2>
-          <p class="p-crosstalk-event-award__question">ーお二人は同じ合同説明会でテレックス関西を知ったそうですね。<br class="u-desktop">当時の第一印象はどうでしたか？</p>
-          <div class="p-crosstalk-event-award__items p-crosstalk-event-award__items--side">
-            <div class="p-crosstalk-event-award__item">
-              <div class="p-crosstalk-event-award__speaker">
+          <p class="p-crosstalk-event-question">ーお二人は同じ合同説明会でテレックス関西を知ったそうですね。<br class="u-desktop">当時の第一印象はどうでしたか？</p>
+          <div class="p-crosstalk-event-dialogs p-crosstalk-event-dialogs--side">
+            <div class="p-crosstalk-event-dialog">
+              <div class="p-crosstalk-event-dialog__speaker">
                 <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_unofficial-person/person-kanda.png" alt="">
                 <span>神田</span>
               </div>
-              <p class="p-crosstalk-event-award__text">きっかけは「スポナビ」というスポーツ学生向けのイベントでした。正直に言うと、最初はかなり強引に呼び止められて(笑)どういう会社かも知らなかったので、最初は少し不信感というか「イケイケな会社なのかな」という印象でした。</p>
+              <p class="p-crosstalk-event-dialog__text">きっかけは「スポナビ」というスポーツ学生向けのイベントでした。正直に言うと、最初はかなり強引に呼び止められて(笑)どういう会社かも知らなかったので、最初は少し不信感というか「イケイケな会社なのかな」という印象でした。</p>
             </div>
-            <div class="p-crosstalk-event-award__item">
-              <div class="p-crosstalk-event-award__speaker">
+            <div class="p-crosstalk-event-dialog">
+              <div class="p-crosstalk-event-dialog__speaker">
                 <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_unofficial-person/person-ike.png" alt="">
                 <span>池</span>
               </div>
-              <p class="p-crosstalk-event-award__text">分かります(笑)私も同じ場所でしたけど、ブースの雰囲気が他とは違いましたよね。他社は明るい装飾が多い中で、ここは黒が基調で、とにかくインパクトが強くて。</p>
+              <p class="p-crosstalk-event-dialog__text">分かります(笑)私も同じ場所でしたけど、ブースの雰囲気が他とは違いましたよね。他社は明るい装飾が多い中で、ここは黒が基調で、とにかくインパクトが強くて。</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="p-crosstalk-event-award__items p-crosstalk-event-award__items--wide">
-        <div class="p-crosstalk-event-award__item">
-          <div class="p-crosstalk-event-award__speaker">
+      <div class="p-crosstalk-event-dialogs p-crosstalk-event-dialogs--wide">
+        <div class="p-crosstalk-event-dialog">
+          <div class="p-crosstalk-event-dialog__speaker">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_unofficial-person/person-kanda.png" alt="">
             <span>神田</span>
           </div>
-          <p class="p-crosstalk-event-award__text">でも、実際に話を聞いてみたら印象がガラッと変わったんです。人事の方の熱量やプレゼンの巧さ、学生への質問の返しが、その日見たどの会社よりも圧倒的に良くて。「会社の説明は今はしないけど、説明会に来てくれたら100％後悔させない」と言い切られた時、この人たちに興味が湧いて選考に進もうと決めました。</p>
+          <p class="p-crosstalk-event-dialog__text">でも、実際に話を聞いてみたら印象がガラッと変わったんです。人事の方の熱量やプレゼンの巧さ、学生への質問の返しが、その日見たどの会社よりも圧倒的に良くて。「会社の説明は今はしないけど、説明会に来てくれたら100％後悔させない」と言い切られた時、この人たちに興味が湧いて選考に進もうと決めました。</p>
         </div>
-        <div class="p-crosstalk-event-award__item">
-          <div class="p-crosstalk-event-award__speaker">
+        <div class="p-crosstalk-event-dialog">
+          <div class="p-crosstalk-event-dialog__speaker">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_unofficial-person/person-ike.png" alt="">
             <span>池</span>
           </div>
-          <p class="p-crosstalk-event-award__text">私も、人事の方が学生一人ひとりに寄り添う姿に衝撃を受けました。大人数に対して一方的に話すのではなく、2、3人のグループで話しやすい環境を作りながら学生に対して本気で向き合ってくれる。就活初心者だった私に「相談に乗るよ」と声をかけてくださって、そこから頻繁に連絡を取り合うようになりましたね。</p>
+          <p class="p-crosstalk-event-dialog__text">私も、人事の方が学生一人ひとりに寄り添う姿に衝撃を受けました。大人数に対して一方的に話すのではなく、2、3人のグループで話しやすい環境を作りながら学生に対して本気で向き合ってくれる。就活初心者だった私に「相談に乗るよ」と声をかけてくださって、そこから頻繁に連絡を取り合うようになりましたね。</p>
         </div>
       </div>
     </div>

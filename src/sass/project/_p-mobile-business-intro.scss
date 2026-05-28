@@ -2,7 +2,7 @@
 
 .p-mobile-business-intro {
   padding-top: rem(48);
-  padding-bottom: rem(72);
+  padding-bottom: rem(48);
   color: #222;
   background-color: $white;
 
@@ -14,7 +14,7 @@
 
 .p-mobile-business-intro__title {
   color: #000;
-  font-size: rem(30);
+  font-size: rem(24);
   font-weight: 700;
   line-height: 1.4;
   text-align: center;
@@ -27,8 +27,8 @@
 
 .p-mobile-business-intro__content {
   display: grid;
-  gap: rem(32);
-  margin-top: rem(48);
+  gap: rem(24);
+  margin-top: rem(32);
 
   @include mq(md) {
     grid-template-columns: minmax(0, 548fr) minmax(0, 599fr);
@@ -70,7 +70,7 @@
 
 .p-mobile-business-intro__heading {
   color: #000;
-  font-size: rem(26);
+  font-size: rem(20);
   font-weight: 700;
   line-height: 1.4;
 
@@ -81,10 +81,10 @@
 }
 
 .p-mobile-business-intro__text {
-  margin-top: rem(28);
-  font-size: rem(15);
+  margin-top: rem(20);
+  font-size: rem(14);
   font-weight: 400;
-  line-height: calc(29.8 / 16);
+  line-height: calc(29 / 16);
 
   @include mq(md) {
     margin-top: rem(39);
@@ -94,7 +94,11 @@
 
 .p-mobile-business-intro__text p + p,
 .p-mobile-business-intro__text p + ul {
-  margin-top: rem(24);
+  margin-top: rem(16);
+
+  @include mq(md) {
+    margin-top: rem(24);
+  }
 }
 
 .p-mobile-business-intro__text ul {

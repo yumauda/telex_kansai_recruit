@@ -6,6 +6,7 @@
   overflow: hidden;
   color: $white;
   background-color: #1b1b1b;
+  margin-top: rem(64);
 
   @include mq(md) {
     min-height: rem(526);
@@ -49,8 +50,8 @@
   display: inline-flex;
   align-items: center;
   min-height: rem(40);
-  padding: rem(6) rem(14);
-  font-size: rem(18);
+  padding: rem(4) rem(12);
+  font-size: rem(14);
   font-weight: 700;
   line-height: 1.4;
   background-color: #1b1b1b;
@@ -67,8 +68,8 @@
 .p-crosstalk-event-mv__detail {
   width: fit-content;
   max-width: 100%;
-  margin-top: rem(16);
-  padding: rem(13) rem(14) rem(15);
+  margin-top: rem(8);
+  padding: rem(8) rem(12) rem(10);
   background-color: #1b1b1b;
 
   @include mq(md) {
@@ -79,7 +80,7 @@
 }
 
 .p-crosstalk-event-mv__title {
-  font-size: rem(27);
+  font-size: rem(20);
   font-weight: 700;
   line-height: 1.35;
 
@@ -91,7 +92,7 @@
 
 .p-crosstalk-event-mv__lead {
   margin-top: rem(4);
-  font-size: rem(14);
+  font-size: rem(12);
   font-weight: 700;
   line-height: 1.6;
 

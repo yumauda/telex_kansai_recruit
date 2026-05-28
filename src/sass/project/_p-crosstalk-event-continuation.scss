@@ -35,7 +35,7 @@
 }
 
 .p-crosstalk-event-section-title {
-  font-size: rem(22);
+  font-size: rem(18);
   font-weight: 700;
   line-height: 1.55;
 
@@ -77,15 +77,19 @@
 
 .p-crosstalk-event-dialogs {
   display: grid;
-  gap: rem(34);
+  gap: rem(24);
+
+  @include mq(md) {
+    gap: rem(34);
+  }
 }
 
 .p-crosstalk-event-dialogs--side {
-  margin-top: rem(28);
+  margin-top: rem(20);
 
   @include mq(md) {
-    margin-top: rem(22);
-    gap: rem(30);
+    margin-top: rem(24);
+    gap: rem(37);
   }
 }
 
@@ -93,16 +97,20 @@
   margin-top: rem(38);
 
   @include mq(md) {
-    margin-top: rem(52);
-    gap: rem(44);
+    margin-top: rem(67);
+    gap: rem(46);
   }
 }
 
 .p-crosstalk-event-dialog {
   display: grid;
-  grid-template-columns: rem(61) minmax(0, 1fr);
+  grid-template-columns: rem(48) minmax(0, 1fr);
   gap: rem(13);
   align-items: start;
+
+  @include mq(md) {
+    grid-template-columns: rem(61) minmax(0, 1fr);
+  }
 }
 
 .p-crosstalk-event-dialog__speaker {
@@ -110,26 +118,35 @@
 }
 
 .p-crosstalk-event-dialog__speaker img {
-  width: rem(61);
-  height: rem(61);
+  width: rem(48);
+  height: rem(48);
   object-fit: contain;
+
+  @include mq(md) {
+    width: rem(61);
+    height: rem(61);
+  }
 }
 
 .p-crosstalk-event-dialog__speaker span {
   display: block;
   margin-top: rem(6);
-  font-size: rem(16);
+  font-size: rem(12);
   font-weight: 700;
   line-height: 1.2;
+
+  @include mq(md) {
+    font-size: rem(16);
+  }
 }
 
 .p-crosstalk-event-dialog__text {
-  font-size: rem(15);
+  font-size: rem(14);
   font-weight: 400;
   line-height: 1.86;
 
   @include mq(md) {
     font-size: rem(16);
-    line-height: calc(29.8 / 16);
+    line-height: calc(30 / 16);
   }
 }

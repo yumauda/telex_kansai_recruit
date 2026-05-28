@@ -2,7 +2,7 @@
 
 .p-crosstalk-event-speakers {
   padding-top: rem(48);
-  padding-bottom: rem(64);
+  padding-bottom: rem(48);
   background-color: $white;
 
   @include mq(md) {
@@ -13,8 +13,8 @@
 
 .p-crosstalk-event-speakers__list {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: rem(44);
+  grid-template-columns: 1fr 1fr;
+  gap: rem(24);
   justify-items: center;
 
   @include mq(md) {
@@ -34,9 +34,14 @@
 }
 
 .p-crosstalk-event-speakers__image {
-  width: rem(222);
   aspect-ratio: 1;
   margin-inline: auto;
+  width: rem(120);
+
+  @include mq(md) {
+    width: rem(222);
+
+  }
 }
 
 .p-crosstalk-event-speakers__image img {
@@ -46,20 +51,35 @@
 }
 
 .p-crosstalk-event-speakers__body {
-  margin-top: rem(22);
+  margin-top: rem(12);
+
+  @include mq(md) {
+
+    margin-top: rem(22);
+  }
 }
 
 .p-crosstalk-event-speakers__name {
-  font-size: rem(24);
   font-weight: 700;
   line-height: calc(58.8 / 24);
+  font-size: rem(16);
+
+  @include mq(md) {
+    font-size: rem(24);
+
+  }
 }
 
 .p-crosstalk-event-speakers__profile {
   margin-top: rem(4);
-  font-size: rem(18);
   font-weight: 400;
-  line-height: calc(23.8 / 18);
+  line-height: calc(23 / 18);
+  font-size: rem(12);
+
+  @include mq(md) {
+    font-size: rem(18);
+
+  }
 }
 
 .p-crosstalk-event-speakers__profile span {

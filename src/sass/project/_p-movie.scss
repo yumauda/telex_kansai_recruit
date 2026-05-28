@@ -11,6 +11,7 @@
   color: $white;
   text-align: center;
   background-color: #1b1b1b;
+  margin-top: rem(64);
 
   @include mq(md) {
     min-height: rem(480);
@@ -146,12 +147,13 @@
 }
 
 .p-movie-card__title {
-  margin-top: rem(22);
-  font-size: rem(20);
+  font-size: rem(16);
   font-weight: 700;
   line-height: 1.45;
-
+  margin-top: rem(16);
+  
   @include mq(md) {
+    margin-top: rem(22);
     font-size: rem(24);
   }
 }
@@ -160,12 +162,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: rem(28);
-  margin-top: rem(56);
+  margin-top: rem(40);
   font-size: rem(16);
   line-height: 1;
-
+  gap: rem(20);
+  
   @include mq(md) {
+    gap: rem(28);
     margin-top: rem(76);
   }
 }

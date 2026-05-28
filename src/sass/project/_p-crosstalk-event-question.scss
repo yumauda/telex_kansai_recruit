@@ -1,13 +1,14 @@
 @use "../global" as *;
 
 .p-crosstalk-event-question {
-  margin-top: rem(24);
-  font-size: rem(15);
+  margin-top: rem(16);
+  font-size: rem(14);
   font-weight: 400;
   line-height: 1.86;
 
   @include mq(md) {
+    margin-top: rem(24);
     font-size: rem(16);
-    line-height: calc(29.8 / 16);
+    line-height: calc(30 / 16);
   }
 }

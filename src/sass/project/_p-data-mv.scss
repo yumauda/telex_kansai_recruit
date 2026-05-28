@@ -7,6 +7,7 @@
   color: $white;
   text-align: center;
   background-color: #1b1b1b;
+  margin-top: rem(64);
 
   @include mq(md) {
     min-height: rem(480);

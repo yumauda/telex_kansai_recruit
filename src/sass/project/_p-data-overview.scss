@@ -88,46 +88,76 @@
 .p-data-overview-card__icon {
   grid-row: 2;
   display: block;
-  width: min(42%, rem(150));
   height: auto;
   object-fit: contain;
+  width: rem(110);
+  @include mq(md){
+    width: min(42%, rem(150));
+    
+  }
 }
 
 .p-data-overview-card__icon--building {
-  width: min(36%, rem(114));
+  width: rem(96);
+  @include mq(md){
+    
+    width: min(36%, rem(114));
+  }
 }
 
 .p-data-overview-card__icon--sales {
-  width: min(44%, rem(133));
+  width: rem(120);
+  @include mq(md){
+    
+    width: min(44%, rem(133));
+  }
 }
 
 .p-data-overview-card__icon--employee,
 .p-data-overview-card__icon--family,
 .p-data-overview-card__icon--exit {
-  width: min(54%, rem(174));
+  width: rem(160);
+  @include mq(md){
+    width: min(54%, rem(174));
+  }
 }
 
 .p-data-overview-card__icon--team {
-  width: min(50%, rem(153));
+  width: rem(140);
+  @include mq(md){
+    width: min(50%, rem(153));
+  }
 }
 
 .p-data-overview-card__icon--career,
 .p-data-overview-card__icon--time,
 .p-data-overview-card__icon--calendar,
 .p-data-overview-card__icon--pie {
-  width: min(43%, rem(137));
+  width: rem(130);
+  @include mq(md){
+    width: min(43%, rem(137));
+  }
 }
 
 .p-data-overview-card__icon--trophy {
-  width: min(32%, rem(99));
+  width: rem(90);
+  @include mq(md){
+    width: min(32%, rem(99));
+  }
 }
 
 .p-data-overview-card__icon--vacation {
-  width: min(38%, rem(116));
+  width: rem(116);
+  @include mq(md){
+    width: min(38%, rem(116));
+  }
 }
 
 .p-data-overview-card__icon--event {
-  width: min(32%, rem(99));
+  width: rem(90);
+  @include mq(md){
+    width: min(32%, rem(99));
+  }
 }
 
 .p-data-overview-card__gender {
@@ -139,8 +169,12 @@
 }
 
 .p-data-overview-card__gender img {
-  width: min(34%, rem(116));
+  width: rem(90);
   height: auto;
+  @include mq(md){
+    width: min(34%, rem(116));
+    
+  }
 }
 
 .p-data-overview-card__dots {

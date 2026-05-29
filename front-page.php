@@ -11,7 +11,7 @@
           <span class="p-loading__logo-text p-loading__logo-text--small">Recruit Site</span>
         </div>
       </div>
-      <p class="p-loading__text">未来を変えるのはいつだって人だ</p>
+      <p class="p-loading__text">未来を変えるのは<br class="u-mobile">いつだって人だ</p>
     </div>
   </div>
 </div>
@@ -28,9 +28,9 @@
             <span>いつだって人だ</span>
           </h1>
           <p class="p-mv__text">
-            <span>「未来のあたりまえ」をつくるのは「創造性」です。</span>
-            <span>あたらしい個性を受け入れるたびに、あたらしいこだわりが増え、</span>
-            <span>チームもプロダクトも進化します。あなたの経験や独創性を、活かしてみませんか？</span>
+            「未来のあたりまえ」をつくるのは「創造性」です。<br>
+            あたらしい個性を受け入れるたびに、あたらしいこだわりが増え、<br class="u-desktop">
+            チームもプロダクトも進化します。あなたの経験や独創性を、活かしてみませんか？
           </p>
         </div>
         <div class="p-mv__entry">

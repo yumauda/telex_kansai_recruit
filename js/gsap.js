@@ -1,82 +1,114 @@
 "use strict";
 
-gsap.registerPlugin(ScrollTrigger, SplitText);
-
+gsap.registerPlugin(ScrollTrigger);
 
 var webStorage = function () {
   if (sessionStorage.getItem('access')) {
-    gsap.set(".p-loader", {
-      display: "none",
+    gsap.set(".p-loading", {
+      display: 'none',
     });
+
   } else {
     sessionStorage.setItem('access', 0);
 
-    const opening = gsap.timeline();
-
-    opening.fromTo(".p-loader__logo-img", {
+    gsap.set(".p-loading__logo-text-wrapper", {
       opacity: 0,
-      scale: 2.5,
-      x: () => {
-        const logoLink = document.querySelector(".p-loader__logoLink");
-        const textEl = document.querySelector(".p-loader__logoText");
-        if (!logoLink || !textEl) return 0;
-        const styles = window.getComputedStyle(logoLink);
-        const gap = parseFloat(styles.gap || styles.columnGap || "0") || 0;
-        const textWidth = textEl.getBoundingClientRect().width || 0;
-        return (textWidth + gap) / 2;
-      },
-    }, {
-      opacity: 1,
-      duration: 3,
-      ease: "power2.inOut",
-    }, "-=1.5");
-
-    opening.to(".p-loader__logo-img", {
-      scale: 1,
-      x: 0,
-      duration: 1.0,
-      ease: "power2.inOut",
+      visibility: 'hidden',
+    });
+    gsap.set(".p-loading__text", {
+      opacity: 0,
+      visibility: 'hidden',
+      color: 'transparent',
+      '-webkit-text-stroke': '0px rgba(255, 255, 255, 0)',
+      textShadow: '0 0 0 rgba(255, 255, 255, 0)',
     });
 
-    opening.fromTo(".p-loader__logoText", {
-      opacity: 0,
-    }, {
-      opacity: 1,
-      duration: 0.01,
-    });
-    opening.fromTo(".p-loader__char", {
-      opacity: 0,
-      y: 6,
-    }, {
-      opacity: 1,
-      y: 0,
-      duration: 0.45,
-      stagger: 0.08,
-      ease: "power2.out",
-    }, "<");
-    // 全体をふわっと消す
-    opening.to(".p-loader", {
-      opacity: 0,
-      duration: 0.9,
-      ease: "power2.inOut",
-    }, "+=0.4");
-    opening.set(".p-loader", {
-      display: "none",
-    });
+    const loadingLogo = document.querySelector(".p-loading__logo-img");
 
-    opening.fromTo(".js-top-header", {
-      opacity: 0,
-      y: -100,
-    }, {
-      y: 0,
-      opacity: 1,
-      ease: "power2.inOut",
-      duration: 1,
-    });
+    if (loadingLogo) {
+      const logoRect = loadingLogo.getBoundingClientRect();
+      const centerX = window.innerWidth / 2 - (logoRect.left + logoRect.width / 2);
+      const centerY = window.innerHeight / 2 - (logoRect.top + logoRect.height / 2);
+      const opening = gsap.timeline();
+
+      // ロゴを通常位置から中央にずらしておき、最後に元の位置へ戻す
+      gsap.set(loadingLogo, {
+        opacity: 0,
+        x: centerX,
+        y: centerY,
+        scale: 3,
+      });
+
+      opening.to(loadingLogo, {
+        opacity: 1,
+        duration: 1.5,
+        delay: 0.2,
+        ease: 'power2.inOut',
+        scale: 1,
+      }, "+=0.6");
+
+      opening.to(loadingLogo, {
+        x: 0,
+        y: 0,
+        duration: 1.5,
+        ease: 'power2.inOut',
+      });
+      opening.to(".p-loading__logo-text-wrapper", {
+        opacity: 1,
+        visibility: 'visible',
+        duration: 1.5,
+        ease: 'power2.inOut',
+        delay: 0.2,
+      });
+      opening.to(".p-loading__text", {
+        visibility: 'visible',
+        opacity: 1,
+        '-webkit-text-stroke': '1px rgba(255, 255, 255, 1)',
+        textShadow: '0 0 14px rgba(255, 255, 255, 0.5)',
+        duration: 0.45,
+        ease: 'power2.out',
+        delay: 0.2,
+      });
+      opening.to(".p-loading__text", {
+        x: 'random(-4, 4)',
+        y: 'random(-3, 3)',
+        skewX: 'random(-4, 4)',
+        duration: 0.06,
+        repeat: 9,
+        yoyo: true,
+        ease: 'sine.inOut',
+      }, "<");
+      opening.to(".p-loading__text", {
+        x: 0,
+        y: 0,
+        skewX: 0,
+        color: '#fff',
+        '-webkit-text-stroke': '1px rgba(255, 255, 255, 0)',
+        textShadow: '0 0 0 rgba(255, 255, 255, 0)',
+        visibility: 'visible',
+        duration: 0.9,
+        ease: 'power2.out',
+      });
+      opening.to(".p-loading", {
+        opacity: 0,
+        duration: 1.5,
+        ease: 'power2.inOut',
+        delay: 0.2,
+      }, "+=1.5");
+      opening.to(".p-loading", {
+        display: 'none',
+      });
+    }
 
   }
 }
 webStorage();
+
+
+
+
+
+
 
 let ribbons = document.querySelectorAll('.js-ribbon');
 

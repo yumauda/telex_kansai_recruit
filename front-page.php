@@ -1,4 +1,20 @@
 <?php get_header(); ?>
+<div class="p-loading">
+  <div class="l-inner">
+    <div class="p-loading__content">
+      <div class="p-loading__logo-wrapper">
+        <div class="p-loading__logo-img">
+          <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/header/innovation-logo.webp" alt="テレックス関西 採用サイト" width="431" height="38">
+        </div>
+        <div class="p-loading__logo-text-wrapper">
+          <span class="p-loading__logo-text">Telex Kansai</span>
+          <span class="p-loading__logo-text p-loading__logo-text--small">Recruit Site</span>
+        </div>
+      </div>
+      <p class="p-loading__text">未来を変えるのはいつだって人だ</p>
+    </div>
+  </div>
+</div>
 <main>
   <section class="p-mv">
     <div class="l-inner">

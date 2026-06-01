@@ -205,6 +205,25 @@ jQuery(window).on("resize", function () {
     closeDrawer();
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  var headerMegaButtons = document.querySelectorAll(".p-header__nav-item--mega > .p-header__nav-link--button");
+  var isPointerInteraction = false;
+
+  headerMegaButtons.forEach(function (button) {
+    button.addEventListener("pointerdown", function () {
+      isPointerInteraction = true;
+    });
+
+    button.addEventListener("click", function () {
+      if (isPointerInteraction) {
+        button.blur();
+      }
+
+      isPointerInteraction = false;
+    });
+  });
+});
 window.addEventListener("scroll", function () {
   var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
   var element = document.querySelector(".p-footer__floating");

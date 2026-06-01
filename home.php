@@ -58,7 +58,7 @@ if (! function_exists('telex_people_archive_meta_lines')) {
   <section class="p-people-mv">
     <div class="p-people-mv__content">
       <p class="p-people-mv__en js-page-main-title">People</p>
-      <h1 class="p-people-mv__title">人を知る</h1>
+      <h1 class="p-people-mv__title js-opacity-word">人を知る</h1>
     </div>
   </section>
 
@@ -72,7 +72,7 @@ if (! function_exists('telex_people_archive_meta_lines')) {
             $card_image = telex_people_archive_image_url(get_the_ID());
             $meta_lines = telex_people_archive_meta_lines(get_the_ID());
             ?>
-            <article class="p-people-card">
+            <article class="p-people-card js-opacity-word">
               <a class="p-people-card__link" href="<?php the_permalink(); ?>">
                 <figure class="p-people-card__image">
                   <img src="<?php echo esc_url($card_image); ?>" alt="<?php the_title_attribute(); ?>">

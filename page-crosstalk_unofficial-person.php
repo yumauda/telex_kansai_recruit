@@ -8,7 +8,7 @@
     <div class="p-crosstalk-event-mv__content">
       <p class="p-crosstalk-event-mv__label">クロストーク</p>
       <div class="p-crosstalk-event-mv__detail">
-        <h1 class="p-crosstalk-event-mv__title">内定者対談</h1>
+        <h1 class="p-crosstalk-event-mv__title js-opacity-word">内定者対談</h1>
         <p class="p-crosstalk-event-mv__lead">この会社に入社を決めた理由</p>
       </div>
     </div>

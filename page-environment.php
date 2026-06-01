@@ -3,7 +3,7 @@
   <section class="p-environment-mv">
     <div class="p-environment-mv__content">
       <p class="p-environment-mv__en js-page-main-title">Environment</p>
-      <h1 class="p-environment-mv__title">働く環境</h1>
+      <h1 class="p-environment-mv__title js-opacity-word">働く環境</h1>
     </div>
   </section>
   <nav class="p-environment-anchor" aria-label="働く環境ページ内ナビゲーション">

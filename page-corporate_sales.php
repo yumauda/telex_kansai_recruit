@@ -3,14 +3,14 @@
   <section class="p-mobile-business-mv">
     <div class="p-mobile-business-mv__content">
       <p class="p-mobile-business-mv__en js-page-main-title">Corporate sales</p>
-      <h1 class="p-mobile-business-mv__title">法人営業</h1>
+      <h1 class="p-mobile-business-mv__title js-opacity-word">法人営業</h1>
     </div>
   </section>
   <section class="p-mobile-business-intro">
     <div class="l-inner">
-      <h2 class="p-mobile-business-intro__title">法人事業の仕事紹介</h2>
+      <h2 class="p-mobile-business-intro__title js-opacity-word">法人事業の仕事紹介</h2>
       <div class="p-mobile-business-intro__content p-mobile-business-intro__content--work">
-        <div class="p-mobile-business-intro__body">
+        <div class="p-mobile-business-intro__body js-opacity-word">
           <h3 class="p-mobile-business-intro__heading">仕事内容</h3>
           <div class="p-mobile-business-intro__text">
             <p>法人営業部は、ドコモの法人向けモバイル通信サービスを軸に、クラウドPBXや生成AI、管理業務のDX化など、企業の「未来のあたりまえ」となるソリューションを提案しています。2010年の設立以来、京阪神エリアを中心に430社以上の企業様を担当し、通信インフラから業務効率化までを幅広く支えるパートナーとして活動しています。</p>
@@ -22,15 +22,15 @@
             </ul>
           </div>
         </div>
-        <figure class="p-mobile-business-intro__image">
+        <figure class="p-mobile-business-intro__image js-pro-img">
           <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/corporate_sales/work-intro.webp" alt="">
         </figure>
       </div>
       <div class="p-mobile-business-intro__content p-mobile-business-intro__content--reverse">
-        <figure class="p-mobile-business-intro__image">
+        <figure class="p-mobile-business-intro__image js-pro-img">
           <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/corporate_sales/reward.webp" alt="">
         </figure>
-        <div class="p-mobile-business-intro__body">
+        <div class="p-mobile-business-intro__body js-opacity-word">
           <h3 class="p-mobile-business-intro__heading">魅力・やりがい</h3>
           <div class="p-mobile-business-intro__text">
             <ul>
@@ -42,7 +42,7 @@
         </div>
       </div>
       <div class="p-mobile-business-intro__content">
-        <div class="p-mobile-business-intro__body">
+        <div class="p-mobile-business-intro__body js-opacity-word">
           <h3 class="p-mobile-business-intro__heading">身に付くスキル・マインド</h3>
           <div class="p-mobile-business-intro__text">
             <ul>
@@ -52,7 +52,7 @@
             </ul>
           </div>
         </div>
-        <figure class="p-mobile-business-intro__image">
+        <figure class="p-mobile-business-intro__image js-pro-img">
           <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/corporate_sales/skill.webp" alt="">
         </figure>
       </div>
@@ -60,54 +60,54 @@
   </section>
   <section class="p-mobile-business-flow">
     <div class="l-inner">
-      <h2 class="p-mobile-business-flow__title">1日の流れ</h2>
+      <h2 class="p-mobile-business-flow__title js-opacity-word">1日の流れ</h2>
       <ol class="p-mobile-business-flow__list">
-        <li class="p-mobile-business-flow__item">
+        <li class="p-mobile-business-flow__item js-opacity-word">
           <figure class="p-mobile-business-flow__icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/mobile_business/flow-icon-morning.webp" alt=""></figure>
           <time class="p-mobile-business-flow__time" datetime="09:00">9:00</time>
           <div class="p-mobile-business-flow__body"><p>出勤</p><p>・部署内情報共有</p><p>・本体発注</p><p>・申込書の登録前チェック</p></div>
         </li>
-        <li class="p-mobile-business-flow__item">
+        <li class="p-mobile-business-flow__item js-opacity-word">
           <figure class="p-mobile-business-flow__icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/mobile_business/flow-icon-morning.webp" alt=""></figure>
           <time class="p-mobile-business-flow__time" datetime="10:00">10:00</time>
           <div class="p-mobile-business-flow__body"><p>お客様先訪問①</p><p>・商談（提案/申込/納品）</p><p>・アフターフォロー(設定・保守)</p></div>
         </li>
-        <li class="p-mobile-business-flow__item">
+        <li class="p-mobile-business-flow__item js-opacity-word">
           <figure class="p-mobile-business-flow__icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/mobile_business/flow-icon-morning.webp" alt=""></figure>
           <time class="p-mobile-business-flow__time" datetime="11:00">11:00</time>
           <div class="p-mobile-business-flow__body"><p>・移動</p><p>・電話/メール対応</p><p>・確認事項をサポート窓口に問い合わせ</p></div>
         </li>
-        <li class="p-mobile-business-flow__item">
+        <li class="p-mobile-business-flow__item js-opacity-word">
           <figure class="p-mobile-business-flow__icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/mobile_business/flow-icon-day.webp" alt=""></figure>
           <time class="p-mobile-business-flow__time" datetime="12:00">12:00</time>
           <div class="p-mobile-business-flow__body"><p>・休憩(現地周辺で昼食)</p></div>
         </li>
-        <li class="p-mobile-business-flow__item">
+        <li class="p-mobile-business-flow__item js-opacity-word">
           <figure class="p-mobile-business-flow__icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/mobile_business/flow-icon-day.webp" alt=""></figure>
           <time class="p-mobile-business-flow__time" datetime="13:00">13:00</time>
           <div class="p-mobile-business-flow__body"><p>お客様先訪問②</p><p>・商談（提案/申込/納品）</p><p>・アフターフォロー(設定・保守)</p></div>
         </li>
-        <li class="p-mobile-business-flow__item">
+        <li class="p-mobile-business-flow__item js-opacity-word">
           <figure class="p-mobile-business-flow__icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/mobile_business/flow-icon-day.webp" alt=""></figure>
           <time class="p-mobile-business-flow__time" datetime="14:00">14:00</time>
           <div class="p-mobile-business-flow__body"><p>・移動</p><p>・電話/メール対応</p><p>・確認事項をサポート窓口に問い合わせ</p></div>
         </li>
-        <li class="p-mobile-business-flow__item">
+        <li class="p-mobile-business-flow__item js-opacity-word">
           <figure class="p-mobile-business-flow__icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/mobile_business/flow-icon-day.webp" alt=""></figure>
           <time class="p-mobile-business-flow__time" datetime="15:00">15:00</time>
           <div class="p-mobile-business-flow__body"><p>お客様先訪問③</p><p>・商談（提案/申込/納品）</p><p>・アフターフォロー(設定・保守)</p></div>
         </li>
-        <li class="p-mobile-business-flow__item">
+        <li class="p-mobile-business-flow__item js-opacity-word">
           <figure class="p-mobile-business-flow__icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/mobile_business/flow-icon-day.webp" alt=""></figure>
           <time class="p-mobile-business-flow__time" datetime="16:00">16:00</time>
           <div class="p-mobile-business-flow__body"><p>・移動</p><p>・電話/メール対応</p><p>・確認事項をサポート窓口に問い合わせ</p></div>
         </li>
-        <li class="p-mobile-business-flow__item">
+        <li class="p-mobile-business-flow__item js-opacity-word">
           <figure class="p-mobile-business-flow__icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/mobile_business/flow-icon-day.webp" alt=""></figure>
           <time class="p-mobile-business-flow__time" datetime="17:00">17:00</time>
           <div class="p-mobile-business-flow__body"><p>事務作業</p><p>・提案書/申込書/見積書/請求書の作成</p><p>・プラン変更等の登録業務</p><p>・本体キッティング作業</p></div>
         </li>
-        <li class="p-mobile-business-flow__item">
+        <li class="p-mobile-business-flow__item js-opacity-word">
           <figure class="p-mobile-business-flow__icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/mobile_business/flow-icon-night.webp" alt=""></figure>
           <time class="p-mobile-business-flow__time" datetime="18:00">18:00</time>
           <div class="p-mobile-business-flow__body"><p>退勤</p><p>・各種申請業務</p><p>・メール対応</p><p>・日報入力</p></div>
@@ -117,24 +117,24 @@
   </section>
   <section class="p-mobile-business-other">
     <div class="l-inner">
-      <h2 class="p-mobile-business-other__title">他の仕事内容</h2>
+      <h2 class="p-mobile-business-other__title js-opacity-word">他の仕事内容</h2>
       <div class="p-mobile-business-other__list">
         <article class="p-mobile-business-other__card">
-          <figure class="p-mobile-business-other__image">
+          <figure class="p-mobile-business-other__image js-pro-img">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/corporate_sales/other-mobile-business.webp" alt="">
           </figure>
-          <h3 class="p-mobile-business-other__heading">モバイル事業部</h3>
-          <a class="p-mobile-business-other__link" href="<?php echo esc_url(home_url('/mobile_business/')); ?>">
+          <h3 class="p-mobile-business-other__heading js-opacity-word">モバイル事業部</h3>
+          <a class="p-mobile-business-other__link js-opacity-word" href="<?php echo esc_url(home_url('/mobile_business/')); ?>">
             <span class="p-mobile-business-other__arrow">→</span>
             <span>仕事を見る</span>
           </a>
         </article>
         <article class="p-mobile-business-other__card">
-          <figure class="p-mobile-business-other__image">
+          <figure class="p-mobile-business-other__image js-pro-img">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/corporate_sales/other-event-business-photo.webp" alt="">
           </figure>
-          <h3 class="p-mobile-business-other__heading">イベント事業部</h3>
-          <a class="p-mobile-business-other__link" href="<?php echo esc_url(home_url('/event_business/')); ?>">
+          <h3 class="p-mobile-business-other__heading js-opacity-word">イベント事業部</h3>
+          <a class="p-mobile-business-other__link js-opacity-word" href="<?php echo esc_url(home_url('/event_business/')); ?>">
             <span class="p-mobile-business-other__arrow">→</span>
             <span>仕事を見る</span>
           </a>

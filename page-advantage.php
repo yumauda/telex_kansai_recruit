@@ -3,7 +3,7 @@
   <section class="p-advantage-mv">
     <div class="p-advantage-mv__content">
       <p class="p-advantage-mv__en js-page-main-title">Advantage</p>
-      <h1 class="p-advantage-mv__title">テレックスの強み</h1>
+      <h1 class="p-advantage-mv__title js-opacity-word">テレックスの強み</h1>
     </div>
   </section>
   <nav class="p-advantage-anchor" aria-label="テレックスの強み内ナビゲーション">
@@ -27,7 +27,7 @@
   <section class="p-advantage-culture" id="anc01">
     <div class="l-inner">
       <div class="p-advantage-culture__content">
-        <div class="p-advantage-culture__body">
+        <div class="p-advantage-culture__body js-opacity-word">
           <p class="p-advantage-culture__number">01</p>
           <h2 class="p-advantage-culture__title">頑張りが評価され称賛される文化</h2>
           <div class="p-advantage-culture__items">
@@ -45,7 +45,7 @@
             </section>
           </div>
         </div>
-        <figure class="p-advantage-culture__image">
+        <figure class="p-advantage-culture__image js-pro-img">
           <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/advantage/advantage-culture.webp" alt="">
         </figure>
       </div>
@@ -54,7 +54,7 @@
   <section class="p-advantage-growth" id="anc02">
     <div class="l-inner">
       <div class="p-advantage-growth__content">
-        <div class="p-advantage-growth__body">
+        <div class="p-advantage-growth__body js-opacity-word">
           <p class="p-advantage-growth__number">02</p>
           <h2 class="p-advantage-growth__title">成長を“仕組み”で支える育成制度</h2>
           <div class="p-advantage-growth__items">
@@ -72,7 +72,7 @@
             </section>
           </div>
         </div>
-        <figure class="p-advantage-growth__image">
+        <figure class="p-advantage-growth__image js-pro-img">
           <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/advantage/advantage-growth.webp" alt="">
         </figure>
       </div>
@@ -81,7 +81,7 @@
   <section class="p-advantage-environment" id="anc03">
     <div class="l-inner">
       <div class="p-advantage-environment__content">
-        <div class="p-advantage-environment__body">
+        <div class="p-advantage-environment__body js-opacity-word">
           <p class="p-advantage-environment__number">03</p>
           <h2 class="p-advantage-environment__title">安心して働ける環境</h2>
           <div class="p-advantage-environment__items">
@@ -99,7 +99,7 @@
             </section>
           </div>
         </div>
-        <figure class="p-advantage-environment__image">
+        <figure class="p-advantage-environment__image js-pro-img">
           <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/advantage/advantage-environment.webp" alt="">
         </figure>
       </div>
@@ -108,7 +108,7 @@
   <section class="p-advantage-stability" id="anc04">
     <div class="l-inner">
       <div class="p-advantage-stability__content">
-        <div class="p-advantage-stability__body">
+        <div class="p-advantage-stability__body js-opacity-word">
           <p class="p-advantage-stability__number">04</p>
           <h2 class="p-advantage-stability__title">通信インフラ×関西密着の安定性</h2>
           <div class="p-advantage-stability__items">
@@ -126,7 +126,7 @@
             </section>
           </div>
         </div>
-        <figure class="p-advantage-stability__image">
+        <figure class="p-advantage-stability__image js-pro-img">
           <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/advantage/advantage-stability.webp" alt="">
         </figure>
       </div>

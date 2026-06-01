@@ -3,7 +3,7 @@
   <section class="p-movie-mv">
     <div class="p-movie-mv__content">
       <p class="p-movie-mv__en js-page-main-title">Movie</p>
-      <h1 class="p-movie-mv__title">動画ギャラリー</h1>
+      <h1 class="p-movie-mv__title js-opacity-word">動画ギャラリー</h1>
     </div>
   </section>
 

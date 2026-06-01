@@ -228,6 +228,30 @@ opacityWords.forEach((opacityWord) => {
     }
   );
 });
+
+let proImages = document.querySelectorAll('.js-pro-img');
+
+proImages.forEach((proImage) => {
+  gsap.fromTo(
+    proImage,
+    {
+      opacity: 0,
+      filter: "blur(20px)",
+    },
+    {
+      opacity: 1,
+      filter: "blur(0px)",
+      duration: 1,
+      ease: 'power2.inOut',
+      scrollTrigger: {
+        trigger: proImage,
+        start: 'top 90%',
+      },
+    }
+  );
+});
+
+
 let shiningTitles = document.querySelectorAll('.js-shining-title');
 
 shiningTitles.forEach((shiningTitle) => {
@@ -328,19 +352,8 @@ proWords.forEach((proWord) => {
     }
   );
 });
-gsap.fromTo(".js-pro-img", {
-  opacity: 0,
-  filter: "blur(200px)",
-}, {
-  opacity: 1,
-  filter: "blur(0px)",
-  duration: 1.5,
-  ease: 'power3.out',
-  scrollTrigger: {
-    trigger: ".js-pro-img",
-    start: 'top 90%',
-  },
-});
+
+
 
 let parallaxImgs = document.querySelectorAll('.js-parallax');
 

@@ -6,14 +6,14 @@
       <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/main.jpg" alt="">
     </picture>
     <div class="p-crosstalk-event-mv__content">
-      <p class="p-crosstalk-event-mv__label">クロストーク</p>
-      <div class="p-crosstalk-event-mv__detail">
+      <p class="p-crosstalk-event-mv__label js-pro-img">クロストーク</p>
+      <div class="p-crosstalk-event-mv__detail js-pro-img">
         <h1 class="p-crosstalk-event-mv__title">イノベーションセレモニー対談</h1>
         <p class="p-crosstalk-event-mv__lead">テレックス関西が大切にする「賞賛し合う文化」の根源</p>
       </div>
     </div>
   </section>
-  <section class="p-crosstalk-event-intro">
+  <section class="p-crosstalk-event-intro js-opacity-word">
     <div class="l-inner">
       <h2 class="p-crosstalk-event-intro__title">
         <span>一人ひとりを会社全体で育てる</span>
@@ -25,7 +25,7 @@
   <section class="p-crosstalk-event-speakers">
     <div class="l-inner">
       <div class="p-crosstalk-event-speakers__list">
-        <article class="p-crosstalk-event-speakers__item">
+        <article class="p-crosstalk-event-speakers__item js-opacity-word">
           <figure class="p-crosstalk-event-speakers__image">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/person-seki.png" alt="関 陽平">
           </figure>
@@ -37,7 +37,7 @@
             </p>
           </div>
         </article>
-        <article class="p-crosstalk-event-speakers__item">
+        <article class="p-crosstalk-event-speakers__item js-opacity-word">
           <figure class="p-crosstalk-event-speakers__image">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/person-nishimura.png" alt="西村 海飛">
           </figure>
@@ -55,7 +55,7 @@
   <section class="p-crosstalk-event-talk">
     <div class="l-inner">
       <div class="p-crosstalk-event-talk__head">
-        <div class="p-crosstalk-event-talk__body">
+        <div class="p-crosstalk-event-talk__body js-opacity-word">
           <h2 class="p-crosstalk-event-section-title">
             <span>1年間の集大成</span>
             <span>イノベーションセレモニーとは何か？</span>
@@ -78,7 +78,7 @@
             </div>
           </div>
         </div>
-        <figure class="p-crosstalk-event-section-image">
+        <figure class="p-crosstalk-event-section-image js-pro-img">
           <picture>
             <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/ceremony-talk01.webp" type="image/webp">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/ceremony-talk01.jpg" alt="">
@@ -86,14 +86,14 @@
         </figure>
       </div>
       <div class="p-crosstalk-event-dialogs p-crosstalk-event-dialogs--wide">
-        <div class="p-crosstalk-event-dialog">
+        <div class="p-crosstalk-event-dialog js-opacity-word">
           <div class="p-crosstalk-event-dialog__speaker">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/icon-nishimura.png" alt="">
             <span>西村</span>
           </div>
           <p class="p-crosstalk-event-dialog__text">本当にそうですよね。僕は今回、セレモニーの1週間前くらいには「やりきった、あとは結果を待つだけだ」という心境でした。賞が獲れるかどうか以上に、この1年間の自分の行動を信じて、自分自身を褒めてあげたいなと思って当日を迎えました。</p>
         </div>
-        <div class="p-crosstalk-event-dialog">
+        <div class="p-crosstalk-event-dialog js-opacity-word">
           <div class="p-crosstalk-event-dialog__speaker">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/icon-seki.png" alt="">
             <span>関</span>
@@ -106,24 +106,24 @@
   <section class="p-crosstalk-event-award">
     <div class="l-inner">
       <div class="p-crosstalk-event-award__head">
-        <figure class="p-crosstalk-event-section-image">
+        <figure class="p-crosstalk-event-section-image js-pro-img">
           <picture>
             <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/ceremony-talk02.webp" type="image/webp">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/ceremony-talk02.jpg" alt="">
           </picture>
         </figure>
         <div class="p-crosstalk-event-award__body">
-          <h2 class="p-crosstalk-event-section-title">日本一の実績と手探りで掴んだ<br class="u-mobile">「3桁」の成功</h2>
-          <p class="p-crosstalk-event-question">ー今回、関さんは社長賞、西村さんはテレックス関西賞を受賞されました。それぞれの受賞理由となった具体的な取り組みについて教えてください。</p>
+          <h2 class="p-crosstalk-event-section-title js-opacity-word">日本一の実績と手探りで掴んだ<br class="u-mobile">「3桁」の成功</h2>
+          <p class="p-crosstalk-event-question js-opacity-word">ー今回、関さんは社長賞、西村さんはテレックス関西賞を受賞されました。それぞれの受賞理由となった具体的な取り組みについて教えてください。</p>
           <div class="p-crosstalk-event-dialogs p-crosstalk-event-dialogs--side">
-            <div class="p-crosstalk-event-dialog">
+            <div class="p-crosstalk-event-dialog js-opacity-word">
               <div class="p-crosstalk-event-dialog__speaker">
                 <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/icon-nishimura.png" alt="">
                 <span>西村</span>
               </div>
               <p class="p-crosstalk-event-dialog__text">僕は、ドコモの大型イベントで「3桁（100台超え）」という、キャリア内でも初となる実績を出したことが大きかったと思います。最初は部長や次長から「次は3桁よ」と期待を込めて言われて。不安よりも先に「やります！」と即答して、キャリアの担当者さんにもすぐに伝えました。</p>
             </div>
-            <div class="p-crosstalk-event-dialog">
+            <div class="p-crosstalk-event-dialog js-opacity-word">
               <div class="p-crosstalk-event-dialog__speaker">
                 <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/icon-seki.png" alt="">
                 <span>関</span>
@@ -134,42 +134,42 @@
         </div>
       </div>
       <div class="p-crosstalk-event-dialogs p-crosstalk-event-dialogs--wide">
-        <div class="p-crosstalk-event-dialog">
+        <div class="p-crosstalk-event-dialog js-opacity-word">
           <div class="p-crosstalk-event-dialog__speaker">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/icon-nishimura.png" alt="">
             <span>西村</span>
           </div>
           <p class="p-crosstalk-event-dialog__text">ありがとうございます！でも、実は初日は全然台数が出なくて失敗してしまったんです……。</p>
         </div>
-        <div class="p-crosstalk-event-dialog">
+        <div class="p-crosstalk-event-dialog js-opacity-word">
           <div class="p-crosstalk-event-dialog__speaker">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/icon-seki.png" alt="">
             <span>関</span>
           </div>
           <p class="p-crosstalk-event-dialog__text">そうだっけ？（笑）</p>
         </div>
-        <div class="p-crosstalk-event-dialog">
+        <div class="p-crosstalk-event-dialog js-opacity-word">
           <div class="p-crosstalk-event-dialog__speaker">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/icon-nishimura.png" alt="">
             <span>西村</span>
           </div>
           <p class="p-crosstalk-event-dialog__text">そうなんですよ（笑）。自分の力だけで何とかしようとして空回りしてしまって。そこから上司の皆さんにアドバイスをもらって、拠点を超えて協力を仰ぐように動いたら、周りが「西村君のためなら」と動いてくれた。戦略というより、周囲との関わり方を変えたことで掴んだ結果でした。</p>
         </div>
-        <div class="p-crosstalk-event-dialog">
+        <div class="p-crosstalk-event-dialog js-opacity-word">
           <div class="p-crosstalk-event-dialog__speaker">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/icon-seki.png" alt="">
             <span>関</span>
           </div>
           <p class="p-crosstalk-event-dialog__text">僕の社長賞については、イベント事業部（レックス）の「自走化」と「内製化」を評価していただきました。自分たちでイベントを企画し、運営し、人を育てる。特にニトリモールでのオープニングイベントで全国1位の実績を出せたことや、それを実現できる組織を作れたことが理由だと社長から仰っていただきました。</p>
         </div>
-        <div class="p-crosstalk-event-dialog">
+        <div class="p-crosstalk-event-dialog js-opacity-word">
           <div class="p-crosstalk-event-dialog__speaker">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/icon-nishimura.png" alt="">
             <span>西村</span>
           </div>
           <p class="p-crosstalk-event-dialog__text">関さんのチームは、本当に皆さん活気がありますよね。</p>
         </div>
-        <div class="p-crosstalk-event-dialog">
+        <div class="p-crosstalk-event-dialog js-opacity-word">
           <div class="p-crosstalk-event-dialog__speaker">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/icon-seki.png" alt="">
             <span>関</span>
@@ -363,7 +363,7 @@
       <?php get_template_part('includes/entry'); ?>
     </div>
   </section>
-  
+
 
 </main>
 <?php get_footer(); ?>

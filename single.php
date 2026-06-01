@@ -82,12 +82,12 @@ $story_sections = array(
   <section class="p-people-single-mv">
     <div class="l-inner">
       <div class="p-people-single-mv__content">
-        <figure class="p-people-single-mv__image">
+        <figure class="p-people-single-mv__image js-pro-img">
           <img src="<?php echo esc_url(telex_people_single_image_url('people_single_mv_image', '/images/people-single/yamada-saki-mv-bg.webp')); ?>" alt="">
         </figure>
         <div class="p-people-single-mv__body">
-          <p class="p-people-single-mv__label"><?php echo esc_html($mv_label); ?></p>
-          <h1 class="p-people-single-mv__title"><?php telex_people_single_render_lines($mv_title); ?></h1>
+          <p class="p-people-single-mv__label js-opacity-word"><?php echo esc_html($mv_label); ?></p>
+          <h1 class="p-people-single-mv__title js-opacity-word"><?php telex_people_single_render_lines($mv_title); ?></h1>
         </div>
       </div>
     </div>
@@ -96,10 +96,10 @@ $story_sections = array(
   <section class="p-people-single-profile">
     <div class="l-inner">
       <div class="p-people-single-profile__content">
-        <figure class="p-people-single-profile__image">
+        <figure class="p-people-single-profile__image js-pro-img">
           <img src="<?php echo esc_url(telex_people_single_image_url('people_single_profile_image', '/images/people-single/yamada-saki-profile.webp')); ?>" alt="<?php echo esc_attr($profile_name); ?>">
         </figure>
-        <div class="p-people-single-profile__body">
+        <div class="p-people-single-profile__body js-opacity-word">
           <h2 class="p-people-single-profile__name"><?php echo esc_html($profile_name); ?></h2>
           <p class="p-people-single-profile__meta"><?php telex_people_single_render_lines($profile_meta); ?></p>
           <div class="p-people-single-profile__text">
@@ -116,25 +116,25 @@ $story_sections = array(
         <?php foreach ($story_sections as $section) : ?>
           <article class="p-people-single-story__row<?php echo $section['reverse'] ? ' p-people-single-story__row--reverse' : ''; ?>">
             <div class="p-people-single-story__body">
-              <h2 class="p-people-single-story__title"><?php telex_people_single_render_lines($section['title']); ?></h2>
-              <div class="p-people-single-story__text">
+              <h2 class="p-people-single-story__title js-opacity-word"><?php telex_people_single_render_lines($section['title']); ?></h2>
+              <div class="p-people-single-story__text js-opacity-word">
                 <?php echo wp_kses_post(wpautop($section['text'])); ?>
               </div>
             </div>
-            <figure class="p-people-single-story__image">
+            <figure class="p-people-single-story__image js-pro-img">
               <img src="<?php echo esc_url($section['image']); ?>" alt="">
             </figure>
           </article>
         <?php endforeach; ?>
         <section class="p-people-single-story__future">
-          <h2 class="p-people-single-story__title"><?php echo esc_html(telex_people_single_field('people_single_future_title', '信頼の積み重ねが、新しい自分の可能性を広げていく')); ?></h2>
-          <div class="p-people-single-story__text">
+          <h2 class="p-people-single-story__title js-opacity-word"><?php echo esc_html(telex_people_single_field('people_single_future_title', '信頼の積み重ねが、新しい自分の可能性を広げていく')); ?></h2>
+          <div class="p-people-single-story__text js-opacity-word">
             <?php echo wp_kses_post(wpautop(telex_people_single_field('people_single_future_text', 'これからは店舗の責任者として、今まで以上にスタッフ一人ひとりがやりがいを持って働ける店舗を作っていきたいです。指示待ちではなく、自分で考えて行動できるチーム。それが結果として会社の利益にも繋がり、みんなの達成感に繋がっていく。そんな好循環を生み出すことが目標です。' . "\n" . '私個人としては、上司からも部下からも信頼される人間であり続けたいと思っています。「山田に任せておけば、あのお店は大丈夫だ。」そう思っていただける信頼を一つひとつ積み上げていくこと。その積み重ねがまた新しい領域への挑戦権を与えてくれ、入社時に期待した自分の可能性をさらに広げてくれると信じています。'))); ?>
           </div>
         </section>
         <section class="p-people-single-story__message">
-          <h2 class="p-people-single-story__message-title"><?php echo esc_html(telex_people_single_field('people_single_message_title', '就活生へのメッセージ')); ?></h2>
-          <div class="p-people-single-story__message-text">
+          <h2 class="p-people-single-story__message-title js-opacity-word"><?php echo esc_html(telex_people_single_field('people_single_message_title', '就活生へのメッセージ')); ?></h2>
+          <div class="p-people-single-story__message-text js-opacity-word">
             <?php echo wp_kses_post(wpautop(telex_people_single_field('people_single_message_text', '就職活動をしていると、どの道を選べば正解なのかと悩むことも多いと思います。でも、私はこう考えています。' . "\n" . '「選んだ道を、後から自分の力で正解にしていくことが何より大切だ」と。この会社に入れば誰かが変えてくれる、ではなく、この会社に入ったからこそ自分が変わるんだ。そんな主体的な気持ちがあれば、どんな困難も成長の糧にしていけます。テレックス関西は、そんなあなたの主体性と可能性を、誰よりも信じて伴走してくれる会社です。自分を飾ることなく、ありのままのあなたで飛び込んできてください。一緒に働ける日を楽しみにしています。'))); ?>
           </div>
         </section>
@@ -145,7 +145,7 @@ $story_sections = array(
   <section class="p-people-single-nav">
     <div class="l-inner">
       <div class="p-people-single-nav__inner">
-        <a class="p-people-single-nav__link" href="<?php echo esc_url(home_url('/people/')); ?>">
+        <a class="p-people-single-nav__link js-opacity-word" href="<?php echo esc_url(home_url('/people/')); ?>">
           <span class="p-people-single-nav__icon" aria-hidden="true">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/people-single/icon-arrow.svg" alt="">
           </span>

@@ -3,14 +3,14 @@
   <section class="p-mobile-business-mv">
     <div class="p-mobile-business-mv__content">
       <p class="p-mobile-business-mv__en js-page-main-title">Event business</p>
-      <h1 class="p-mobile-business-mv__title">イベント事業部</h1>
+      <h1 class="p-mobile-business-mv__title js-opacity-word">イベント事業部</h1>
     </div>
   </section>
   <section class="p-mobile-business-intro">
     <div class="l-inner">
-      <h2 class="p-mobile-business-intro__title">イベント事業部の仕事紹介</h2>
+      <h2 class="p-mobile-business-intro__title js-opacity-word">イベント事業部の仕事紹介</h2>
       <div class="p-mobile-business-intro__content p-mobile-business-intro__content--work">
-        <div class="p-mobile-business-intro__body">
+        <div class="p-mobile-business-intro__body js-opacity-word">
           <h3 class="p-mobile-business-intro__heading">仕事内容</h3>
           <div class="p-mobile-business-intro__text">
             <p>イベント事業部（REX）は、ドコモ・auを中心とした通信キャリアの販促イベントを企画・運営するプロフェッショナル集団です。単なる「販売」ではなく、来場導線の設計から声掛け、クロージングまでを一気通貫で構築する「成果設計型モデル」を強みとしています。</p>
@@ -22,15 +22,15 @@
             </ul>
           </div>
         </div>
-        <figure class="p-mobile-business-intro__image">
+        <figure class="p-mobile-business-intro__image js-pro-img">
           <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/event_business/work-intro.webp" alt="">
         </figure>
       </div>
       <div class="p-mobile-business-intro__content p-mobile-business-intro__content--reverse">
-        <figure class="p-mobile-business-intro__image">
+        <figure class="p-mobile-business-intro__image js-pro-img">
           <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/event_business/reward.webp" alt="">
         </figure>
-        <div class="p-mobile-business-intro__body">
+        <div class="p-mobile-business-intro__body js-opacity-word">
           <h3 class="p-mobile-business-intro__heading">魅力・やりがい</h3>
           <div class="p-mobile-business-intro__text">
             <ul>
@@ -42,7 +42,7 @@
         </div>
       </div>
       <div class="p-mobile-business-intro__content">
-        <div class="p-mobile-business-intro__body">
+        <div class="p-mobile-business-intro__body js-opacity-word">
           <h3 class="p-mobile-business-intro__heading">身に付くスキル・マインド</h3>
           <div class="p-mobile-business-intro__text">
             <ul>
@@ -52,7 +52,7 @@
             </ul>
           </div>
         </div>
-        <figure class="p-mobile-business-intro__image">
+        <figure class="p-mobile-business-intro__image js-pro-img">
           <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/event_business/skill-photo.webp" alt="">
         </figure>
       </div>
@@ -60,54 +60,54 @@
   </section>
   <section class="p-mobile-business-flow">
     <div class="l-inner">
-      <h2 class="p-mobile-business-flow__title">1日の流れ</h2>
+      <h2 class="p-mobile-business-flow__title js-opacity-word">1日の流れ</h2>
       <ol class="p-mobile-business-flow__list">
-        <li class="p-mobile-business-flow__item">
+        <li class="p-mobile-business-flow__item js-opacity-word">
           <figure class="p-mobile-business-flow__icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/mobile_business/flow-icon-morning.webp" alt=""></figure>
           <time class="p-mobile-business-flow__time" datetime="09:00">9:00</time>
           <div class="p-mobile-business-flow__body"><p>・会場挨拶、入館手続き</p><p>・ブース設営（机・販促物・導線確認）</p><p>・在庫確認、端末・備品チェック</p><p>・朝礼（目標・役割分担・KPI共有）</p></div>
         </li>
-        <li class="p-mobile-business-flow__item">
+        <li class="p-mobile-business-flow__item js-opacity-word">
           <figure class="p-mobile-business-flow__icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/mobile_business/flow-icon-morning.webp" alt=""></figure>
           <time class="p-mobile-business-flow__time" datetime="10:00">10:00</time>
           <div class="p-mobile-business-flow__body"><p>・積極的な声掛けで接点最大化</p><p>・アンケート取得を軸に接客</p><p>・お客様の興味/関心に合わせたご案内</p></div>
         </li>
-        <li class="p-mobile-business-flow__item">
+        <li class="p-mobile-business-flow__item js-opacity-word">
           <figure class="p-mobile-business-flow__icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/mobile_business/flow-icon-morning.webp" alt=""></figure>
           <time class="p-mobile-business-flow__time" datetime="11:00">11:00</time>
           <div class="p-mobile-business-flow__body"><p>アンケート内容をもとにしたご提案対応</p><p>・料金見直しやサービス活用方法のご案内</p><p>・料金見直し/メリット訴求</p><p>・ご興味の高いお客様にはその場で最適なご提案</p></div>
         </li>
-        <li class="p-mobile-business-flow__item">
+        <li class="p-mobile-business-flow__item js-opacity-word">
           <figure class="p-mobile-business-flow__icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/mobile_business/flow-icon-day.webp" alt=""></figure>
           <time class="p-mobile-business-flow__time" datetime="12:00">12:00</time>
           <div class="p-mobile-business-flow__body"><p>昼休憩（交代制）</p><p>・スタッフ同士で調整しながら休憩</p></div>
         </li>
-        <li class="p-mobile-business-flow__item">
+        <li class="p-mobile-business-flow__item js-opacity-word">
           <figure class="p-mobile-business-flow__icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/mobile_business/flow-icon-day.webp" alt=""></figure>
           <time class="p-mobile-business-flow__time" datetime="13:00">13:00</time>
           <div class="p-mobile-business-flow__body"><p>中間共有・ピーク前準備</p><p>・アンケート状況確認／有効トーク共有</p><p>・役割/立ち位置の最適化</p><p>・ピークに向けた動きの統一</p></div>
         </li>
-        <li class="p-mobile-business-flow__item">
+        <li class="p-mobile-business-flow__item js-opacity-word">
           <figure class="p-mobile-business-flow__icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/mobile_business/flow-icon-day.webp" alt=""></figure>
           <time class="p-mobile-business-flow__time" datetime="14:00">14:00</time>
           <div class="p-mobile-business-flow__body"><p>ピーク対応（最重要時間帯）</p><p>・声掛け数最大化</p><p>・アンケート回収スピード重視</p><p>・お客様の状況に応じたスムーズなご案内</p></div>
         </li>
-        <li class="p-mobile-business-flow__item">
+        <li class="p-mobile-business-flow__item js-opacity-word">
           <figure class="p-mobile-business-flow__icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/mobile_business/flow-icon-day.webp" alt=""></figure>
           <time class="p-mobile-business-flow__time" datetime="15:00">15:00</time>
           <div class="p-mobile-business-flow__body"><p>レイアウト・導線見直し（改善）</p><p>・ピーク時の課題を踏まえて再設計</p><p>・立ち位置/導線の最適化</p></div>
         </li>
-        <li class="p-mobile-business-flow__item">
+        <li class="p-mobile-business-flow__item js-opacity-word">
           <figure class="p-mobile-business-flow__icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/mobile_business/flow-icon-day.webp" alt=""></figure>
           <time class="p-mobile-business-flow__time" datetime="16:00">16:00</time>
           <div class="p-mobile-business-flow__body"><p>改善後の運用・再アプローチ</p><p>・ご案内できていないお客様へのフォロー対応</p><p>・声掛け精度の向上</p></div>
         </li>
-        <li class="p-mobile-business-flow__item">
+        <li class="p-mobile-business-flow__item js-opacity-word">
           <figure class="p-mobile-business-flow__icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/mobile_business/flow-icon-day.webp" alt=""></figure>
           <time class="p-mobile-business-flow__time" datetime="17:00">17:00</time>
           <div class="p-mobile-business-flow__body"><p>追い込み・締め作業</p><p>・ご検討中のお客様へのフォロー対応</p><p>・最後までアンケート取得/声掛け</p><p>・日報入力/実績精査</p></div>
         </li>
-        <li class="p-mobile-business-flow__item">
+        <li class="p-mobile-business-flow__item js-opacity-word">
           <figure class="p-mobile-business-flow__icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/mobile_business/flow-icon-night.webp" alt=""></figure>
           <time class="p-mobile-business-flow__time" datetime="18:00">18:00</time>
           <div class="p-mobile-business-flow__body"><p>撤収作業・退勤</p><p>・イベントブースの撤収</p><p>・会場挨拶</p></div>
@@ -117,24 +117,24 @@
   </section>
   <section class="p-mobile-business-other">
     <div class="l-inner">
-      <h2 class="p-mobile-business-other__title">他の仕事内容</h2>
+      <h2 class="p-mobile-business-other__title js-opacity-word">他の仕事内容</h2>
       <div class="p-mobile-business-other__list">
         <article class="p-mobile-business-other__card">
-          <figure class="p-mobile-business-other__image">
+          <figure class="p-mobile-business-other__image js-pro-img">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/corporate_sales/other-mobile-business.webp" alt="">
           </figure>
-          <h3 class="p-mobile-business-other__heading">モバイル事業部</h3>
-          <a class="p-mobile-business-other__link" href="<?php echo esc_url(home_url('/mobile_business/')); ?>">
+          <h3 class="p-mobile-business-other__heading js-opacity-word">モバイル事業部</h3>
+          <a class="p-mobile-business-other__link js-opacity-word" href="<?php echo esc_url(home_url('/mobile_business/')); ?>">
             <span class="p-mobile-business-other__arrow">→</span>
             <span>仕事を見る</span>
           </a>
         </article>
         <article class="p-mobile-business-other__card">
-          <figure class="p-mobile-business-other__image">
+          <figure class="p-mobile-business-other__image js-pro-img">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/event_business/other-corporate-sales.webp" alt="">
           </figure>
-          <h3 class="p-mobile-business-other__heading">法人営業</h3>
-          <a class="p-mobile-business-otherbody_link" href="<?php echo esc_url(home_url('/corporate_sales/')); ?>">
+          <h3 class="p-mobile-business-other__heading js-opacity-word">法人営業</h3>
+          <a class="p-mobile-business-other__link js-opacity-word" href="<?php echo esc_url(home_url('/corporate_sales/')); ?>">
             <span class="p-mobile-business-other__arrow">→</span>
             <span>仕事を見る</span>
           </a>

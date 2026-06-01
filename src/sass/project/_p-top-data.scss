@@ -66,6 +66,8 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: rem(24);
+  padding-left: 0;
+  list-style: none;
   margin-top: rem(64);
 
   @include mq(sm) {
@@ -109,29 +111,6 @@
   }
 }
 
-.p-top-data-card__icon {
-  object-fit: contain;
-  width: rem(100);
-  height: rem(100);
-
-  @include mq(md) {
-    width: rem(130);
-    height: rem(130);
-
-  }
-}
-
-.p-top-data-card__icon--team,
-.p-top-data-card__icon--family {
-  width: rem(120);
-  height: rem(120);
-
-  @include mq(md) {
-    width: rem(166);
-    height: rem(166);
-
-  }
-}
 
 .p-top-data-card__value {
   font-weight: 700;
@@ -289,4 +268,10 @@
   font-size: rem(11);
   font-weight: 400;
   line-height: 1;
+}
+.p-top-data-card__icon img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
 }

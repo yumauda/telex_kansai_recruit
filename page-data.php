@@ -22,97 +22,120 @@
   <section class="p-data-overview" id="anc01">
     <div class="l-inner">
       <h2 class="p-data-overview__title">数字データ</h2>
-      <div class="p-data-overview__cards">
-        <article class="p-data-overview-card js-opacity-word">
+      <ul class="p-data-overview__cards">
+        <li class="p-data-overview-card js-opacity-word">
           <h3 class="p-data-overview-card__title">設立年</h3>
-          <img class="p-data-overview-card__icon p-data-overview-card__icon--building" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-building.webp" alt="" width="114" height="114" loading="lazy" decoding="async">
+          <div class="p-data-overview-card__icon">
+            <img class="p-data-overview-card__icon p-data-overview-card__icon--building" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-1.webp" alt="設立年" width="114" height="114" loading="lazy" decoding="async">
+          </div>
           <p class="p-data-overview-card__value"><span class="p-data-overview-card__number">1995</span><span class="p-data-overview-card__unit">年</span></p>
-        </article>
-        <article class="p-data-overview-card js-opacity-word">
+        </li>
+        <li class="p-data-overview-card js-opacity-word">
           <h3 class="p-data-overview-card__title">売上高</h3>
-          <img class="p-data-overview-card__icon p-data-overview-card__icon--sales" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-sales.webp" alt="" width="133" height="117" loading="lazy" decoding="async">
+          <div class="p-data-overview-card__icon">
+            <img class="p-data-overview-card__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-2.webp" alt="売上高" width="133" height="117" loading="lazy" decoding="async">
+          </div>
           <p class="p-data-overview-card__value"><span class="p-data-overview-card__number">19億5,000</span><span class="p-data-overview-card__unit">万円</span></p>
           <p class="p-data-overview-card__note">(2023年度実績)</p>
-        </article>
-        <article class="p-data-overview-card js-opacity-word">
+        </li>
+        <li class="p-data-overview-card js-opacity-word">
           <h3 class="p-data-overview-card__title">従業員数</h3>
-          <img class="p-data-overview-card__icon p-data-overview-card__icon--employee" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-employee.webp" alt="" width="174" height="130" loading="lazy" decoding="async">
+          <div class="p-data-overview-card__icon">
+            <img class="p-data-overview-card__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-3.webp" alt="従業員数" width="174" height="130" loading="lazy" decoding="async">
+          </div>
           <p class="p-data-overview-card__value"><span class="p-data-overview-card__number">111</span><span class="p-data-overview-card__unit">名</span></p>
           <p class="p-data-overview-card__note">(2025年11月時点)</p>
-        </article>
-        <article class="p-data-overview-card js-opacity-word">
+        </li>
+        <li class="p-data-overview-card js-opacity-word">
           <h3 class="p-data-overview-card__title">男女比</h3>
-          <div class="p-data-overview-card__gender" aria-hidden="true">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-man.webp" alt="" width="113" height="142" loading="lazy" decoding="async">
-            <span class="p-data-overview-card__dots"></span>
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-woman.webp" alt="" width="116" height="142" loading="lazy" decoding="async">
+          <div class="p-data-overview-card__icon">
+            <img class="p-data-overview-card__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-4.webp" alt="男女比" width="113" height="142" loading="lazy" decoding="async">
           </div>
           <p class="p-data-overview-card__value"><span class="p-data-overview-card__number">6 : 4</span></p>
-        </article>
-        <article class="p-data-overview-card js-opacity-word">
+        </li>
+        <li class="p-data-overview-card js-opacity-word">
           <h3 class="p-data-overview-card__title">女性管理職割合</h3>
-          <div class="p-data-overview-card__manager" aria-hidden="true">
-            <img class="p-data-overview-card__manager-person" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-manager.webp" alt="" width="113" height="142" loading="lazy" decoding="async">
-            <img class="p-data-overview-card__manager-medal" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-medal.webp" alt="" width="47" height="47" loading="lazy" decoding="async">
+          <div class="p-data-overview-card__icon">
+            <img class="p-data-overview-card__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-5.webp" alt="女性管理職割合" width="113" height="142" loading="lazy" decoding="async">
           </div>
           <p class="p-data-overview-card__value"><span class="p-data-overview-card__number">33</span><span class="p-data-overview-card__unit">%</span></p>
-        </article>
-        <article class="p-data-overview-card js-opacity-word">
+        </li>
+        <li class="p-data-overview-card js-opacity-word">
           <h3 class="p-data-overview-card__title">育休取得率</h3>
-          <img class="p-data-overview-card__icon p-data-overview-card__icon--family" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-family.webp" alt="" width="167" height="129" loading="lazy" decoding="async">
+          <div class="p-data-overview-card__icon">
+            <img class="p-data-overview-card__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-6.webp" alt="育休取得率" width="167" height="129" loading="lazy" decoding="async">
+          </div>
           <p class="p-data-overview-card__value"><span class="p-data-overview-card__number">100</span><span class="p-data-overview-card__unit">%</span></p>
-        </article>
-        <article class="p-data-overview-card js-opacity-word">
+        </li>
+        <li class="p-data-overview-card js-opacity-word">
           <h3 class="p-data-overview-card__title">社員平均年齢</h3>
-          <img class="p-data-overview-card__icon p-data-overview-card__icon--team" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-team.webp" alt="" width="153" height="130" loading="lazy" decoding="async">
+          <div class="p-data-overview-card__icon">
+            <img class="p-data-overview-card__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-7.webp" alt="社員平均年齢" width="153" height="130" loading="lazy" decoding="async">
+          </div>
           <p class="p-data-overview-card__value"><span class="p-data-overview-card__number">30</span><span class="p-data-overview-card__unit">歳</span></p>
-        </article>
-        <article class="p-data-overview-card js-opacity-word">
+        </li>
+        <li class="p-data-overview-card js-opacity-word">
           <h3 class="p-data-overview-card__title">最年少役職者年齢</h3>
-          <img class="p-data-overview-card__icon p-data-overview-card__icon--career" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-career.webp" alt="" width="137" height="120" loading="lazy" decoding="async">
+          <div class="p-data-overview-card__icon">
+            <img class="p-data-overview-card__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-8.webp" alt="最年少役職者年齢" width="137" height="120" loading="lazy" decoding="async">
+          </div>
           <p class="p-data-overview-card__value"><span class="p-data-overview-card__number">24</span><span class="p-data-overview-card__unit">歳</span></p>
-        </article>
-        <article class="p-data-overview-card js-opacity-word">
+        </li>
+        <li class="p-data-overview-card js-opacity-word">
           <h3 class="p-data-overview-card__title">月平均所定外<br>労働時間</h3>
-          <img class="p-data-overview-card__icon p-data-overview-card__icon--time" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-time.webp" alt="" width="135" height="135" loading="lazy" decoding="async">
+          <div class="p-data-overview-card__icon">
+            <img class="p-data-overview-card__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-9.webp" alt="月平均所定外労働時間" width="135" height="135" loading="lazy" decoding="async">
+          </div>
           <p class="p-data-overview-card__value"><span class="p-data-overview-card__number">11</span><span class="p-data-overview-card__unit">時間</span></p>
           <p class="p-data-overview-card__note">(前年度実績)</p>
-        </article>
-        <article class="p-data-overview-card js-opacity-word">
+        </li>
+        <li class="p-data-overview-card js-opacity-word">
           <h3 class="p-data-overview-card__title">平均有給休暇<br>取得日数</h3>
-          <img class="p-data-overview-card__icon p-data-overview-card__icon--calendar" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-calendar.webp" alt="" width="135" height="135" loading="lazy" decoding="async">
+          <div class="p-data-overview-card__icon">
+            <img class="p-data-overview-card__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-10.webp" alt="平均有給休暇取得日数" width="135" height="135" loading="lazy" decoding="async">
+          </div>
           <p class="p-data-overview-card__value"><span class="p-data-overview-card__number">10</span><span class="p-data-overview-card__unit">日</span></p>
           <p class="p-data-overview-card__note">(前年度実績)</p>
-        </article>
-        <article class="p-data-overview-card js-opacity-word">
+        </li>
+        <li class="p-data-overview-card js-opacity-word">
           <h3 class="p-data-overview-card__title">有給取得率</h3>
-          <img class="p-data-overview-card__icon p-data-overview-card__icon--pie" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-pie.webp" alt="" width="133" height="133" loading="lazy" decoding="async">
+          <div class="p-data-overview-card__icon">
+            <img class="p-data-overview-card__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-11.webp" alt="有給取得率" width="133" height="133" loading="lazy" decoding="async">
+          </div>
           <p class="p-data-overview-card__value"><span class="p-data-overview-card__number">92</span><span class="p-data-overview-card__unit">%</span></p>
-        </article>
-        <article class="p-data-overview-card js-opacity-word">
+        </li>
+        <li class="p-data-overview-card js-opacity-word">
           <h3 class="p-data-overview-card__title">eNPS</h3>
-          <img class="p-data-overview-card__icon p-data-overview-card__icon--trophy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-trophy.webp" alt="" width="99" height="148" loading="lazy" decoding="async">
+          <div class="p-data-overview-card__icon">
+            <img class="p-data-overview-card__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-12.webp" alt="eNPS" width="99" height="148" loading="lazy" decoding="async">
+          </div>
           <p class="p-data-overview-card__value p-data-overview-card__value--ranking"><span class="p-data-overview-card__unit">全国189社中</span><span class="p-data-overview-card__number">13</span><span class="p-data-overview-card__unit">位</span></p>
           <p class="p-data-overview-card__note">※従業員のエンゲージメントを可視化する指標</p>
-        </article>
-        <article class="p-data-overview-card js-opacity-word">
+        </li>
+        <li class="p-data-overview-card js-opacity-word">
           <h3 class="p-data-overview-card__title">新卒離職率</h3>
-          <img class="p-data-overview-card__icon p-data-overview-card__icon--exit" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-exit.webp" alt="" width="167" height="126" loading="lazy" decoding="async">
+          <div class="p-data-overview-card__icon">
+            <img class="p-data-overview-card__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-13.webp" alt="新卒離職率" width="167" height="126" loading="lazy" decoding="async">
+          </div>
           <p class="p-data-overview-card__value"><span class="p-data-overview-card__number">6.3</span><span class="p-data-overview-card__unit">%</span></p>
-        </article>
-        <article class="p-data-overview-card js-opacity-word">
+        </li>
+        <li class="p-data-overview-card js-opacity-word">
           <h3 class="p-data-overview-card__title">リフレッシュ休暇</h3>
-          <img class="p-data-overview-card__icon p-data-overview-card__icon--vacation" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-vacation.webp" alt="" width="116" height="116" loading="lazy" decoding="async">
+          <div class="p-data-overview-card__icon">
+            <img class="p-data-overview-card__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-14.webp" alt="リフレッシュ休暇" width="116" height="116" loading="lazy" decoding="async">
+          </div>
           <p class="p-data-overview-card__value p-data-overview-card__value--vacation">
             <span class="p-data-overview-card__unit">年</span><span class="p-data-overview-card__number">1</span><span class="p-data-overview-card__unit">回</span><span class="p-data-overview-card__number">5</span><span class="p-data-overview-card__unit">連休以上取得可能</span>
           </p>
-        </article>
-        <article class="p-data-overview-card js-opacity-word">
+        </li>
+        <li class="p-data-overview-card js-opacity-word">
           <h3 class="p-data-overview-card__title">社内イベント回数</h3>
-          <img class="p-data-overview-card__icon p-data-overview-card__icon--event" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-event.webp" alt="" width="99" height="150" loading="lazy" decoding="async">
+          <div class="p-data-overview-card__icon">
+            <img class="p-data-overview-card__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-15.webp" alt="社内イベント回数" width="99" height="150" loading="lazy" decoding="async">
+          </div>
           <p class="p-data-overview-card__value p-data-overview-card__value--event"><span class="p-data-overview-card__unit">年間</span><span class="p-data-overview-card__number">10</span><span class="p-data-overview-card__unit">回以上</span></p>
-        </article>
-      </div>
+        </li>
+      </ul>
     </div>
   </section>
   <section class="p-data-voice" id="anc02">

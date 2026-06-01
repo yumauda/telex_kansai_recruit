@@ -49,10 +49,8 @@
 
 .p-data-overview-card {
   display: grid;
-  grid-template-rows: rem(62) minmax(0, 1fr) rem(40) rem(24);
   align-items: center;
   justify-items: center;
-  height: clamp(rem(280), 76vw, rem(358));
   min-width: 0;
   padding: rem(18) rem(14) rem(14);
   color: $white;
@@ -62,8 +60,6 @@
   border-radius: rem(8);
 
   @include mq(md) {
-    grid-template-rows: rem(78) rem(150) rem(44) rem(34);
-    height: rem(358);
     padding: rem(22) rem(4) rem(16);
   }
 }
@@ -85,149 +81,13 @@
   }
 }
 
-.p-data-overview-card__icon {
-  grid-row: 2;
-  display: block;
-  height: auto;
-  object-fit: contain;
-  width: rem(110);
-  @include mq(md){
-    width: min(42%, rem(150));
-    
-  }
-}
-
-.p-data-overview-card__icon--building {
-  width: rem(96);
-  @include mq(md){
-    
-    width: min(36%, rem(114));
-  }
-}
-
-.p-data-overview-card__icon--sales {
-  width: rem(120);
-  @include mq(md){
-    
-    width: min(44%, rem(133));
-  }
-}
-
-.p-data-overview-card__icon--employee,
-.p-data-overview-card__icon--family,
-.p-data-overview-card__icon--exit {
-  width: rem(160);
-  @include mq(md){
-    width: min(54%, rem(174));
-  }
-}
-
-.p-data-overview-card__icon--team {
-  width: rem(140);
-  @include mq(md){
-    width: min(50%, rem(153));
-  }
-}
-
-.p-data-overview-card__icon--career,
-.p-data-overview-card__icon--time,
-.p-data-overview-card__icon--calendar,
-.p-data-overview-card__icon--pie {
-  width: rem(130);
-  @include mq(md){
-    width: min(43%, rem(137));
-  }
-}
-
-.p-data-overview-card__icon--trophy {
-  width: rem(90);
-  @include mq(md){
-    width: min(32%, rem(99));
-  }
-}
-
-.p-data-overview-card__icon--vacation {
-  width: rem(116);
-  @include mq(md){
-    width: min(38%, rem(116));
-  }
-}
-
-.p-data-overview-card__icon--event {
-  width: rem(90);
-  @include mq(md){
-    width: min(32%, rem(99));
-  }
-}
-
-.p-data-overview-card__gender {
-  grid-row: 2;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  width: 100%;
-}
-
-.p-data-overview-card__gender img {
-  width: rem(90);
-  height: auto;
-  @include mq(md){
-    width: min(34%, rem(116));
-    
-  }
-}
-
-.p-data-overview-card__dots {
-  display: grid;
-  grid-template-columns: repeat(2, rem(6));
-  gap: rem(5);
-  margin: rem(24) rem(8) 0;
-
-  @include mq(md) {
-    grid-template-columns: repeat(2, rem(8));
-    gap: rem(7);
-    margin: rem(30) rem(10) 0;
-  }
-}
-
-.p-data-overview-card__dots::before,
-.p-data-overview-card__dots::after {
-  display: block;
-  width: rem(6);
-  height: rem(6);
-  content: "";
-  background-color: $white;
-  border-radius: 50%;
-  box-shadow: 0 rem(11) 0 $white;
-
-  @include mq(md) {
-    width: rem(8);
-    height: rem(8);
-    box-shadow: 0 rem(15) 0 $white;
-  }
-}
-
-.p-data-overview-card__manager {
-  display: grid;
-  grid-row: 2;
-  width: min(43%, rem(143));
-}
-
-.p-data-overview-card__manager-person {
-  grid-area: 1 / 1;
-  display: block;
+.p-data-overview-card__icon img {
   width: 100%;
   height: auto;
+  object-fit: cover;
+  object-position: center center;
 }
 
-.p-data-overview-card__manager-medal {
-  grid-area: 1 / 1;
-  align-self: start;
-  justify-self: end;
-  width: min(38%, rem(47));
-  height: auto;
-  transform: translate(35%, -18%);
-}
 
 .p-data-overview-card__value {
   grid-row: 3;
@@ -239,6 +99,7 @@
   color: $white;
   font-weight: 700;
   line-height: 1;
+  margin-top: rem(16);
 }
 
 .p-data-overview-card__number {

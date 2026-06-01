@@ -129,47 +129,52 @@
           </div>
           <p class="p-top-data__lead js-opacity-word">社員構成から昇進実績まで、テレックスの現場をデータで紹介します。<br>未経験者の割合が高く、若手が活躍する組織です。</p>
         </div>
-        <div class="p-top-data__cards">
-          <article class="p-top-data-card js-opacity-word">
+        <ul class="p-top-data__cards">
+          <li class="p-top-data-card js-opacity-word">
             <h3 class="p-top-data-card__title">設立年</h3>
-            <img class="p-top-data-card__icon p-top-data-card__icon--building" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top-data/icon-building.png" alt="">
+            <div class="p-top-data-card__icon">
+              <img class="p-top-data-card__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-1.webp" alt="設立年">
+            </div>
             <p class="p-top-data-card__value"><span class="p-top-data-card__number">1995</span><span>年</span></p>
-          </article>
-          <article class="p-top-data-card js-opacity-word">
+          </li>
+          <li class="p-top-data-card js-opacity-word">
             <h3 class="p-top-data-card__title">売上高</h3>
-            <img class="p-top-data-card__icon p-top-data-card__icon--graph" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top-data/icon-graph.png" alt="">
+            <div class="p-top-data-card__icon">
+              <img class="p-top-data-card__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-2.webp" alt="売上高">
+            </div>
             <p class="p-top-data-card__value"><span class="p-top-data-card__number">19億5,000</span><span>万円</span></p>
             <p class="p-top-data-card__note">(2023年度実績)</p>
-          </article>
-          <article class="p-top-data-card js-opacity-word">
+          </li>
+          <li class="p-top-data-card js-opacity-word">
             <h3 class="p-top-data-card__title">従業員数</h3>
-            <img class="p-top-data-card__icon p-top-data-card__icon--team" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top-data/icon-team.png" alt="">
+            <div class="p-top-data-card__icon">
+              <img class="p-top-data-card__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-3.webp" alt="従業員数">
+            </div>
             <p class="p-top-data-card__value"><span class="p-top-data-card__number">111</span><span>名</span></p>
             <p class="p-top-data-card__note">(2025年11月時点)</p>
-          </article>
-          <article class="p-top-data-card js-opacity-word">
+          </li>
+          <li class="p-top-data-card js-opacity-word">
             <h3 class="p-top-data-card__title">男女比</h3>
-            <div class="p-top-data-card__gender">
-              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top-data/icon-man.png" alt="">
-              <span aria-hidden="true"></span>
-              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top-data/icon-woman.png" alt="">
+            <div class="p-top-data-card__icon">
+              <img class="p-top-data-card__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-4.webp" alt="男女比">
             </div>
             <p class="p-top-data-card__value"><span class="p-top-data-card__number">6 : 4</span></p>
-          </article>
-          <article class="p-top-data-card js-opacity-word">
+          </li>
+          <li class="p-top-data-card js-opacity-word">
             <h3 class="p-top-data-card__title">女性管理職割合</h3>
-            <div class="p-top-data-card__manager">
-              <img class="p-top-data-card__manager-person" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top-data/icon-ol.png" alt="">
-              <img class="p-top-data-card__manager-medal" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top-data/icon-medal.png" alt="">
+            <div class="p-top-data-card__icon">
+              <img class="p-top-data-card__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-5.webp" alt="女性管理職割合">
             </div>
             <p class="p-top-data-card__value"><span class="p-top-data-card__number">33</span><span>%</span></p>
-          </article>
-          <article class="p-top-data-card js-opacity-word">
+          </li>
+          <li class="p-top-data-card js-opacity-word">
             <h3 class="p-top-data-card__title">育休取得率</h3>
-            <img class="p-top-data-card__icon p-top-data-card__icon--family" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top-data/icon-family.png" alt="">
+            <div class="p-top-data-card__icon">
+              <img class="p-top-data-card__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-6.webp" alt="育休取得率">
+            </div>
             <p class="p-top-data-card__value"><span class="p-top-data-card__number">100</span><span>%</span></p>
-          </article>
-        </div>
+          </li>
+        </ul>
         <a class="p-top-data__link js-opacity-word" href="<?php echo esc_url(home_url('/data/')); ?>">
           <span class="p-top-data__link-text">数字一覧へ</span>
           <span class="p-top-data__link-en">Data</span>

@@ -5336,6 +5336,30 @@ input::placeholder {
   display: block;
 }
 
+.p-mv__title .js-shining-title {
+  position: relative;
+  width: fit-content;
+  text-shadow: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.p-mv__title .js-shining-title::after {
+  position: absolute;
+  inset: 0;
+  content: attr(data-shining-text);
+  color: transparent;
+  pointer-events: none;
+  background-image: linear-gradient(105deg, transparent 0%, transparent 42%, rgba(255, 255, 255, 0.08) 46%, #fff 50%, rgba(255, 255, 255, 0.08) 54%, transparent 58%, transparent 100%);
+  background-position: var(--shine-x, -130%) 50%;
+  background-size: 220% 100%;
+  background-clip: text;
+  opacity: var(--shine-opacity, 0);
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1.6px rgba(255, 255, 255, 0.95);
+  -webkit-background-clip: text;
+  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.9));
+}
+
 .p-mv__text {
   margin-top: 1.75rem;
   font-size: 0.8125rem;
@@ -6304,7 +6328,6 @@ input::placeholder {
 .p-top-advantage__cards {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.5rem;
   margin-top: 3.375rem;
 }
 @media screen and (min-width: 600px) {
@@ -6315,7 +6338,6 @@ input::placeholder {
 @media screen and (min-width: 1250px) {
   .p-top-advantage__cards {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 2.4375rem;
     margin-top: 4.25rem;
   }
 }
@@ -6357,7 +6379,7 @@ input::placeholder {
 
 .p-top-advantage-card__title {
   font-weight: 700;
-  line-height: 1.24;
+  line-height: 1.6;
   font-size: 1rem;
 }
 @media screen and (min-width: 768px) {
@@ -6372,7 +6394,7 @@ input::placeholder {
 
 .p-top-advantage-card__text {
   font-weight: 400;
-  line-height: 1.25;
+  line-height: 1.6;
   margin-top: 0.75rem;
   font-size: 0.875rem;
 }
@@ -6539,6 +6561,8 @@ input::placeholder {
   font-weight: 700;
   line-height: 1.4;
   gap: 1rem;
+  white-space: nowrap;
+  --width: 0;
 }
 @media screen and (min-width: 768px) {
   .p-top-career__column-title {
@@ -6549,9 +6573,12 @@ input::placeholder {
 
 .p-top-career__column-title::after {
   flex: 1 1 auto;
+  width: auto;
   height: 1px;
   content: "";
   background-color: #222;
+  transform: scaleX(var(--width));
+  transform-origin: left center;
 }
 
 .p-top-career__list {
@@ -6952,6 +6979,11 @@ input::placeholder {
   }
 }
 
+.p-top-data-card__value .p-top-data-card__number {
+  margin-left: 0;
+  font-size: inherit;
+}
+
 .p-top-data-card__note {
   margin-top: 0.625rem;
   font-weight: 700;
@@ -7322,7 +7354,7 @@ input::placeholder {
   margin-top: 1.5rem;
   font-size: 0.875rem;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.6;
   color: #222;
 }
 @media screen and (min-width: 768px) {

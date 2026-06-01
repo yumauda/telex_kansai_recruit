@@ -2,7 +2,7 @@
 <main>
   <section class="p-mobile-business-mv">
     <div class="p-mobile-business-mv__content">
-      <p class="p-mobile-business-mv__en">Mobile business</p>
+      <p class="p-mobile-business-mv__en js-page-main-title">Mobile business</p>
       <h1 class="p-mobile-business-mv__title">モバイル事業部</h1>
     </div>
   </section>

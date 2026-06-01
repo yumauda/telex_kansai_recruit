@@ -2,7 +2,7 @@
 <main>
   <section class="p-data-mv">
     <div class="p-data-mv__content">
-      <p class="p-data-mv__en">Data</p>
+      <p class="p-data-mv__en js-page-main-title">Data</p>
       <h1 class="p-data-mv__title">数字で見るテレックス</h1>
     </div>
   </section>

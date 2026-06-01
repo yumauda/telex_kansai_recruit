@@ -101,6 +101,8 @@
   font-weight: 700;
   line-height: 1.4;
   gap: rem(16);
+  white-space: nowrap;
+  --width: 0;
   @include mq(md) {
     gap: rem(28);
     font-size: rem(32);
@@ -109,9 +111,12 @@
 
 .p-top-career__column-title::after {
   flex: 1 1 auto;
+  width: auto;
   height: 1px;
   content: "";
   background-color: #222;
+  transform: scaleX(var(--width));
+  transform-origin: left center;
 }
 
 .p-top-career__list {

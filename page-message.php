@@ -6,7 +6,7 @@
       <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/message/message-main.jpg" alt="">
     </picture>
     <div class="p-message-mv__content">
-      <p class="p-message-mv__en">Message</p>
+      <p class="p-message-mv__en js-page-main-title">Message</p>
       <h1 class="p-message-mv__title">採用メッセージ</h1>
     </div>
   </section>

@@ -2,7 +2,7 @@
 <main>
   <section class="p-career-mv">
     <div class="p-career-mv__content">
-      <p class="p-career-mv__en">Career</p>
+      <p class="p-career-mv__en js-page-main-title">Career</p>
       <h1 class="p-career-mv__title">キャリア</h1>
     </div>
   </section>

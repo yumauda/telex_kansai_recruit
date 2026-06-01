@@ -2,7 +2,7 @@
 <main>
   <section class="p-mobile-business-mv">
     <div class="p-mobile-business-mv__content">
-      <p class="p-mobile-business-mv__en">Corporate sales</p>
+      <p class="p-mobile-business-mv__en js-page-main-title">Corporate sales</p>
       <h1 class="p-mobile-business-mv__title">法人営業</h1>
     </div>
   </section>

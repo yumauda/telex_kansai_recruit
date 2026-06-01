@@ -156,6 +156,11 @@
   }
 }
 
+.p-top-data-card__value .p-top-data-card__number {
+  margin-left: 0;
+  font-size: inherit;
+}
+
 .p-top-data-card__note {
   margin-top: rem(10);
   font-weight: 700;

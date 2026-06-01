@@ -2,7 +2,7 @@
 <main>
   <section class="p-advantage-mv">
     <div class="p-advantage-mv__content">
-      <p class="p-advantage-mv__en">Advantage</p>
+      <p class="p-advantage-mv__en js-page-main-title">Advantage</p>
       <h1 class="p-advantage-mv__title">テレックスの強み</h1>
     </div>
   </section>

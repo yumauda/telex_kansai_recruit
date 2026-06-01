@@ -57,7 +57,7 @@ if (! function_exists('telex_people_archive_meta_lines')) {
 <main>
   <section class="p-people-mv">
     <div class="p-people-mv__content">
-      <p class="p-people-mv__en">People</p>
+      <p class="p-people-mv__en js-page-main-title">People</p>
       <h1 class="p-people-mv__title">人を知る</h1>
     </div>
   </section>

@@ -255,6 +255,188 @@ jQuery(document).ready(function ($) {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  var countTargets = document.querySelectorAll(".p-top-data-card__number, .p-data-overview-card__number");
+
+  if (!countTargets.length) {
+    return;
+  }
+
+  var prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var duration = 2000;
+
+  function parseNumberText(text) {
+    var normalized = text.trim();
+
+    if (normalized.indexOf(":") !== -1) {
+      var ratioParts = normalized.split(":").map(function (part) {
+        return parseFloat(part.replace(/[^\d.-]/g, ""));
+      });
+
+      if (ratioParts.every(function (value) {
+        return !isNaN(value);
+      })) {
+        return {
+          type: "ratio",
+          values: ratioParts,
+        };
+      }
+    }
+
+    if (normalized.indexOf("億") !== -1) {
+      var okuParts = normalized.split("億");
+      var oku = parseInt(okuParts[0].replace(/[^\d]/g, ""), 10) || 0;
+      var man = parseInt((okuParts[1] || "").replace(/[^\d]/g, ""), 10) || 0;
+
+      return {
+        type: "okuMan",
+        value: oku * 10000 + man,
+      };
+    }
+
+    var numericText = normalized.replace(/,/g, "");
+    var value = parseFloat(numericText);
+
+    if (isNaN(value)) {
+      return null;
+    }
+
+    return {
+      type: "number",
+      value: value,
+      decimals: (numericText.split(".")[1] || "").length,
+      useComma: normalized.indexOf(",") !== -1,
+    };
+  }
+
+  function formatOkuMan(value) {
+    var roundedValue = Math.floor(value);
+    var oku = Math.floor(roundedValue / 10000);
+    var man = roundedValue % 10000;
+
+    if (oku <= 0) {
+      return man.toLocaleString("ja-JP");
+    }
+
+    return oku + "億" + man.toLocaleString("ja-JP");
+  }
+
+  function formatNumber(value, config) {
+    var fixedValue = config.decimals > 0 ? value.toFixed(config.decimals) : Math.floor(value).toString();
+
+    if (!config.useComma) {
+      return fixedValue;
+    }
+
+    var parts = fixedValue.split(".");
+    parts[0] = Number(parts[0]).toLocaleString("ja-JP");
+    return parts.join(".");
+  }
+
+  function renderCount(element, config, progress) {
+    if (config.type === "ratio") {
+      element.textContent = config.values.map(function (value) {
+        return Math.round(value * progress);
+      }).join(" : ");
+      return;
+    }
+
+    if (config.type === "okuMan") {
+      element.textContent = formatOkuMan(config.value * progress);
+      return;
+    }
+
+    element.textContent = formatNumber(config.value * progress, config);
+  }
+
+  function animateCount(element, config) {
+    if (element.dataset.counted === "true") {
+      return;
+    }
+
+    element.dataset.counted = "true";
+
+    if (prefersReducedMotion) {
+      renderCount(element, config, 1);
+      return;
+    }
+
+    var startTime = null;
+
+    function easeInOutCubic(progress) {
+      return progress < 0.5
+        ? 4 * progress * progress * progress
+        : 1 - Math.pow(-2 * progress + 2, 3) / 2;
+    }
+
+    function tick(timestamp) {
+      if (startTime === null) {
+        startTime = timestamp;
+      }
+
+      var elapsed = timestamp - startTime;
+      var progress = Math.min(elapsed / duration, 1);
+      var easedProgress = easeInOutCubic(progress);
+
+      renderCount(element, config, easedProgress);
+
+      if (progress < 1) {
+        requestAnimationFrame(tick);
+      } else {
+        renderCount(element, config, 1);
+      }
+    }
+
+    requestAnimationFrame(tick);
+  }
+
+  countTargets.forEach(function (element) {
+    var config = parseNumberText(element.textContent);
+
+    if (!config) {
+      return;
+    }
+
+    element.dataset.countOriginal = element.textContent;
+
+    if (prefersReducedMotion || !("IntersectionObserver" in window)) {
+      animateCount(element, config);
+      return;
+    }
+
+    element.textContent = config.type === "ratio" ? "0 : 0" : "0";
+  });
+
+  if (prefersReducedMotion || !("IntersectionObserver" in window)) {
+    return;
+  }
+
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (!entry.isIntersecting) {
+        return;
+      }
+
+      var element = entry.target;
+      var config = parseNumberText(element.dataset.countOriginal || element.textContent);
+
+      if (config) {
+        animateCount(element, config);
+      }
+
+      observer.unobserve(element);
+    });
+  }, {
+    threshold: 0.35,
+  });
+
+  countTargets.forEach(function (element) {
+    if (element.dataset.countOriginal) {
+      observer.observe(element);
+    }
+  });
+});
 jQuery(".js-modal-btn").on("click", function (e) {
   e.preventDefault();
   jQuery(".p-modal").toggleClass("is-active");

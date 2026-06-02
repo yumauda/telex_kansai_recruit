@@ -1,4 +1,76 @@
 <?php get_header(); ?>
+<?php
+if (! function_exists('telex_top_people_field')) {
+  function telex_top_people_field($post_id, $name, $default = '')
+  {
+    if (function_exists('get_field')) {
+      $value = get_field($name, $post_id);
+      if ($value !== null && $value !== false && $value !== '') {
+        return $value;
+      }
+    }
+
+    $value = get_post_meta($post_id, $name, true);
+    return $value !== '' ? $value : $default;
+  }
+}
+
+if (! function_exists('telex_top_people_image_url')) {
+  function telex_top_people_image_url($post_id)
+  {
+    $image = telex_top_people_field($post_id, 'people_archive_thumbnail_image');
+
+    if (is_array($image) && ! empty($image['url'])) {
+      return $image['url'];
+    }
+
+    if (is_numeric($image)) {
+      $image_url = wp_get_attachment_image_url((int) $image, 'large');
+      if ($image_url) {
+        return $image_url;
+      }
+    }
+
+    $fallback_image = telex_top_people_field($post_id, 'people_single_profile_image');
+
+    if (is_array($fallback_image) && ! empty($fallback_image['url'])) {
+      return $fallback_image['url'];
+    }
+
+    if (is_numeric($fallback_image)) {
+      $fallback_url = wp_get_attachment_image_url((int) $fallback_image, 'large');
+      if ($fallback_url) {
+        return $fallback_url;
+      }
+    }
+
+    if (is_string($fallback_image) && $fallback_image !== '') {
+      if (preg_match('/^https?:\/\//', $fallback_image)) {
+        return $fallback_image;
+      }
+
+      if (strpos($fallback_image, '/src/images/') === 0) {
+        return get_template_directory_uri() . str_replace('/src/images/', '/images/', $fallback_image);
+      }
+
+      if (strpos($fallback_image, '/images/') === 0) {
+        return get_template_directory_uri() . $fallback_image;
+      }
+
+      return $fallback_image;
+    }
+
+    return get_template_directory_uri() . '/images/people/yamada-saki.webp';
+  }
+}
+
+if (! function_exists('telex_top_people_lines')) {
+  function telex_top_people_lines($text)
+  {
+    return array_values(array_filter(array_map('trim', preg_split('/\r\n|\r|\n/', (string) $text)), 'strlen'));
+  }
+}
+?>
 <div class="p-loading">
   <div class="l-inner">
     <div class="p-loading__content">
@@ -189,7 +261,7 @@
           <p class="p-top-work__en js-page-main-title">Work</p>
           <h2 class="p-top-work__title js-opacity-word">仕事を知る</h2>
         </div>
-        <div class="p-top-work__cards js-column-scrub">
+        <div class="p-top-work__cards js-column-work">
           <article class="p-top-work-card">
             <figure class="p-top-work-card__image">
               <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top-work/work01.webp" alt="モバイル事業部">
@@ -226,6 +298,71 @@
               </a>
             </div>
           </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="p-top-people">
+    <div class="l-inner">
+      <div class="p-top-people__content">
+        <div class="p-top-people__heading">
+          <p class="p-top-people__en js-page-main-title">People</p>
+          <h2 class="p-top-people__title js-opacity-word">人を知る</h2>
+        </div>
+        <div class="p-top-people__body">
+          <div class="p-top-people__slider swiper js-top-people-slider">
+            <div class="swiper-wrapper">
+              <?php
+              $top_people_cards = array(
+                array(
+                  'slug' => 'yamada',
+                  'name' => '山田 紗季',
+                  'copy' => "顧客体験価値を引き上げ\n会社に還元する",
+                  'position' => 'モバイル事業部 店長',
+                  'image' => get_template_directory_uri() . '/images/people/yamada-saki.webp',
+                ),
+                array('slug' => 'kawamoto-daichi'),
+                array('slug' => 'nishikawa-honoka'),
+                array('slug' => 'sakamoto-genki'),
+                array('slug' => 'muto-ren'),
+                array('slug' => 'yano-kana'),
+              );
+              ?>
+              <?php foreach ($top_people_cards as $top_people_card) : ?>
+                <?php
+                $top_people_post = get_page_by_path($top_people_card['slug'], OBJECT, 'post');
+                $top_people_id = $top_people_post ? $top_people_post->ID : 0;
+                $top_people_name = $top_people_id ? get_the_title($top_people_id) : $top_people_card['name'];
+                $top_people_image = $top_people_id ? telex_top_people_image_url($top_people_id) : $top_people_card['image'];
+                $top_people_copy = $top_people_id ? telex_top_people_field($top_people_id, 'people_single_mv_title', $top_people_name) : $top_people_card['copy'];
+                $top_people_position = $top_people_id ? telex_top_people_field($top_people_id, 'position') : $top_people_card['position'];
+                $top_people_permalink = $top_people_id ? get_permalink($top_people_id) : home_url('/people/' . $top_people_card['slug'] . '/');
+                ?>
+                <div class="p-top-people-card swiper-slide">
+                  <a class="p-top-people-card__link" href="<?php echo esc_url($top_people_permalink); ?>">
+                    <figure class="p-top-people-card__image">
+                      <img src="<?php echo esc_url($top_people_image); ?>" alt="<?php echo esc_attr($top_people_name); ?>">
+                    </figure>
+                    <div class="p-top-people-card__body">
+                      <h3 class="p-top-people-card__copy">
+                        <?php foreach (telex_top_people_lines($top_people_copy) as $top_people_copy_line) : ?>
+                          <span><?php echo esc_html($top_people_copy_line); ?></span>
+                        <?php endforeach; ?>
+                      </h3>
+                      <?php if ($top_people_position) : ?>
+                        <p class="p-top-people-card__position"><?php echo esc_html($top_people_position); ?></p>
+                      <?php endif; ?>
+                      <p class="p-top-people-card__name"><?php echo esc_html($top_people_name); ?></p>
+                    </div>
+                  </a>
+                </div>
+              <?php endforeach; ?>
+            </div>
+          </div>
+          <a class="p-top-people__link js-opacity-word" href="<?php echo esc_url(home_url('/people/')); ?>">
+            <span class="p-top-people__link-text">社員一覧へ</span>
+            <span class="p-top-people__link-en">People</span>
+          </a>
         </div>
       </div>
     </div>

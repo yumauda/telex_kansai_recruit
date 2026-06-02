@@ -126,6 +126,9 @@
   @include mq(md) {
     font-size: rem(16);
     margin-top: rem(26);
+    max-width: rem(287);
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

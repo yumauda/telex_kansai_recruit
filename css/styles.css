@@ -7330,6 +7330,201 @@ input::placeholder {
   object-position: center center;
 }
 
+.p-top-people {
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  color: #fff;
+  background-color: #222;
+  overflow-x: clip;
+}
+@media screen and (min-width: 768px) {
+  .p-top-people {
+    padding-top: 12.25rem;
+    padding-bottom: 4.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-top-people__content {
+    display: grid;
+    grid-template-columns: 12rem minmax(0, 1fr);
+    gap: 4.75rem;
+    align-items: start;
+  }
+}
+
+.p-top-people__heading {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .p-top-people__heading {
+    position: sticky;
+    top: 6.5rem;
+    text-align: left;
+  }
+}
+
+.p-top-people__en {
+  font-family: "Inter", "Noto Sans JP", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+@media screen and (min-width: 768px) {
+  .p-top-people__en {
+    font-size: 1.25rem;
+  }
+}
+
+.p-top-people__title {
+  margin-top: 0.75rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+@media screen and (min-width: 768px) {
+  .p-top-people__title {
+    margin-top: 1.125rem;
+    font-size: 2.625rem;
+    line-height: 1.5952380952;
+  }
+}
+
+.p-top-people__body {
+  margin-top: 2.375rem;
+  margin-right: calc(50% - 50vw);
+}
+@media screen and (min-width: 768px) {
+  .p-top-people__body {
+    margin-top: initial;
+  }
+}
+
+.p-top-people__slider {
+  overflow: visible;
+}
+
+.p-top-people-card__link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.p-top-people-card__image {
+  overflow: hidden;
+  aspect-ratio: 311/389;
+  border-radius: 0.5rem;
+  background-color: #e9e9e9;
+}
+
+.p-top-people-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.p-top-people-card__link:hover .p-top-people-card__image img {
+  transform: scale(1.04);
+}
+
+.p-top-people-card__body {
+  margin-top: 1.125rem;
+}
+@media screen and (min-width: 768px) {
+  .p-top-people-card__body {
+    margin-top: 1.75rem;
+  }
+}
+
+.p-top-people-card__copy {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+@media screen and (min-width: 768px) {
+  .p-top-people-card__copy {
+    font-size: 1.25rem;
+  }
+}
+
+.p-top-people-card__copy span {
+  display: block;
+}
+
+.p-top-people-card__position,
+.p-top-people-card__name {
+  font-family: "Inter", "Noto Sans JP", sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0;
+}
+@media screen and (min-width: 768px) {
+  .p-top-people-card__position,
+  .p-top-people-card__name {
+    font-size: 1rem;
+  }
+}
+
+.p-top-people-card__position {
+  margin-top: 1.125rem;
+}
+
+.p-top-people-card__name {
+  margin-top: 0.4375rem;
+}
+
+.p-top-people__link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(100%, 25.25rem);
+  min-height: 3.4375rem;
+  padding: 0.9375rem 1.125rem;
+  margin: 2.5rem 0 0;
+  color: #fff;
+  background-color: #222;
+  border: 2px solid #fff;
+  border-radius: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-top-people__link {
+    margin-top: 4.375rem;
+  }
+}
+
+.p-top-people__link-text {
+  position: relative;
+  padding-left: 2rem;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.p-top-people__link-text::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 0.75rem;
+  height: 0.75rem;
+  content: "";
+  background-color: currentColor;
+  clip-path: polygon(16% 0, 100% 0, 100% 84%, 82% 84%, 82% 31%, 12% 100%, 0 88%, 70% 18%, 16% 18%);
+  transform: translateY(-50%);
+}
+
+.p-top-people__link-en {
+  flex: 0 0 auto;
+  margin-left: 1rem;
+  font-family: "Inter", "Noto Sans JP", sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
 .p-top-work {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -7463,6 +7658,9 @@ input::placeholder {
   .p-top-work-card__text {
     font-size: 1rem;
     margin-top: 1.625rem;
+    max-width: 17.9375rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

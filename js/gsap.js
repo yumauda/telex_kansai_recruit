@@ -310,7 +310,6 @@ strongColumns.forEach((strongColumn) => {
       trigger: strongColumn,
       start: 'top 90%',
       end: 'bottom 90%',
-      scrub: true,
     },
   });
 
@@ -322,7 +321,30 @@ strongColumns.forEach((strongColumn) => {
     {
       gap: '39px',
       duration: 1.5,
-      delay: 0.5,
+      ease: 'power2.out',
+    }
+  );
+});
+const workColumns = document.querySelectorAll('.js-column-work');
+
+workColumns.forEach((workColumn) => {
+  const workTimeline = gsap.timeline({
+    scrollTrigger: {
+      trigger: workColumn,
+      start: 'top 90%',
+      end: 'bottom 90%',
+      // scrub: true,
+    },
+  });
+
+  workTimeline.fromTo(
+    workColumn,
+    {
+      gap: 0,
+    },
+    {
+      gap: '35px',
+      duration: 1.5,
       ease: 'power2.out',
     }
   );

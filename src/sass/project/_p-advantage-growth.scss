@@ -62,7 +62,7 @@
   font-weight: 700;
   line-height: 0.78;
   color: #eaeaea;
-
+  top: rem(-40);
   @include mq(md) {
     font-size: rem(128);
     left: 0;
@@ -71,17 +71,34 @@
 }
 
 .p-advantage-growth__title {
+  --advantage-title-line-left: 0;
+  --advantage-title-line-width: 70%;
+
   position: relative;
-  display: inline;
+  display: inline-block;
+  isolation: isolate;
   font-size: rem(20);
   font-weight: 700;
   line-height: 1.45;
   color: #000;
-  background: linear-gradient(transparent 68%, $yellow 68%);
 
   @include mq(md) {
+    --advantage-title-line-left: #{rem(354)};
+    --advantage-title-line-width: #{rem(133)};
+
     font-size: rem(32);
-    line-height: calc(58.8 / 32);
+    line-height: calc(59 / 32);
+  }
+
+  &::after {
+    position: absolute;
+    bottom: 0.18em;
+    left: var(--advantage-title-line-left);
+    z-index: -1;
+    width: var(--advantage-title-line-width);
+    height: rem(8);
+    content: "";
+    background-color: #FFFB26;
   }
 }
 

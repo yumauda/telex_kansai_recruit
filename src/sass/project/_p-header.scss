@@ -40,7 +40,7 @@
 
   @include mq(md) {
     height: rem(74);
-    gap: rem(45);
+    gap: clamp(rem(18), 2vw, rem(45));
   }
 }
 

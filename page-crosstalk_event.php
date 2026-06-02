@@ -183,13 +183,13 @@
     <div class="l-inner">
       <div class="p-crosstalk-event-challenge__head">
         <div class="p-crosstalk-event-challenge__body">
-          <h2 class="p-crosstalk-event-section-title">
+          <h2 class="p-crosstalk-event-section-title js-opacity-word">
             <span>一人で抱え込む限界</span>
             <span>壁を乗り越えた「視点の変化」</span>
           </h2>
-          <p class="p-crosstalk-event-question">ー大きな成果の裏には困難もあったかと思います。壁にぶつかった時、どうやって乗り越えたのでしょうか？</p>
+          <p class="p-crosstalk-event-question js-opacity-word">ー大きな成果の裏には困難もあったかと思います。壁にぶつかった時、どうやって乗り越えたのでしょうか？</p>
           <div class="p-crosstalk-event-dialogs p-crosstalk-event-dialogs--side">
-            <div class="p-crosstalk-event-dialog">
+            <div class="p-crosstalk-event-dialog js-opacity-word">
               <div class="p-crosstalk-event-dialog__speaker">
                 <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/icon-seki.png" alt="">
                 <span>関</span>
@@ -198,7 +198,7 @@
             </div>
           </div>
         </div>
-        <figure class="p-crosstalk-event-section-image">
+        <figure class="p-crosstalk-event-section-image js-pro-img">
           <picture>
             <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/ceremony-talk03.webp" type="image/webp">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/ceremony-talk03.jpg" alt="">
@@ -206,28 +206,28 @@
         </figure>
       </div>
       <div class="p-crosstalk-event-dialogs p-crosstalk-event-dialogs--wide">
-        <div class="p-crosstalk-event-dialog">
+        <div class="p-crosstalk-event-dialog js-opacity-word">
           <div class="p-crosstalk-event-dialog__speaker">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/icon-nishimura.png" alt="">
             <span>西村</span>
           </div>
           <p class="p-crosstalk-event-dialog__text">僕も全く同じでした。「自分がプレイヤーとして頑張ればいい」と思っていたのが、初日の大失敗で完全に崩れて。上司から「それがお前の本気か？」と問われた時に、自分の視座が低かったことに気づかされました。</p>
         </div>
-        <div class="p-crosstalk-event-dialog">
+        <div class="p-crosstalk-event-dialog js-opacity-word">
           <div class="p-crosstalk-event-dialog__speaker">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/icon-seki.png" alt="">
             <span>関</span>
           </div>
           <p class="p-crosstalk-event-dialog__text">視座が変わると、行動も変わるよね。</p>
         </div>
-        <div class="p-crosstalk-event-dialog">
+        <div class="p-crosstalk-event-dialog js-opacity-word">
           <div class="p-crosstalk-event-dialog__speaker">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/icon-nishimura.png" alt="">
             <span>西村</span>
           </div>
           <p class="p-crosstalk-event-dialog__text">はい。翌日からは自分が売るのではなく、「どうすればみんながやりやすいか？」「どうすれば成果につながるか？」に1分1秒、思考を使い切るようにしました。そうしたら、面白いように結果がついてきたんです。</p>
         </div>
-        <div class="p-crosstalk-event-dialog">
+        <div class="p-crosstalk-event-dialog js-opacity-word">
           <div class="p-crosstalk-event-dialog__speaker">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/icon-seki.png" alt="">
             <span>関</span>
@@ -240,27 +240,27 @@
   <section class="p-crosstalk-event-values">
     <div class="l-inner">
       <div class="p-crosstalk-event-values__head">
-        <figure class="p-crosstalk-event-section-image">
+        <figure class="p-crosstalk-event-section-image js-pro-img">
           <picture>
             <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/ceremony-talk04.webp" type="image/webp">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/ceremony-talk04.jpg" alt="">
           </picture>
         </figure>
         <div class="p-crosstalk-event-values__body">
-          <h2 class="p-crosstalk-event-section-title">
+          <h2 class="p-crosstalk-event-section-title js-opacity-word">
             <span>評価される人の共通点</span>
             <span>「素直さ」と「ポジティブ」の定義</span>
           </h2>
-          <p class="p-crosstalk-event-question">ーテレックス関西で「評価される人」にはどんな共通点があると感じますか？</p>
+          <p class="p-crosstalk-event-question js-opacity-word">ーテレックス関西で「評価される人」にはどんな共通点があると感じますか？</p>
           <div class="p-crosstalk-event-dialogs p-crosstalk-event-dialogs--side">
-            <div class="p-crosstalk-event-dialog">
+            <div class="p-crosstalk-event-dialog js-opacity-word">
               <div class="p-crosstalk-event-dialog__speaker">
                 <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/icon-nishimura.png" alt="">
                 <span>西村</span>
               </div>
               <p class="p-crosstalk-event-dialog__text">まずは「素直さ」だと思います。自分のプライドを持つことも大事ですが、周りのアドバイスをスッと受け入れられる人。あとは「思いやり」ですね。表彰されている人たちはみんな、「あの人のために何かできないか」という言葉が自然に出る人ばかりです。</p>
             </div>
-            <div class="p-crosstalk-event-dialog">
+            <div class="p-crosstalk-event-dialog js-opacity-word">
               <div class="p-crosstalk-event-dialog__speaker">
                 <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/icon-seki.png" alt="">
                 <span>関</span>
@@ -271,21 +271,21 @@
         </div>
       </div>
       <div class="p-crosstalk-event-dialogs p-crosstalk-event-dialogs--wide">
-        <div class="p-crosstalk-event-dialog">
+        <div class="p-crosstalk-event-dialog js-opacity-word">
           <div class="p-crosstalk-event-dialog__speaker">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/icon-nishimura.png" alt="">
             <span>西村</span>
           </div>
           <p class="p-crosstalk-event-dialog__text">関部長のような立場の方でも、部下の意見を素直に聞くんですか？</p>
         </div>
-        <div class="p-crosstalk-event-dialog">
+        <div class="p-crosstalk-event-dialog js-opacity-word">
           <div class="p-crosstalk-event-dialog__speaker">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/icon-seki.png" alt="">
             <span>関</span>
           </div>
           <p class="p-crosstalk-event-dialog__text">もちろん！スタッフの一意見は素晴らしい情報源やから。「良いものは良い」と認めるし、もし僕と意見が違っても、まずは「なんでそう思ったん？」と深掘りする。否定から入ると挑戦したくなくなるからね。</p>
         </div>
-        <div class="p-crosstalk-event-dialog">
+        <div class="p-crosstalk-event-dialog js-opacity-word">
           <div class="p-crosstalk-event-dialog__speaker">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/icon-nishimura.png" alt="">
             <span>西村</span>
@@ -297,37 +297,37 @@
   </section>
   <section class="p-crosstalk-event-future">
     <div class="l-inner">
-      <figure class="p-crosstalk-event-future__image">
+      <figure class="p-crosstalk-event-future__image js-pro-img">
         <picture>
           <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/ceremony-talk05.webp" type="image/webp">
           <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/ceremony-talk05.jpg" alt="">
         </picture>
       </figure>
-      <h2 class="p-crosstalk-event-section-title">未来の当たり前を作る。後輩たちへ伝えたいこと</h2>
-      <p class="p-crosstalk-event-question">ー最後に、これからの展望を教えてください。</p>
+      <h2 class="p-crosstalk-event-section-title js-opacity-word">未来の当たり前を作る。後輩たちへ伝えたいこと</h2>
+      <p class="p-crosstalk-event-question js-opacity-word">ー最後に、これからの展望を教えてください。</p>
       <div class="p-crosstalk-event-dialogs p-crosstalk-event-dialogs--wide">
-        <div class="p-crosstalk-event-dialog">
+        <div class="p-crosstalk-event-dialog js-opacity-word">
           <div class="p-crosstalk-event-dialog__speaker">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/icon-nishimura.png" alt="">
             <span>西村</span>
           </div>
           <p class="p-crosstalk-event-dialog__text">僕は前の会社では「人のために」という想いが自己満足だと否定されて、売上だけを見ろと言われて悩んでいました。でもテレックス関西に入って、「その考えは間違っていない。もっと表に出せ」と言ってくれる上司に出会えた。自分らしさを捨てずに努力し続けたら、こうして賞までいただけた。ここは、想いを形にさせてくれる会社です。この感謝の気持ちを還元していきたいですね。</p>
         </div>
-        <div class="p-crosstalk-event-dialog">
+        <div class="p-crosstalk-event-dialog js-opacity-word">
           <div class="p-crosstalk-event-dialog__speaker">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/icon-seki.png" alt="">
             <span>関</span>
           </div>
           <p class="p-crosstalk-event-dialog__text">いい話やね。僕は、この会社を「何度でも挑戦できる場所」にしていきたい。イベント事業だけじゃなく、新しい事業をどんどん作って、一人ひとりが自分の強みを活かせる役割を見つけられる環境にしたいなと。</p>
         </div>
-        <div class="p-crosstalk-event-dialog">
+        <div class="p-crosstalk-event-dialog js-opacity-word">
           <div class="p-crosstalk-event-dialog__speaker">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/icon-nishimura.png" alt="">
             <span>西村</span>
           </div>
           <p class="p-crosstalk-event-dialog__text">僕も「人が育つ環境」をさらに盤石にしたいです。テレックスらしい「絶対に諦めない姿勢」を背中で見せ続けて、関わった人全員を幸せにできるリーダーを目指します。</p>
         </div>
-        <div class="p-crosstalk-event-dialog">
+        <div class="p-crosstalk-event-dialog js-opacity-word">
           <div class="p-crosstalk-event-dialog__speaker">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/icon-seki.png" alt="">
             <span>関</span>
@@ -339,18 +339,18 @@
   </section>
   <section class="p-crosstalk-event-other">
     <div class="l-inner">
-      <h2 class="p-crosstalk-event-other__heading">その他のクロストーク</h2>
+      <h2 class="p-crosstalk-event-other__heading js-opacity-word">その他のクロストーク</h2>
       <article class="p-crosstalk-event-other__card">
-        <figure class="p-crosstalk-event-other__image">
+        <figure class="p-crosstalk-event-other__image js-pro-img">
           <picture>
             <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/other-crosstalk.webp" type="image/webp">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/other-crosstalk.jpg" alt="内定者対談">
           </picture>
         </figure>
         <div class="p-crosstalk-event-other__body">
-          <h3 class="p-crosstalk-event-other__title">内定者対談</h3>
-          <p class="p-crosstalk-event-other__text">この会社に内定を決めた2人に<br class="u-mobile">その理由を聞いてみました。</p>
-          <a class="p-crosstalk-event-other__link" href="<?php echo esc_url(home_url('/crosstalk/')); ?>">
+          <h3 class="p-crosstalk-event-other__title js-opacity-word">内定者対談</h3>
+          <p class="p-crosstalk-event-other__text js-opacity-word">この会社に内定を決めた2人に<br class="u-mobile">その理由を聞いてみました。</p>
+          <a class="p-crosstalk-event-other__link js-opacity-word" href="<?php echo esc_url(home_url('/crosstalk_unofficial-person/')); ?>">
             <span class="p-crosstalk-event-other__link-text">対談を見る</span>
             <span class="p-crosstalk-event-other__link-en">cross talk</span>
           </a>

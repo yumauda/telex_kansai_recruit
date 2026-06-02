@@ -23,8 +23,8 @@
   </nav>
   <section class="p-career-path" id="career-path">
     <div class="l-inner">
-      <h2 class="p-career-path__title">キャリアパス</h2>
-      <div class="p-career-path__panel">
+      <h2 class="p-career-path__title js-opacity-word">キャリアパス</h2>
+      <div class="p-career-path__panel js-opacity-word">
         <p class="p-career-path__lead">当グループではジョブエントリー制度などを活用し、自分に合ったキャリアプランで成長していくことが可能です。また、社員一人ひとりの成長をサポートするためにさまざまな制度をご用意しています。</p>
         <div class="p-career-path__flow" aria-label="キャリアパス図">
           <div class="p-career-path__entry">
@@ -77,9 +77,9 @@
   </section>
   <section class="p-career-example">
     <div class="l-inner">
-      <h2 class="p-career-example__title">キャリアパスの例</h2>
-      <h3 class="p-career-example__heading">販売現場から人を育て組織を動かす事業部の中核へ</h3>
-      <div class="p-career-example__profile">
+      <h2 class="p-career-example__title js-opacity-word">キャリアパスの例</h2>
+      <h3 class="p-career-example__heading js-opacity-word">販売現場から人を育て組織を動かす事業部の中核へ</h3>
+      <div class="p-career-example__profile js-opacity-word">
         <figure class="p-career-example__portrait">
           <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/career/yamada.webp" alt="山田 崚太">
         </figure>
@@ -88,7 +88,7 @@
           <p class="p-career-example__summary">auショップでの販売業務を起点に、店舗マネジメント、副店長、店長を経て、現在はモバイル事業部の課長として5店舗を統括。実績を追い求めるだけでなく、CX(カスタマーエクスペリエンス)向上や人財育成にも力を注ぎ、「数字」と「人」の両面から組織を支えることを大切にしている。</p>
         </div>
       </div>
-      <div class="p-career-example__timeline">
+      <div class="p-career-example__timeline js-opacity-word">
         <article class="p-career-example__step">
           <p class="p-career-example__period">入社〜4年</p>
           <h4 class="p-career-example__step-title">
@@ -115,8 +115,8 @@
   </section>
   <section class="p-career-example p-career-example--seki">
     <div class="l-inner">
-      <h3 class="p-career-example__heading">販売スタッフから、日本一の組織をつくる部長へ昇格</h3>
-      <div class="p-career-example__profile">
+      <h3 class="p-career-example__heading js-opacity-word">販売スタッフから、日本一の組織をつくる部長へ昇格</h3>
+      <div class="p-career-example__profile js-opacity-word">
         <figure class="p-career-example__portrait">
           <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/career/seki.webp" alt="関 陽平">
         </figure>
@@ -125,7 +125,7 @@
           <p class="p-career-example__summary">中途入社後、販売スタッフから副店長・店長・スーパーバイザーを経て、現在はイベント事業部の部長。5名でスタートした事業部を17名規模に拡大し、日本一の実績を達成。挫折を糧に、再現性のある組織づくりを大切にしている。</p>
         </div>
       </div>
-      <div class="p-career-example__timeline">
+      <div class="p-career-example__timeline js-opacity-word">
         <article class="p-career-example__step">
           <p class="p-career-example__period">入社〜2年</p>
           <h4 class="p-career-example__step-title">
@@ -155,8 +155,8 @@
   </section>
   <section class="p-career-example p-career-example--kaneman">
     <div class="l-inner">
-      <h3 class="p-career-example__heading">人と組織に向き合い、社内の旗艦組織を目指す係長</h3>
-      <div class="p-career-example__profile">
+      <h3 class="p-career-example__heading js-opacity-word">人と組織に向き合い、社内の旗艦組織を目指す係長</h3>
+      <div class="p-career-example__profile js-opacity-word">
         <figure class="p-career-example__portrait">
           <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/career/kaneman.webp" alt="金万 美鈴">
         </figure>
@@ -165,7 +165,7 @@
           <p class="p-career-example__summary">中途入社後、auショップの販売スタッフから副店長・店長を経て、現在はイベント事業部の係長。KDDI主催の接客グランプリで関西初の準グランプリを受賞。「人と組織にどう向き合うか」をテーマに活動している。</p>
         </div>
       </div>
-      <div class="p-career-example__timeline">
+      <div class="p-career-example__timeline js-opacity-word">
         <article class="p-career-example__step">
           <p class="p-career-example__period">入社〜3年</p>
           <h4 class="p-career-example__step-title">
@@ -195,8 +195,8 @@
   </section>
   <section class="p-career-example p-career-example--tanaka">
     <div class="l-inner">
-      <h3 class="p-career-example__heading">販売トップ新人から、人事部立ち上げメンバーへの抜擢</h3>
-      <div class="p-career-example__profile">
+      <h3 class="p-career-example__heading js-opacity-word">販売トップ新人から、人事部立ち上げメンバーへの抜擢</h3>
+      <div class="p-career-example__profile js-opacity-word">
         <figure class="p-career-example__portrait">
           <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/career/tanaka.webp" alt="田中 千菜美">
         </figure>
@@ -205,7 +205,7 @@
           <p class="p-career-example__summary">2023年度新卒入社。販売実績で同年度新卒1位を獲得し最優秀新人賞を受賞。現在はモバイル事業部専属の人事部立ち上げメンバーとして、自社採用の最前線で活躍中。</p>
         </div>
       </div>
-      <div class="p-career-example__timeline">
+      <div class="p-career-example__timeline js-opacity-word">
         <article class="p-career-example__step">
           <p class="p-career-example__period">入社〜1年</p>
           <h4 class="p-career-example__step-title">新卒として入社</h4>
@@ -229,8 +229,8 @@
   </section>
   <section class="p-career-example p-career-example--matsumoto">
     <div class="l-inner">
-      <h3 class="p-career-example__heading">接客グランプリ優勝から、社内教育部門の次世代リーダーへ</h3>
-      <div class="p-career-example__profile">
+      <h3 class="p-career-example__heading js-opacity-word">接客グランプリ優勝から、社内教育部門の次世代リーダーへ</h3>
+      <div class="p-career-example__profile js-opacity-word">
         <figure class="p-career-example__portrait">
           <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/career/matsumoto.webp" alt="松本 唯花">
         </figure>
@@ -239,7 +239,7 @@
           <p class="p-career-example__summary">2024年度新卒入社。DSショップで高いホスピタリティを発揮し、社内新卒接客グランプリで優勝。現在はカレッジ課にて社内教育部門の業務に従事し、本社部門のリーダー候補として期待されている。</p>
         </div>
       </div>
-      <div class="p-career-example__timeline">
+      <div class="p-career-example__timeline js-opacity-word">
         <article class="p-career-example__step">
           <p class="p-career-example__period">入社〜1年</p>
           <h4 class="p-career-example__step-title">新卒として入社</h4>
@@ -263,82 +263,82 @@
   </section>
   <section class="p-career-support" id="support">
     <div class="l-inner">
-      <h2 class="p-career-support__title">キャリア構築を支援する制度</h2>
-      <div class="p-career-support__list">
-        <article class="p-career-support__item">
+      <h2 class="p-career-support__title js-opacity-word">キャリア構築を支援する制度</h2>
+      <ul class="p-career-support__list">
+        <li class="p-career-support__item js-opacity-word">
           <figure class="p-career-support__image">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/career/support-job-entry.webp" alt="">
           </figure>
           <h3 class="p-career-support__item-title">ジョブエントリー制度</h3>
           <p class="p-career-support__text">昇進や昇格、職種や部署の異動希望など、自身のキャリアステップについて半年に一度会社に直接申告することができる制度です。エントリー後の面談で人材要件を満たしていると判断されれば、昇進や異動が認められます。これまでに多くの社員がこの制度を利用し、新たな分野で力を発揮しています。</p>
-        </article>
-        <article class="p-career-support__item">
+        </li>
+        <li class="p-career-support__item js-opacity-word">
           <figure class="p-career-support__image">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/career/support-evaluation.webp" alt="">
           </figure>
           <h3 class="p-career-support__item-title">評価制度</h3>
           <p class="p-career-support__text">人事評価は、半年に一度実施します。目標設定シートを用い、部署やチームの目標に沿って、自身の行動目標を自ら設定します。成果だけではなく、それまでのプロセスも評価の対象にしています。半年の実績と行動に対し、上長と定期面談で評価のすり合わせを行うことで、互いの納得度を高めています。</p>
-        </article>
-        <article class="p-career-support__item">
+        </li>
+        <li class="p-career-support__item js-opacity-word">
           <figure class="p-career-support__image">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/career/support-brother-sister.webp" alt="">
           </figure>
           <h3 class="p-career-support__item-title">ブラザーシスター制度</h3>
           <p class="p-career-support__text">新入社員が安心してスタートできるよう、年齢の近い先輩社員が1年間マンツーマンで伴走します。業務の進め方や接客・提案のコツだけでなく、悩みや不安の相談先としても機能します。「最初のつまずき」を減らし、現場で自信を持って動ける状態をつくるための制度です。</p>
-        </article>
-        <article class="p-career-support__item">
+        </li>
+        <li class="p-career-support__item js-opacity-word">
           <figure class="p-career-support__image">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/career/support-arrow-college.webp" alt="">
           </figure>
           <h3 class="p-career-support__item-title">Arrow College(社内教育機関)</h3>
           <p class="p-career-support__text">Arrow Collegeは、社員の成長を支える社内教育機関です。社員研修や資格取得支援、接客コンテストのサポートなどを通じて、スキル・知識だけでなく「考え方」や「仕事への向き合い方」まで育てます。目の前の業務に必要な力だけでなく、中長期で通用する力を身につけられる環境を整えています。</p>
-        </article>
-        <article class="p-career-support__item">
+        </li>
+        <li class="p-career-support__item js-opacity-word">
           <figure class="p-career-support__image">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/career/support-contest.webp" alt="">
           </figure>
           <h3 class="p-career-support__item-title">社内コンテスト</h3>
           <p class="p-career-support__text">挑戦や成果を正当に評価し、称賛するために社内コンテストや表彰制度を設けています。目標に向かって努力する過程そのものが評価されるため、挑戦が続きやすい環境になります。個人だけでなくチームの取り組みも含め、成長が見える形で称えられる仕組みです。</p>
-        </article>
-        <article class="p-career-support__item">
+        </li>
+        <li class="p-career-support__item js-opacity-word">
           <figure class="p-career-support__image">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/career/support-license.webp" alt="">
           </figure>
           <h3 class="p-career-support__item-title">キャリア資格支援制度</h3>
           <p class="p-career-support__text">学びを継続しやすいよう、指定資格合格に応じて資格手当を支給します。努力が報酬に反映される設計にすることで、「学ぶ→成果につながる→評価される」という成長サイクルを後押しします。スキルアップを“個人の根性”に任せず、制度として応援する考え方です。</p>
-        </article>
-      </div>
+        </li>
+      </ul>
     </div>
   </section>
   <section class="p-career-training" id="training">
     <div class="l-inner">
-      <h2 class="p-career-training__title">多彩な研修</h2>
-      <div class="p-career-training__list">
-        <article class="p-career-training__item">
+      <h2 class="p-career-training__title js-opacity-word">多彩な研修</h2>
+      <ul class="p-career-training__list">
+        <li class="p-career-training__item js-opacity-word">
           <h3 class="p-career-training__item-title">新入社員研修</h3>
           <p class="p-career-training__text">入社後は、社会人としての基礎を固めるために約1ヶ月の新入社員研修を実施します。ビジネスマナーや考え方、コミュニケーションの取り方などを体系的に学びます。スタート時点の不安を減らし、自信を持って現場に入れる状態をつくります。</p>
-        </article>
-        <article class="p-career-training__item">
+        </li>
+        <li class="p-career-training__item js-opacity-word">
           <h3 class="p-career-training__item-title">事業部別の業務研修</h3>
           <p class="p-career-training__text">新入社員研修後は、配属先の業務に直結する知識・スキルを学ぶための研修を行います。商品・サービス、接客・提案、業務フローなど、現場で必要になる内容を中心に、実務へスムーズに移行できるようサポートします。</p>
-        </article>
-        <article class="p-career-training__item">
-          <h3 class="p-career-training__item-title">販売研修</h3>
+        </li>
+        <li class="p-career-training__item js-opacity-word">
+          <h3 class="p-career-training__item-title js-opacity-word">販売研修</h3>
           <p class="p-career-training__text">接客の基本から、ヒアリング、提案、クロージングまで、店舗で必要なスキルを段階的に身につける研修です。「何をどう聞き、どう提案するか」の型を学ぶことで、未経験でも成果に近づける状態をつくります。</p>
-        </article>
-        <article class="p-career-training__item">
+        </li>
+        <li class="p-career-training__item js-opacity-word">
           <h3 class="p-career-training__item-title">営業研修</h3>
           <p class="p-career-training__text">法人・個人を問わず、提案の組み立て方、課題の捉え方、商談の進め方などを学ぶ研修です。商品説明だけで終わらない“課題解決型”の提案力を育て、成果につながる営業行動を身につけます。</p>
-        </article>
-        <article class="p-career-training__item">
+        </li>
+        <li class="p-career-training__item js-opacity-word">
           <h3 class="p-career-training__item-title">マネジメント研修</h3>
           <p class="p-career-training__text">組織運営の視点で、業績管理、育成、評価、仕組みづくりなどを学ぶ研修です。属人的なマネジメントではなく、再現性のある組織づくりを実践できる状態を目指します。</p>
-        </article>
-        <article class="p-career-training__item">
+        </li>
+        <li class="p-career-training__item js-opacity-word">
           <h3 class="p-career-training__item-title">キャリア別研修</h3>
           <p class="p-career-training__text">経験年数や役割に応じて、次に必要なスキルへ段階的に移行できるよう設計した研修です。「次のステージで何が求められるか」を明確にし、成長の方向性を揃えます。</p>
-        </article>
-      </div>
+        </li>
+      </ul>
     </div>
   </section>
   <section class="p-message-entry">

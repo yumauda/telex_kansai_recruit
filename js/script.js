@@ -224,19 +224,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-window.addEventListener("scroll", function () {
-  var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-  var element = document.querySelector(".p-footer__floating");
 
-  if (window.innerWidth <= 768) {
-    // 768px以下のデバイスでのみ動作
-    if (scrollPosition > 700) {
-      element.style.opacity = "1";
-    } else {
-      element.style.opacity = "0";
-    }
-  }
-});
 window.onload = function () {
   document.body.classList.add("fade-in");
 };

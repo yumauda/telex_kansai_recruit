@@ -55,7 +55,9 @@
   object-fit: cover;
 }
 
-.p-advantage-growth__number {
+.p-advantage-growth__body::before {
+  position: absolute;
+  content: "02";
   font-size: rem(64);
   font-weight: 700;
   line-height: 0.78;
@@ -63,6 +65,8 @@
 
   @include mq(md) {
     font-size: rem(128);
+    left: 0;
+    top: rem(-80);
   }
 }
 

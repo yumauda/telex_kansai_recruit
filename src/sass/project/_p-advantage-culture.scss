@@ -1,12 +1,12 @@
 @use "../global" as *;
 
 .p-advantage-culture {
-  padding-top: rem(48);
+  padding-top: rem(96);
   padding-bottom: rem(48);
   background-color: $white;
 
   @include mq(md) {
-    padding-top: rem(116);
+    padding-top: rem(156);
     padding-bottom: rem(112);
   }
 }
@@ -32,7 +32,9 @@
   position: relative;
 }
 
-.p-advantage-culture__number {
+.p-advantage-culture__body::before {
+  position: absolute;
+  content: "01";
   font-size: rem(64);
   font-weight: 700;
   line-height: 0.78;
@@ -40,6 +42,8 @@
 
   @include mq(md) {
     font-size: rem(128);
+    left: 0;
+    top: rem(-80);
   }
 }
 
@@ -54,7 +58,8 @@
 
   @include mq(md) {
     font-size: rem(32);
-    line-height: calc(58.8 / 32);
+    line-height: calc(59 / 32);
+    margin-top: rem(-32);
   }
 }
 
@@ -83,7 +88,7 @@
 
   @include mq(md) {
     font-size: rem(24);
-    line-height: calc(58.8 / 24);
+    line-height: calc(59 / 24);
   }
 }
 

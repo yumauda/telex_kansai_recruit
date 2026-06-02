@@ -452,13 +452,13 @@ select::-ms-expand {
 }
 
 .p-advantage-culture {
-  padding-top: 3rem;
+  padding-top: 6rem;
   padding-bottom: 3rem;
   background-color: #fff;
 }
 @media screen and (min-width: 768px) {
   .p-advantage-culture {
-    padding-top: 7.25rem;
+    padding-top: 9.75rem;
     padding-bottom: 7rem;
   }
 }
@@ -485,15 +485,19 @@ select::-ms-expand {
   position: relative;
 }
 
-.p-advantage-culture__number {
+.p-advantage-culture__body::before {
+  position: absolute;
+  content: "01";
   font-size: 4rem;
   font-weight: 700;
   line-height: 0.78;
   color: #eaeaea;
 }
 @media screen and (min-width: 768px) {
-  .p-advantage-culture__number {
+  .p-advantage-culture__body::before {
     font-size: 8rem;
+    left: 0;
+    top: -5rem;
   }
 }
 
@@ -509,7 +513,8 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .p-advantage-culture__title {
     font-size: 2rem;
-    line-height: 1.8375;
+    line-height: 1.84375;
+    margin-top: -2rem;
   }
 }
 
@@ -540,7 +545,7 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .p-advantage-culture__item-title {
     font-size: 1.5rem;
-    line-height: 2.45;
+    line-height: 2.4583333333;
   }
 }
 
@@ -611,15 +616,19 @@ select::-ms-expand {
   position: relative;
 }
 
-.p-advantage-environment__number {
+.p-advantage-environment__body::before {
+  position: absolute;
+  content: "03";
   font-size: 4rem;
   font-weight: 700;
   line-height: 0.78;
   color: #eaeaea;
 }
 @media screen and (min-width: 768px) {
-  .p-advantage-environment__number {
+  .p-advantage-environment__body::before {
     font-size: 8rem;
+    left: 0;
+    top: -5rem;
   }
 }
 
@@ -762,15 +771,19 @@ select::-ms-expand {
   object-fit: cover;
 }
 
-.p-advantage-growth__number {
+.p-advantage-growth__body::before {
+  position: absolute;
+  content: "02";
   font-size: 4rem;
   font-weight: 700;
   line-height: 0.78;
   color: #eaeaea;
 }
 @media screen and (min-width: 768px) {
-  .p-advantage-growth__number {
+  .p-advantage-growth__body::before {
     font-size: 8rem;
+    left: 0;
+    top: -5rem;
   }
 }
 
@@ -941,15 +954,19 @@ select::-ms-expand {
   object-fit: cover;
 }
 
-.p-advantage-stability__number {
+.p-advantage-stability__body::before {
+  position: absolute;
+  content: "04";
   font-size: 4rem;
   font-weight: 700;
   line-height: 0.78;
   color: #eaeaea;
 }
 @media screen and (min-width: 768px) {
-  .p-advantage-stability__number {
+  .p-advantage-stability__body::before {
     font-size: 8rem;
+    left: 0;
+    top: -5rem;
   }
 }
 

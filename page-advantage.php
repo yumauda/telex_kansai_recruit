@@ -28,7 +28,6 @@
     <div class="l-inner">
       <div class="p-advantage-culture__content">
         <div class="p-advantage-culture__body js-opacity-word">
-          <p class="p-advantage-culture__number">01</p>
           <h2 class="p-advantage-culture__title">頑張りが評価され称賛される文化</h2>
           <div class="p-advantage-culture__items">
             <section class="p-advantage-culture__item">
@@ -55,7 +54,6 @@
     <div class="l-inner">
       <div class="p-advantage-growth__content">
         <div class="p-advantage-growth__body js-opacity-word">
-          <p class="p-advantage-growth__number">02</p>
           <h2 class="p-advantage-growth__title">成長を“仕組み”で支える育成制度</h2>
           <div class="p-advantage-growth__items">
             <section class="p-advantage-growth__item">
@@ -82,7 +80,6 @@
     <div class="l-inner">
       <div class="p-advantage-environment__content">
         <div class="p-advantage-environment__body js-opacity-word">
-          <p class="p-advantage-environment__number">03</p>
           <h2 class="p-advantage-environment__title">安心して働ける環境</h2>
           <div class="p-advantage-environment__items">
             <section class="p-advantage-environment__item">
@@ -109,7 +106,6 @@
     <div class="l-inner">
       <div class="p-advantage-stability__content">
         <div class="p-advantage-stability__body js-opacity-word">
-          <p class="p-advantage-stability__number">04</p>
           <h2 class="p-advantage-stability__title">通信インフラ×関西密着の安定性</h2>
           <div class="p-advantage-stability__items">
             <section class="p-advantage-stability__item">

@@ -7392,7 +7392,6 @@ input::placeholder {
 
 .p-top-people__body {
   margin-top: 2.375rem;
-  margin-right: calc(50% - 50vw);
 }
 @media screen and (min-width: 768px) {
   .p-top-people__body {
@@ -7401,7 +7400,7 @@ input::placeholder {
 }
 
 .p-top-people__slider {
-  overflow: visible;
+  margin-right: calc(50% - 50vw) !important;
 }
 
 .p-top-people-card__link {
@@ -7492,7 +7491,8 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-top-people__link {
-    margin-top: 4.375rem;
+    margin-top: 3.375rem;
+    margin-left: auto;
   }
 }
 

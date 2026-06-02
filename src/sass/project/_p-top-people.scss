@@ -58,7 +58,6 @@
 
 .p-top-people__body {
   margin-top: rem(38);
-  margin-right: calc(50% - 50vw);
 
   @include mq(md) {
     margin-top: initial;
@@ -66,7 +65,7 @@
 }
 
 .p-top-people__slider {
-  overflow: visible;
+  margin-right: calc(50% - 50vw) !important;
 }
 
 .p-top-people-card__link {
@@ -152,7 +151,8 @@
   border-radius: rem(8);
 
   @include mq(md) {
-    margin-top: rem(70);
+    margin-top: rem(54);
+    margin-left: auto;
   }
 }
 

@@ -2981,6 +2981,10 @@ select::-ms-expand {
   line-height: 1.4;
 }
 
+.p-drawer-content__group-title--parent {
+  pointer-events: none;
+}
+
 .p-drawer-content__sub-links {
   display: grid;
   gap: 0.625rem;
@@ -3427,6 +3431,10 @@ select::-ms-expand {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.p-footer__nav-link--parent {
+  pointer-events: none;
 }
 
 .p-footer__utility-link--external {
@@ -4011,6 +4019,10 @@ input::placeholder {
   appearance: none;
   background: transparent;
   border: 0;
+}
+
+.p-header__nav-link--parent {
+  pointer-events: none;
 }
 
 .p-header__nav-ja {
@@ -7678,11 +7690,17 @@ input::placeholder {
 
 .p-top-work-card__body {
   position: absolute;
-  right: 1.875rem;
-  bottom: 1.8125rem;
-  left: 1.875rem;
   z-index: 1;
+  bottom: 1.8125rem;
   text-align: center;
+  left: 1.25rem;
+  right: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-top-work-card__body {
+    left: 1.875rem;
+    right: 1.875rem;
+  }
 }
 
 .p-top-work-card__title {

@@ -90,7 +90,7 @@
                             </a>
                         </li>
                         <li class="p-header__nav-item p-header__nav-item--mega">
-                            <button class="p-header__nav-link p-header__nav-link--button" type="button" aria-haspopup="true">
+                            <button class="p-header__nav-link p-header__nav-link--button p-header__nav-link--parent" type="button" aria-haspopup="true">
                                 <span class="p-header__nav-ja">仕事を知る</span>
                                 <span class="p-header__nav-en">Work</span>
                             </button>
@@ -116,7 +116,7 @@
                             </a>
                         </li>
                         <li class="p-header__nav-item p-header__nav-item--mega">
-                            <button class="p-header__nav-link p-header__nav-link--button" type="button" aria-haspopup="true">
+                            <button class="p-header__nav-link p-header__nav-link--button p-header__nav-link--parent" type="button" aria-haspopup="true">
                                 <span class="p-header__nav-ja">クロストーク</span>
                                 <span class="p-header__nav-en">Cross talk</span>
                             </button>
@@ -132,7 +132,7 @@
                             </div>
                         </li>
                         <li class="p-header__nav-item p-header__nav-item--mega">
-                            <button class="p-header__nav-link p-header__nav-link--button" type="button" aria-haspopup="true">
+                            <button class="p-header__nav-link p-header__nav-link--button p-header__nav-link--parent" type="button" aria-haspopup="true">
                                 <span class="p-header__nav-ja">キャリア/働く環境</span>
                                 <span class="p-header__nav-en">Career / Environment</span>
                             </button>
@@ -195,7 +195,7 @@
                         </ul>
                         <div class="p-drawer-content__groups">
                             <section class="p-drawer-content__group" aria-labelledby="drawer-work-title">
-                                <h2 class="p-drawer-content__group-title" id="drawer-work-title">仕事を知る</h2>
+                                <h2 class="p-drawer-content__group-title p-drawer-content__group-title--parent" id="drawer-work-title">仕事を知る</h2>
                                 <div class="p-drawer-content__sub-links">
                                     <a class="p-drawer-content__sub-link" href="<?php echo esc_url(home_url('/mobile_business/')); ?>">モバイル事業部</a>
                                     <a class="p-drawer-content__sub-link" href="<?php echo esc_url(home_url('/corporate_sales/')); ?>">法人営業</a>
@@ -203,14 +203,14 @@
                                 </div>
                             </section>
                             <section class="p-drawer-content__group" aria-labelledby="drawer-crosstalk-title">
-                                <h2 class="p-drawer-content__group-title" id="drawer-crosstalk-title">クロストーク</h2>
+                                <h2 class="p-drawer-content__group-title p-drawer-content__group-title--parent" id="drawer-crosstalk-title">クロストーク</h2>
                                 <div class="p-drawer-content__sub-links">
                                     <a class="p-drawer-content__sub-link" href="<?php echo esc_url(home_url('/crosstalk_event/')); ?>">イノベーションセレモニー対談</a>
                                     <a class="p-drawer-content__sub-link" href="<?php echo esc_url(home_url('/crosstalk_unofficial-person/')); ?>">内定者対談</a>
                                 </div>
                             </section>
                             <section class="p-drawer-content__group" aria-labelledby="drawer-career-title">
-                                <h2 class="p-drawer-content__group-title" id="drawer-career-title">キャリア/働く環境</h2>
+                                <h2 class="p-drawer-content__group-title p-drawer-content__group-title--parent" id="drawer-career-title">キャリア/働く環境</h2>
                                 <div class="p-drawer-content__sub-links">
                                     <a class="p-drawer-content__sub-link" href="<?php echo esc_url(home_url('/career/')); ?>">キャリア</a>
                                     <a class="p-drawer-content__sub-link" href="<?php echo esc_url(home_url('/environment/')); ?>">働く環境</a>

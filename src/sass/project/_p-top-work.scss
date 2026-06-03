@@ -100,11 +100,16 @@
 
 .p-top-work-card__body {
   position: absolute;
-  right: rem(30);
-  bottom: rem(29);
-  left: rem(30);
   z-index: 1;
+  bottom: rem(29);
   text-align: center;
+  left: rem(20);
+  right: rem(20);
+  @include mq(md){
+    left: rem(30);
+    right: rem(30);
+    
+  }
 }
 
 .p-top-work-card__title {

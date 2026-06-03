@@ -86,6 +86,10 @@
   justify-content: space-between;
 }
 
+.p-footer__nav-link--parent {
+  pointer-events: none;
+}
+
 .p-footer__utility-link--external {
   position: relative;
   // padding-right: rem(28);

@@ -145,6 +145,10 @@
   border: 0;
 }
 
+.p-header__nav-link--parent {
+  pointer-events: none;
+}
+
 .p-header__nav-ja {
   font-size: rem(13);
   font-weight: 500;

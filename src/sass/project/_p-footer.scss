@@ -7,7 +7,7 @@
   background-color: #222;
 
   @include mq(md) {
-    padding-top: rem(56);
+    padding-top: rem(84);
     padding-bottom: rem(28);
   }
 }
@@ -80,12 +80,16 @@
     
   }
 }
+.p-footer__utility-link {
+  width: rem(190);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 .p-footer__utility-link--external {
   position: relative;
-  display: inline-flex;
-  align-items: center;
-  padding-right: rem(28);
+  // padding-right: rem(28);
 }
 
 .p-footer__utility-link--external::after,
@@ -120,7 +124,7 @@
 }
 
 .p-footer__nav-item + .p-footer__nav-item {
-  margin-top: rem(18);
+  margin-top: rem(12);
 }
 
 .p-footer__entry {

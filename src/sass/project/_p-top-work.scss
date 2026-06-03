@@ -7,8 +7,8 @@
   background-color: $white;
 
   @include mq(md) {
-    padding-top: rem(130);
-    padding-bottom: rem(130);
+    padding-top: rem(136);
+    padding-bottom: rem(304);
   }
 }
 
@@ -54,7 +54,7 @@
   @include mq(md) {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: rem(39);
-    margin-top: rem(112);
+    margin-top: rem(103);
   }
 }
 

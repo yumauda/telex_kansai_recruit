@@ -391,7 +391,7 @@ if (! function_exists('telex_top_people_lines')) {
                 <span>テレックス関西が大切にしている社員総会(イノベーションセレモニー)について受賞した2名に</span>
                 <span>対談してもらいました。</span>
               </p>
-              <a class="p-top-crosstalk-card__link" href="<?php echo esc_url(home_url('/crosstalk_event/')); ?>">
+              <a class="p-top-crosstalk-card__link p-top-crosstalk-card__link--arrow" href="<?php echo esc_url(home_url('/crosstalk_event/')); ?>">
                 <span class="p-top-crosstalk-card__link-text">対談を見る</span>
                 <span class="p-top-crosstalk-card__link-en">cross talk</span>
               </a>
@@ -408,7 +408,7 @@ if (! function_exists('telex_top_people_lines')) {
                 <span>選んだのか？どんなことが決めて手になったのか</span>
                 <span>リアルな胸の内を語ってもらいました。</span>
               </p>
-              <a class="p-top-crosstalk-card__link" href="<?php echo esc_url(home_url('/crosstalk_unofficial-person/')); ?>">
+              <a class="p-top-crosstalk-card__link p-top-crosstalk-card__link--arrow" href="<?php echo esc_url(home_url('/crosstalk_unofficial-person/')); ?>">
                 <span class="p-top-crosstalk-card__link-text">対談を見る</span>
                 <span class="p-top-crosstalk-card__link-en">cross talk</span>
               </a>

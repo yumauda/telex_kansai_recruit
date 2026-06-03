@@ -23,6 +23,7 @@
               <?php else : ?>
                 <div class="p-movie-card__link p-movie-card__link--disabled">
               <?php endif; ?>
+                  <h2 class="p-movie-card__title"><?php the_title(); ?></h2>
                   <figure class="p-movie-card__image">
                     <?php if ($thumbnail_url) : ?>
                       <img src="<?php echo esc_url($thumbnail_url); ?>" alt="<?php the_title_attribute(); ?>" loading="lazy" decoding="async">
@@ -33,7 +34,6 @@
                       <span class="p-movie-card__play" aria-hidden="true"></span>
                     <?php endif; ?>
                   </figure>
-                  <h2 class="p-movie-card__title"><?php the_title(); ?></h2>
               <?php if ($movie_url) : ?>
                 </a>
               <?php else : ?>

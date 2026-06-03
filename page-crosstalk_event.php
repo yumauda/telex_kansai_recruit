@@ -251,7 +251,7 @@
             <span>評価される人の共通点</span>
             <span>「素直さ」と「ポジティブ」の定義</span>
           </h2>
-          <p class="p-crosstalk-event-question js-opacity-word">ーテレックス関西で「評価される人」にはどんな共通点があると感じますか？</p>
+          <p class="p-crosstalk-event-question js-opacity-word">ーテレックス関西で「評価される人」には<br class="u-desktop">どんな共通点があると感じますか？</p>
           <div class="p-crosstalk-event-dialogs p-crosstalk-event-dialogs--side">
             <div class="p-crosstalk-event-dialog js-opacity-word">
               <div class="p-crosstalk-event-dialog__speaker">
@@ -318,14 +318,14 @@
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/icon-seki.png" alt="">
             <span>関</span>
           </div>
-          <p class="p-crosstalk-event-dialog__text">いい話やね。僕は、この会社を「何度でも挑戦できる場所」にしていきたい。イベント事業だけじゃなく、新しい事業をどんどん作って、一人ひとりが自分の強みを活かせる役割を見つけられる環境にしたいなと。</p>
+          <p class="p-crosstalk-event-dialog__text">いい話やね。僕は、この会社を「何度でも挑戦できる場所」にしていきたい。<br>イベント事業だけじゃなく、新しい事業をどんどん作って、一人ひとりが自分の強みを活かせる役割を見つけられる環境にしたいなと。</p>
         </div>
         <div class="p-crosstalk-event-dialog js-opacity-word">
           <div class="p-crosstalk-event-dialog__speaker">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/icon-nishimura.png" alt="">
             <span>西村</span>
           </div>
-          <p class="p-crosstalk-event-dialog__text">僕も「人が育つ環境」をさらに盤石にしたいです。テレックスらしい「絶対に諦めない姿勢」を背中で見せ続けて、関わった人全員を幸せにできるリーダーを目指します。</p>
+          <p class="p-crosstalk-event-dialog__text">僕も「人が育つ環境」をさらに盤石にしたいです。<br>テレックスらしい「絶対に諦めない姿勢」を背中で見せ続けて、関わった人全員を幸せにできるリーダーを目指します。</p>
         </div>
         <div class="p-crosstalk-event-dialog js-opacity-word">
           <div class="p-crosstalk-event-dialog__speaker">

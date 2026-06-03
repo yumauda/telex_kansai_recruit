@@ -150,10 +150,10 @@
   font-size: rem(16);
   font-weight: 700;
   line-height: 1.45;
-  margin-top: rem(16);
+  margin-bottom: rem(16);
   
   @include mq(md) {
-    margin-top: rem(22);
+    margin-bottom: rem(22);
     font-size: rem(24);
   }
 }

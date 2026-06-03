@@ -7,7 +7,7 @@
   background-color: $white;
 
   @include mq(md) {
-    padding-top: rem(70);
+    padding-top: rem(113);
     padding-bottom: rem(96);
   }
 }
@@ -32,7 +32,6 @@
 
   @include mq(md) {
     grid-template-columns: minmax(0, 548fr) minmax(0, 599fr);
-    align-items: center;
     gap: rem(52);
     margin-top: rem(75);
   }
@@ -42,7 +41,7 @@
   margin-top: rem(56);
 
   @include mq(md) {
-    margin-top: rem(88);
+    margin-top: rem(106);
   }
 }
 
@@ -92,8 +91,7 @@
   }
 }
 
-.p-mobile-business-intro__text p + p,
-.p-mobile-business-intro__text p + ul {
+.p-mobile-business-intro__text p + p {
   margin-top: rem(16);
 
   @include mq(md) {

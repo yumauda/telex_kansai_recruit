@@ -7,7 +7,7 @@
 
   @include mq(md) {
     padding-top: rem(96);
-    padding-bottom: rem(126);
+    padding-bottom: initial;
   }
 }
 
@@ -42,7 +42,7 @@
   line-height: 2.15;
 
   @include mq(md) {
-    margin-top: rem(76);
+    margin-top: rem(48);
     font-size: rem(16);
     line-height: calc(40 / 16);
   }

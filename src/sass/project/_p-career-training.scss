@@ -8,7 +8,7 @@
 
   @include mq(md) {
     padding-top: rem(55);
-    padding-bottom: rem(104);
+    padding-bottom: initial;
   }
 }
 

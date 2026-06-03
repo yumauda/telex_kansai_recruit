@@ -110,7 +110,8 @@
   height: rem(12);
   content: "";
   background-color: currentColor;
-  clip-path: polygon(16% 0, 100% 0, 100% 84%, 82% 84%, 82% 31%, 12% 100%, 0 88%, 70% 18%, 16% 18%);
+  mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 12 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.7295 5.86479L5.86479 11.7295L5.21214 11.0769L9.96277 6.32633H0V5.40325H9.96277L5.21214 0.652644L5.86479 0L11.7295 5.86479Z' fill='black'/%3E%3C/svg%3E") center / contain no-repeat;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 12 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.7295 5.86479L5.86479 11.7295L5.21214 11.0769L9.96277 6.32633H0V5.40325H9.96277L5.21214 0.652644L5.86479 0L11.7295 5.86479Z' fill='black'/%3E%3C/svg%3E") center / contain no-repeat;
   transform: translateY(-50%);
 }
 

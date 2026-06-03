@@ -122,7 +122,7 @@
         </figure>
         <div class="p-career-example__profile-body">
           <p class="p-career-example__name">関 陽平</p>
-          <p class="p-career-example__summary">中途入社後、販売スタッフから副店長・店長・スーパーバイザーを経て、現在はイベント事業部の部長。5名でスタートした事業部を17名規模に拡大し、日本一の実績を達成。挫折を糧に、再現性のある組織づくりを大切にしている。</p>
+          <p class="p-career-example__summary">中途入社後、販売スタッフから副店長・店長・スーパーバイザーを経て、現在はイベント事業部の部長。<br>5名でスタートした事業部を17名規模に拡大し、日本一の実績を達成。挫折を糧に、再現性のある組織づくりを大切にしている。</p>
         </div>
       </div>
       <div class="p-career-example__timeline js-opacity-word">

@@ -120,18 +120,6 @@
   }
 }
 
-.p-career-path__arrow--entry {
-  @include mq(md) {
-    margin-top: rem(10);
-  }
-}
-
-.p-career-path__arrow--plan {
-  @include mq(md) {
-    margin-top: rem(10);
-  }
-}
-
 .p-career-path__arrow img {
   width: 100%;
   height: auto;
@@ -155,6 +143,22 @@
   text-align: center;
 
   @include mq(md) {
+    font-size: rem(13);
+    white-space: nowrap;
+  }
+
+  @media screen and (min-width: 900px) {
+    font-size: rem(16);
+  }
+
+  @media screen and (min-width: 1000px) {
+    font-size: rem(20);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: rem(22);
+  }
+  @media screen and (min-width: 1300px) {
     font-size: rem(24);
   }
 }

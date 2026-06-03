@@ -6,14 +6,8 @@
   background-color: $white;
 
   @include mq(md) {
-    padding-top: rem(104);
-    padding-bottom: rem(114);
-  }
-}
-
-.p-data-voice .l-inner {
-  @include mq(md) {
-    max-width: rem(1077);
+    padding-top: rem(161);
+    padding-bottom: rem(20);
   }
 }
 
@@ -35,10 +29,12 @@
   flex-direction: column;
   gap: rem(30);
   margin-top: rem(32);
-
+  margin-left: auto;
+  margin-right: auto;
   @include mq(md) {
     gap: rem(56);
     margin-top: rem(92);
+    max-width: rem(1077);
   }
 }
 
@@ -58,8 +54,8 @@
   
   @include mq(md) {
     width: rem(968);
-    min-height: rem(183);
-    padding: rem(45) rem(70);
+    min-height: rem(160);
+    padding: rem(40) rem(70);
     font-size: rem(24);
     line-height: calc(39 / 24);
   }

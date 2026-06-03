@@ -47,7 +47,7 @@
 }
 
 .p-crosstalk-event-mv__label {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   min-height: rem(40);
   padding: rem(4) rem(12);
@@ -55,11 +55,13 @@
   font-weight: 700;
   line-height: 1.4;
   background-color: #1b1b1b;
-
+  width: fit-content;
+  
   @include mq(md) {
+    width: rem(230);
     min-width: rem(230);
     min-height: rem(46);
-    padding: rem(6) rem(18);
+    padding: rem(0) rem(18);
     font-size: rem(24);
     line-height: calc(52 / 24);
   }
@@ -75,7 +77,14 @@
   @include mq(md) {
     width: rem(661);
     margin-top: rem(24);
-    padding: rem(11) rem(18) rem(14);
+    padding: rem(7) rem(18) rem(2);
+  }
+}
+
+.p-crosstalk-event-mv__detail--unofficial {
+  padding-bottom: rem(12);
+  @include mq(md) {
+    width: rem(424);
   }
 }
 

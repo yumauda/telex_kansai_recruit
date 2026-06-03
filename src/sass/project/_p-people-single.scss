@@ -96,8 +96,8 @@
   padding-bottom: rem(64);
 
   @include mq(md) {
-    padding-top: rem(72);
-    padding-bottom: rem(104);
+    padding-top: rem(104);
+    padding-bottom: rem(136);
   }
 }
 
@@ -175,7 +175,7 @@
   background-color: #eaeaea;
 
   @include mq(md) {
-    padding-top: rem(88);
+    padding-top: rem(153);
     padding-bottom: rem(88);
   }
 }

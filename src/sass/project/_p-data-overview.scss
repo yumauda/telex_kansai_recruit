@@ -12,12 +12,6 @@
   }
 }
 
-.p-data-overview .l-inner {
-  @include mq(md) {
-    max-width: rem(1200);
-  }
-}
-
 .p-data-overview__title {
   color: $white;
   font-size: rem(30);
@@ -61,6 +55,7 @@
 
   @include mq(md) {
     padding: rem(22) rem(4) rem(16);
+    min-height: rem(358);
   }
 }
 
@@ -79,6 +74,12 @@
   @include mq(md) {
     font-size: rem(32);
   }
+}
+
+.p-data-overview-card__icon {
+  max-width: rem(300);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .p-data-overview-card__icon img {

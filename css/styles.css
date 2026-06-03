@@ -3400,7 +3400,7 @@ select::-ms-expand {
 }
 
 .p-footer__utility-item + .p-footer__utility-item {
-  margin-top: 0.75rem;
+  margin-top: 1.25rem;
 }
 @media screen and (min-width: 768px) {
   .p-footer__utility-item + .p-footer__utility-item {

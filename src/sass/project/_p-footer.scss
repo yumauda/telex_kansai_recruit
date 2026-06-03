@@ -61,8 +61,7 @@
 }
 
 .p-footer__utility-item + .p-footer__utility-item {
-  margin-top: rem(12);
-
+  margin-top: rem(20);
   @include mq(md){
     margin-top: rem(16);
     

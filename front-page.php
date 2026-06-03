@@ -144,7 +144,7 @@ if (! function_exists('telex_top_people_lines')) {
           <h2 class="p-top-advantage__title js-opacity-word">テレックスの強み</h2>
         </div>
         <div class="p-top-advantage__cards js-column-scrub">
-          <article class="p-top-advantage-card">
+          <a class="p-top-advantage-card" href="<?php echo esc_url(home_url('/advantage/#anc01')); ?>">
             <figure class="p-top-advantage-card__image">
               <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top-advantage/advantage01.webp" alt="頑張りが評価される文化">
             </figure>
@@ -152,8 +152,8 @@ if (! function_exists('telex_top_people_lines')) {
               <h3 class="p-top-advantage-card__title js-opacity-word">頑張りが評価される文化</h3>
               <p class="p-top-advantage-card__text js-opacity-word">成果だけでなく、そこに至るプロセスまでしっかり評価される仕組みを作っています。</p>
             </div>
-          </article>
-          <article class="p-top-advantage-card">
+          </a>
+          <a class="p-top-advantage-card" href="<?php echo esc_url(home_url('/advantage/#anc02')); ?>">
             <figure class="p-top-advantage-card__image">
               <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top-advantage/advantage02.webp" alt="成長を支える育成制度">
             </figure>
@@ -161,8 +161,8 @@ if (! function_exists('telex_top_people_lines')) {
               <h3 class="p-top-advantage-card__title js-opacity-word">成長を支える育成制度</h3>
               <p class="p-top-advantage-card__text js-opacity-word">入社後も研修・メンター・キャリア支援など、成長を後押しする制度が整っています。</p>
             </div>
-          </article>
-          <article class="p-top-advantage-card">
+          </a>
+          <a class="p-top-advantage-card" href="<?php echo esc_url(home_url('/advantage/#anc03')); ?>">
             <figure class="p-top-advantage-card__image">
               <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top-advantage/advantage03.webp" alt="安心して働ける環境">
             </figure>
@@ -170,8 +170,8 @@ if (! function_exists('telex_top_people_lines')) {
               <h3 class="p-top-advantage-card__title js-opacity-word">安心して働ける環境</h3>
               <p class="p-top-advantage-card__text js-opacity-word">体制・休暇・手当まで充実。長く、自分らしく働き続けられる環境をしっかり整えています。</p>
             </div>
-          </article>
-          <article class="p-top-advantage-card">
+          </a>
+          <a class="p-top-advantage-card" href="<?php echo esc_url(home_url('/advantage/#anc04')); ?>">
             <figure class="p-top-advantage-card__image">
               <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top-advantage/advantage04.webp" alt="通信インフラ×関西密着の安定性">
             </figure>
@@ -182,7 +182,7 @@ if (! function_exists('telex_top_people_lines')) {
               </h3>
               <p class="p-top-advantage-card__text js-opacity-word">30年の実績と、関西エリアの土台で安定した基盤の中で仕事に向き合うことができます。</p>
             </div>
-          </article>
+          </a>
         </div>
         <a class="p-top-advantage__link js-opacity-word" href="<?php echo esc_url(home_url('/advantage/')); ?>">
           <span class="p-top-advantage__link-text">テレックスの強み一覧へ</span>

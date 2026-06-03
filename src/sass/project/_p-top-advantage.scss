@@ -65,9 +65,11 @@
 
 .p-top-advantage-card {
   position: relative;
+  display: block;
   min-height: rem(347);
   overflow: hidden;
   color: $white;
+  text-decoration: none;
   border-radius: rem(8);
 }
 
@@ -87,6 +89,12 @@
   width: 100%;
   height: auto;
   object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.p-top-advantage-card:hover .p-top-advantage-card__image img,
+.p-top-advantage-card:focus-visible .p-top-advantage-card__image img {
+  transform: scale(1.04);
 }
 
 .p-top-advantage-card__body {

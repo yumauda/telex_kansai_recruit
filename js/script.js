@@ -464,3 +464,100 @@ jQuery(".p-digital-modal__close").on("click", function (e) {
   jQuery(".p-digital-modal").removeClass("is-active");
   return false;
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  var formSections = document.querySelectorAll(".p-entry-form");
+
+  formSections.forEach(function (section) {
+    var form = section.querySelector(".wpcf7-form");
+    var inputArea = section.querySelector(".js-entry-form-input");
+    var confirmArea = section.querySelector(".js-entry-form-confirm-area");
+    var thanksArea = section.querySelector(".js-entry-form-thanks-area");
+    var confirmButton = section.querySelector(".js-entry-form-confirm-button");
+    var backButton = section.querySelector(".js-entry-form-back-button");
+
+    if (!form || !inputArea || !confirmArea || !thanksArea || !confirmButton || !backButton) {
+      return;
+    }
+
+    var fields = Array.prototype.slice.call(form.querySelectorAll(".js-entry-form-field"));
+    var requiredNames = ["your-name", "your-tel", "your-email", "applicant-type", "privacy-consent"];
+
+    function getFieldValue(name) {
+      var controls = Array.prototype.slice.call(form.querySelectorAll('[name="' + name + '"], [name="' + name + '[]"]'));
+
+      if (!controls.length) {
+        return "";
+      }
+
+      if (controls[0].type === "checkbox" || controls[0].type === "radio") {
+        return controls.filter(function (control) {
+          return control.checked;
+        }).map(function (control) {
+          return control.value;
+        }).join(" / ");
+      }
+
+      return controls[0].value.trim();
+    }
+
+    function isRequiredComplete() {
+      return requiredNames.every(function (name) {
+        return getFieldValue(name) !== "";
+      });
+    }
+
+    function updateConfirmButton() {
+      confirmButton.disabled = !isRequiredComplete();
+    }
+
+    function renderConfirmValues() {
+      var targets = confirmArea.querySelectorAll("[data-confirm-for]");
+
+      targets.forEach(function (target) {
+        target.textContent = getFieldValue(target.dataset.confirmFor) || "未入力";
+      });
+    }
+
+    function scrollToForm() {
+      var header = document.querySelector(".l-header");
+      var headerHeight = header ? header.offsetHeight : 0;
+      var top = section.getBoundingClientRect().top + window.pageYOffset - headerHeight - 24;
+
+      window.scrollTo({
+        top: Math.max(top, 0),
+        behavior: "smooth",
+      });
+    }
+
+    fields.forEach(function (field) {
+      field.addEventListener("input", updateConfirmButton);
+      field.addEventListener("change", updateConfirmButton);
+    });
+
+    confirmButton.addEventListener("click", function () {
+      renderConfirmValues();
+      section.classList.add("is-confirm");
+      section.classList.remove("is-sent");
+      confirmArea.setAttribute("aria-hidden", "false");
+      thanksArea.setAttribute("aria-hidden", "true");
+      scrollToForm();
+    });
+
+    backButton.addEventListener("click", function () {
+      section.classList.remove("is-confirm");
+      confirmArea.setAttribute("aria-hidden", "true");
+      scrollToForm();
+    });
+
+    form.addEventListener("wpcf7mailsent", function () {
+      section.classList.remove("is-confirm");
+      section.classList.add("is-sent");
+      confirmArea.setAttribute("aria-hidden", "true");
+      thanksArea.setAttribute("aria-hidden", "false");
+      scrollToForm();
+    });
+
+    updateConfirmButton();
+  });
+});

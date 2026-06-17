@@ -14,10 +14,17 @@ $args = wp_parse_args(
         'sub_links'   => array(),
         'image'       => get_template_directory_uri() . '/images/top-entry/entry.webp',
         'image_alt'   => '',
+        'class'       => '',
     )
 );
+
+$content_class = 'p-top-entry__content';
+
+if (! empty($args['class'])) {
+    $content_class .= ' ' . sanitize_html_class($args['class']);
+}
 ?>
-<div class="p-top-entry__content">
+<div class="<?php echo esc_attr($content_class); ?>">
     <div class="p-top-entry__body">
         <p class="p-top-entry__en js-page-main-title">Entry</p>
         <h2 class="p-top-entry__title"><?php echo esc_html($args['title']); ?></h2>

@@ -1,0 +1,289 @@
+@use "../global" as *;
+
+.p-entry-form {
+  padding-block: rem(40) rem(94);
+  background-color: $white;
+
+  @include mq(md) {
+    padding-block: rem(38) rem(150);
+  }
+}
+
+.p-entry-form__inner {
+  max-width: rem(917);
+  margin-inline: auto;
+}
+
+.p-entry-form__lead {
+  margin-bottom: rem(34);
+  color: #000;
+  font-size: rem(15);
+  line-height: 1.6;
+  text-align: center;
+
+  @include mq(md) {
+    margin-bottom: rem(42);
+    font-size: rem(20);
+    line-height: 1.19;
+  }
+}
+
+.p-entry-form__field + .p-entry-form__field {
+  margin-top: rem(18);
+
+  @include mq(md) {
+    margin-top: rem(24);
+  }
+}
+
+.p-entry-form__label {
+  display: block;
+  margin-bottom: rem(8);
+  color: #000;
+  font-size: rem(14);
+  font-weight: 500;
+  line-height: 1.5;
+
+  @include mq(md) {
+    font-size: rem(16);
+  }
+}
+
+.p-entry-form input[type="text"],
+.p-entry-form input[type="tel"],
+.p-entry-form input[type="email"],
+.p-entry-form select,
+.p-entry-form textarea {
+  width: 100%;
+  color: #000;
+  font-size: rem(16);
+  line-height: 1.5;
+  background-color: $white;
+  border: 1px solid #5b5b5b;
+  border-radius: rem(8);
+}
+
+.p-entry-form input[type="text"],
+.p-entry-form input[type="tel"],
+.p-entry-form input[type="email"],
+.p-entry-form select {
+  min-height: rem(58);
+  padding: rem(14) rem(20);
+}
+
+.p-entry-form select {
+  max-width: rem(314);
+  padding-right: rem(54);
+  background-image: linear-gradient(45deg, transparent 50%, #000 50%), linear-gradient(135deg, #000 50%, transparent 50%);
+  background-position: calc(100% - 27px) 50%, calc(100% - 20px) 50%;
+  background-repeat: no-repeat;
+  background-size: 8px 8px, 8px 8px;
+}
+
+.p-entry-form textarea {
+  min-height: rem(171);
+  padding: rem(16) rem(20);
+  resize: vertical;
+}
+
+.p-entry-form input::placeholder,
+.p-entry-form textarea::placeholder {
+  color: #5b5b5b;
+  font-size: rem(16);
+  opacity: 1;
+}
+
+.p-entry-form__privacy {
+  margin-top: rem(24);
+}
+
+.p-entry-form__privacy-text {
+  color: #000;
+  font-size: rem(14);
+  line-height: 1.6;
+
+  @include mq(md) {
+    font-size: rem(20);
+    line-height: 1.19;
+  }
+}
+
+.p-entry-form__privacy-text a {
+  text-decoration: underline;
+}
+
+.p-entry-form .wpcf7-acceptance {
+  display: block;
+  margin-top: rem(14);
+}
+
+.p-entry-form .wpcf7-acceptance .wpcf7-list-item {
+  display: inline-block;
+  width: auto;
+  margin: 0;
+}
+
+.p-entry-form .wpcf7-acceptance label {
+  display: inline-flex;
+  align-items: center;
+  gap: rem(14);
+  color: #000;
+  font-size: rem(16);
+  line-height: 1.5;
+}
+
+.p-entry-form .wpcf7-acceptance input[type="checkbox"] {
+  position: static;
+  display: block;
+  width: rem(31);
+  height: rem(31);
+  border: 1px solid #5b5b5b;
+  border-radius: rem(4);
+  appearance: none;
+}
+
+.p-entry-form .wpcf7-acceptance input[type="checkbox"]:checked {
+  background-color: #222;
+  box-shadow: inset 0 0 0 rem(6) $white;
+}
+
+.p-entry-form__button-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: rem(16);
+  justify-content: center;
+  margin-top: rem(30);
+
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}
+
+.p-entry-form__button,
+.p-entry-form input.p-entry-form__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: rem(248);
+  min-height: rem(59);
+  padding: rem(14) rem(22);
+  color: $white;
+  font-size: rem(18);
+  line-height: 1.4;
+  text-align: center;
+  background-color: #222;
+  border: 1px solid #000;
+  border-radius: rem(8);
+  transition: opacity 0.3s ease;
+}
+
+.p-entry-form__button:disabled {
+  cursor: default;
+  opacity: 0.45;
+}
+
+.p-entry-form__button--back {
+  color: #222;
+  background-color: $white;
+}
+
+.p-entry-form__confirm-area,
+.p-entry-form__thanks-area {
+  display: none;
+}
+
+.p-entry-form.is-confirm .p-entry-form__input-area,
+.p-entry-form.is-sent .p-entry-form__input-area,
+.p-entry-form.is-sent .p-entry-form__confirm-area {
+  display: none;
+}
+
+.p-entry-form.is-confirm .p-entry-form__confirm-area,
+.p-entry-form.is-sent .p-entry-form__thanks-area {
+  display: block;
+}
+
+.p-entry-form__confirm-title,
+.p-entry-form__thanks-title {
+  color: #000;
+  font-size: rem(28);
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+
+  @include mq(md) {
+    font-size: rem(34);
+  }
+}
+
+.p-entry-form__confirm-lead,
+.p-entry-form__thanks-text {
+  margin-top: rem(16);
+  color: #000;
+  font-size: rem(15);
+  line-height: 1.7;
+  text-align: center;
+
+  @include mq(md) {
+    font-size: rem(18);
+  }
+}
+
+.p-entry-form__confirm-list {
+  margin-top: rem(36);
+  overflow: hidden;
+  border: 1px solid #1a1a1a;
+  border-radius: rem(4);
+}
+
+.p-entry-form__confirm-row {
+  display: grid;
+  grid-template-columns: rem(130) minmax(0, 1fr);
+  border-bottom: 1px solid #e8e8e8;
+
+  @include mq(md) {
+    grid-template-columns: rem(190) minmax(0, 1fr);
+  }
+}
+
+.p-entry-form__confirm-row:last-child {
+  border-bottom: 0;
+}
+
+.p-entry-form__confirm-row dt,
+.p-entry-form__confirm-row dd {
+  min-height: rem(64);
+  padding: rem(18) rem(16);
+  margin: 0;
+  overflow-wrap: anywhere;
+  color: #000;
+  font-size: rem(14);
+  line-height: 1.7;
+
+  @include mq(md) {
+    padding: rem(22) rem(28);
+    font-size: rem(16);
+  }
+}
+
+.p-entry-form__confirm-row dt {
+  font-weight: 700;
+  background-color: #f8f8f6;
+  border-right: 1px solid #e8e8e8;
+}
+
+.p-entry-form .wpcf7-response-output {
+  display: none;
+}
+
+.p-entry-form .wpcf7-not-valid-tip {
+  margin-top: rem(6);
+  font-size: rem(13);
+}
+
+.p-entry-form__plugin-message {
+  color: #000;
+  font-size: rem(16);
+  line-height: 1.7;
+  text-align: center;
+}

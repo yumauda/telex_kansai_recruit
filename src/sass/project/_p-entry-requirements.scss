@@ -1,0 +1,70 @@
+@use "../global" as *;
+
+.p-entry-requirements {
+  padding-block: rem(64);
+  background-color: #eaeaea;
+
+  @include mq(md) {
+    padding-block: rem(96);
+  }
+}
+
+.p-entry-requirements__title {
+  position: relative;
+  padding-bottom: rem(14);
+  font-size: rem(28);
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+
+  @include mq(md) {
+    font-size: rem(34);
+  }
+}
+
+.p-entry-requirements__table-wrap {
+  overflow-x: auto;
+  background-color: $white;
+  border: 1px solid #1a1a1a;
+  border-radius: rem(4);
+  max-width: rem(980);
+  margin-inline: auto;
+  margin-top: rem(32);
+  @include mq(md){
+    margin-top: rem(72);
+    
+  }
+}
+
+.p-entry-requirements__table {
+  width: 100%;
+  color: #333;
+  font-size: rem(14);
+  line-height: 1.9;
+  border-collapse: collapse;
+}
+
+.p-entry-requirements__table th,
+.p-entry-requirements__table td {
+  padding: rem(22) rem(28);
+  vertical-align: top;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.p-entry-requirements__table tr:last-child th,
+.p-entry-requirements__table tr:last-child td {
+  border-bottom: 0;
+}
+
+.p-entry-requirements__table th {
+  width: rem(160);
+  color: #1a1a1a;
+  font-weight: 700;
+  text-align: left;
+  background-color: #f8f8f6;
+  border-right: 1px solid #e8e8e8;
+}
+
+.p-entry-requirements__table td span {
+  display: block;
+}

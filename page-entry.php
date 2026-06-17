@@ -192,6 +192,7 @@ $entry_flow = array(
                 'includes/entry',
                 null,
                 array(
+                    'class'     => 'p-top-entry__content--entry-page',
                     'title'     => 'エントリー',
                     'primary'   => array(
                         'text' => '公式LINEからエントリー',

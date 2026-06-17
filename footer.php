@@ -37,7 +37,7 @@
                     <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="<?php echo esc_url(home_url('/crosstalk_unofficial-person/')); ?>">-内定者対談</a></li>
                 </ul>
             </nav>
-            <a class="p-footer__entry" href="#">
+            <a class="p-footer__entry" href="<?php echo esc_url(home_url('/entry/')); ?>">
                 <span class="p-footer__entry-text">募集要項・エントリー</span>
             </a>
         </div>

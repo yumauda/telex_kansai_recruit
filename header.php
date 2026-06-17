@@ -218,14 +218,14 @@
                             </section>
                         </div>
                         <div class="p-drawer-content__entry-wrapper">
-                            <a href="#" class="p-drawer-content__entry">
+                            <a href="<?php echo esc_url(home_url('/entry/')); ?>" class="p-drawer-content__entry">
                                 <span class="p-drawer-content__entry-text">募集要項・エントリー</span>
                                 <span class="p-drawer-content__entry-en">Entry</span>
                             </a>
                         </div>
                     </div>
                 </div>
-                <a class="p-header__entry" href="#">
+                <a class="p-header__entry" href="<?php echo esc_url(home_url('/entry/')); ?>">
                     <span class="p-header__entry-text">募集要項・エントリー</span>
                 </a>
             </div>

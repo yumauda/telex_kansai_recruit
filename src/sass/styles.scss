@@ -36,6 +36,10 @@
 @use "./project/_p-data-overview";
 @use "./project/_p-data-voice";
 @use "./project/_p-drawer";
+@use "./project/_p-entry-cta";
+@use "./project/_p-entry-flow";
+@use "./project/_p-entry-form";
+@use "./project/_p-entry-requirements";
 @use "./project/_p-environment-anchor";
 @use "./project/_p-environment-card-section";
 @use "./project/_p-environment-mv";
@@ -69,5 +73,6 @@
 @use "./project/_p-top-work";
 
 // Component
+@use "./component/_c-lower-mv";
 @use "./component/_c-main-text";
 @use "./component/_c-main-title";

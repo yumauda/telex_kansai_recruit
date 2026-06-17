@@ -1,0 +1,112 @@
+@use "../global" as *;
+
+.p-entry-flow {
+  padding-block: rem(64);
+  background-color: $white;
+
+  @include mq(md) {
+    padding-block: rem(96) rem(70);
+  }
+}
+
+.p-entry-flow__title {
+  font-size: rem(28);
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+
+  @include mq(md) {
+    font-size: rem(34);
+  }
+}
+
+.p-entry-flow__list {
+  display: grid;
+  gap: rem(32);
+  margin-top: rem(48);
+
+  @include mq(md) {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: rem(60);
+  }
+}
+
+.p-entry-flow__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: rem(142);
+  padding: rem(20) rem(14);
+  text-align: center;
+  background-color: #f8f8f6;
+  border: 1px solid #1a1a1a;
+  border-radius: rem(8);
+}
+
+.p-entry-flow__item:not(:last-child)::after {
+  position: absolute;
+  bottom: rem(-25);
+  left: 50%;
+  width: 0;
+  height: 0;
+  content: "";
+  border-top: rem(12) solid #1a1a1a;
+  border-right: rem(9) solid transparent;
+  border-left: rem(9) solid transparent;
+  transform: translateX(-50%);
+
+  @include mq(md) {
+    top: 50%;
+    right: rem(-40);
+    bottom: auto;
+    left: auto;
+    border-top: rem(9) solid transparent;
+    border-bottom: rem(9) solid transparent;
+    border-left: rem(12) solid #1a1a1a;
+    transform: translateY(-50%);
+  }
+}
+
+.p-entry-flow__item--final {
+  color: $white;
+  background-color: #222;
+}
+
+.p-entry-flow__step {
+  color: #aaa;
+  font-size: rem(9);
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.18em;
+}
+
+.p-entry-flow__item--final .p-entry-flow__step {
+  color: rgba(255, 255, 255, 0.38);
+}
+
+.p-entry-flow__item-title {
+  margin-top: rem(10);
+  color: #1a1a1a;
+  font-size: rem(16);
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.p-entry-flow__item--final .p-entry-flow__item-title {
+  color: $white;
+  font-size: rem(20);
+}
+
+.p-entry-flow__text {
+  margin-top: rem(8);
+  color: #888;
+  font-size: rem(11);
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+.p-entry-flow__text span {
+  display: block;
+}

@@ -16,7 +16,22 @@
             <div class="p-entry-form__inner" id="entry-form">
                 <?php
                 if (shortcode_exists('contact-form-7')) {
-                    echo do_shortcode(telex_get_entry_form_shortcode());
+                    $entry_forms = get_posts(
+                        array(
+                            'post_type'      => 'wpcf7_contact_form',
+                            'post_status'    => 'publish',
+                            'title'          => 'エントリーフォーム',
+                            'posts_per_page' => 1,
+                            'fields'         => 'ids',
+                            'no_found_rows'  => true,
+                        )
+                    );
+
+                    if (! empty($entry_forms)) {
+                        echo do_shortcode('[contact-form-7 id="' . (int) $entry_forms[0] . '" title="エントリーフォーム"]');
+                    } else {
+                        echo '<p class="p-entry-form__plugin-message">管理画面で「エントリーフォーム」というContact Form 7フォームを作成してください。</p>';
+                    }
                 } else {
                     echo '<p class="p-entry-form__plugin-message">Contact Form 7を有効化すると、エントリーフォームが表示されます。</p>';
                 }

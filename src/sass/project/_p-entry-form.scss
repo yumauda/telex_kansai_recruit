@@ -1,11 +1,11 @@
 @use "../global" as *;
 
 .p-entry-form {
-  padding-block: rem(40) rem(94);
+  padding-block: rem(40) rem(40);
   background-color: $white;
 
   @include mq(md) {
-    padding-block: rem(38) rem(150);
+    padding-block: rem(150) rem(150);
   }
 }
 

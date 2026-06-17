@@ -483,6 +483,18 @@ document.addEventListener("DOMContentLoaded", function () {
     var fields = Array.prototype.slice.call(form.querySelectorAll(".js-entry-form-field"));
     var requiredNames = ["your-name", "your-tel", "your-email", "applicant-type", "privacy-consent"];
 
+    if (!thanksArea.querySelector(".js-entry-form-home-link")) {
+      var homeButtonWrap = document.createElement("div");
+      var homeButton = document.createElement("a");
+
+      homeButtonWrap.className = "p-entry-form__button-wrap";
+      homeButton.className = "p-entry-form__button js-entry-form-home-link";
+      homeButton.href = section.dataset.homeUrl || "/";
+      homeButton.textContent = "トップページに戻る";
+      homeButtonWrap.appendChild(homeButton);
+      thanksArea.appendChild(homeButtonWrap);
+    }
+
     function getFieldValue(name) {
       var controls = Array.prototype.slice.call(form.querySelectorAll('[name="' + name + '"], [name="' + name + '[]"]'));
 

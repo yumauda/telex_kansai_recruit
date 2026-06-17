@@ -11,7 +11,7 @@
     );
     ?>
 
-    <section class="p-entry-form">
+    <section class="p-entry-form" data-home-url="<?php echo esc_url(home_url('/')); ?>">
         <div class="l-inner">
             <div class="p-entry-form__inner" id="entry-form">
                 <?php

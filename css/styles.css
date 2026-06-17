@@ -3217,12 +3217,12 @@ select::-ms-expand {
 }
 
 .p-entry-form {
-  padding-block: 2.5rem 5.875rem;
+  padding-block: 2.5rem 2.5rem;
   background-color: #fff;
 }
 @media screen and (min-width: 768px) {
   .p-entry-form {
-    padding-block: 2.375rem 9.375rem;
+    padding-block: 9.375rem 9.375rem;
   }
 }
 

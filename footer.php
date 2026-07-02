@@ -11,7 +11,7 @@
                         <a class="p-footer__utility-link p-footer__utility-link--external" href="#">コーポレートサイト</a>
                     </li>
                     <li class="p-footer__utility-item">
-                        <a class="p-footer__utility-link p-footer__utility-link--external" href="#">プライバシーポリシー</a>
+                        <a class="p-footer__utility-link p-footer__utility-link--external" href="<?php echo esc_url('https://arrow-group.jp/telexkansai/privacy/'); ?>" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>
                     </li>
                 </ul>
             </div>

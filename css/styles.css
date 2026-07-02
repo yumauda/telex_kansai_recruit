@@ -5775,15 +5775,36 @@ input::placeholder {
 .p-mv {
   overflow-x: clip;
 }
+@media screen and (min-width: 768px) {
+  .p-mv {
+    height: 100vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-mv .l-inner {
+    height: inherit;
+  }
+}
 
 .p-mv__content {
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .p-mv__content {
+    height: inherit;
+  }
 }
 
 .p-mv__bg {
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
+}
+@media screen and (min-width: 768px) {
+  .p-mv__bg {
+    height: inherit;
+  }
 }
 
 .p-mv__bg img {
@@ -5796,6 +5817,7 @@ input::placeholder {
   .p-mv__bg img {
     aspect-ratio: initial;
     object-position: center center;
+    height: inherit;
   }
 }
 

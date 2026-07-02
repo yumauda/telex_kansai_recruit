@@ -2,16 +2,32 @@
 
 .p-mv {
   overflow-x: clip;
+
+  @include mq(md) {
+    height: 100vh;
+  }
+}
+.p-mv .l-inner {
+  @include mq(md) {
+    height: inherit;
+  }
 }
 
 .p-mv__content {
   position: relative;
+
+  @include mq(md) {
+    height: inherit;
+  }
 }
 
 .p-mv__bg {
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
+  @include mq(md) {
+    height: inherit;
+  }
 }
 
 .p-mv__bg img {
@@ -23,7 +39,7 @@
   @include mq(md) {
     aspect-ratio: initial;
     object-position: center center;
-
+    height: inherit;
   }
 }
 

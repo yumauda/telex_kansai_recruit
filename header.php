@@ -7,12 +7,73 @@
     <meta name="format-detection" content="telephone=no" />
     <!-- meta情報 -->
     <?php
-    $site_name = 'テレックス関西 採用サイト';
-    $site_description = 'テレックス関西の採用サイトです。モバイル販売・法人営業・イベント事業で、未来のあたりまえをともにつくる仲間を募集しています。仕事、制度、キャリア、社員の声を紹介します。';
-    $page_title = $site_name;
+    $site_name = 'テレックス関西';
+    $site_description = '法人営業・モバイル事業・イベント事業など多彩な職種で活躍できるテレックス関西の採用サイトです。社員インタビューやキャリアパス・給与情報など求職者に必要な情報をすべてご覧いただけます。';
+    $page_title = 'テレックス関西リクルートサイト';
+    $seo_pages = array(
+        'message' => array(
+            'title' => '採用メッセージ｜テレックス関西',
+            'description' => '代表取締役 蓬莱和真より就活生・転職者の皆さんへ。「挑戦を通して自分の人生を切り拓いてほしい」という想いと、テレックス関西が大切にしていることをお伝えします。',
+        ),
+        'people' => array(
+            'title' => '社員紹介｜テレックス関西',
+            'description' => 'テレックス関西で活躍する社員を紹介します。モバイル事業・イベント事業など、それぞれのフィールドで働くリアルな姿をご覧ください。',
+        ),
+        'career' => array(
+            'title' => 'キャリアについて｜テレックス関西',
+            'description' => 'テレックス関西のキャリアパスと給与体系を公開します。入社後の成長ステップや具体的な給与モデル・評価制度についてご確認いただけます。',
+        ),
+        'advantage' => array(
+            'title' => 'テレックスの強み｜テレックス関西',
+            'description' => 'Innovation Ceremony（社内表彰制度）や充実した育成プログラム、安定した通信キャリアの代理店ビジネスなど、テレックス関西ならではの3つの強みをご紹介します。',
+        ),
+        'data' => array(
+            'title' => '数字で見る｜テレックス関西',
+            'description' => '創業1995年。テレックス関西の実績と職場環境を、定着率・有給消化率・平均残業時間など具体的な数字でご確認いただけます。',
+        ),
+        'environment' => array(
+            'title' => '職場環境について｜テレックス関西',
+            'description' => 'テレックス関西のオフィス環境や社内施設をご紹介します。社員が毎日気持ちよく働けるよう整えられた職場の様子をご覧ください。',
+        ),
+        'corporate_sales' => array(
+            'title' => '法人営業の仕事内容｜テレックス関西',
+            'description' => 'テレックス関西の法人営業（コーポレートセールス）の仕事内容を詳しく紹介します。1日の流れ・求められるスキル・やりがいをリアルにお伝えします。',
+        ),
+        'event_business' => array(
+            'title' => 'イベント事業部の仕事内容｜テレックス関西',
+            'description' => 'テレックス関西のイベント事業部の仕事内容を詳しく紹介します。イベント運営に携わる1日の流れ・魅力・求められるスキルをご確認ください。',
+        ),
+        'mobile_business' => array(
+            'title' => 'モバイル事業部の仕事内容｜テレックス関西',
+            'description' => 'テレックス関西のモバイル事業部（携帯販売代理店）の仕事内容を詳しく紹介します。1日の流れ・やりがい・求められるスキルをお伝えします。',
+        ),
+        'crosstalk_event' => array(
+            'title' => 'クロストーク｜イノベーションセレモニー｜テレックス関西',
+            'description' => 'テレックス関西のイノベーションセレモニー受賞者による座談会。充実した毎日や仲間とのつながり、成長できる職場環境についてリアルな声をお届けします。',
+        ),
+        'crosstalk_unofficial-person' => array(
+            'title' => 'クロストーク｜内定者対談｜テレックス関西',
+            'description' => 'テレックス関西の内定者2名による対談。就職活動中の不安や入社を決めた理由、内定後のサポート体制についてリアルな声をお届けします。',
+        ),
+        'entry' => array(
+            'title' => '募集要項・エントリー｜テレックス関西',
+            'description' => 'テレックス関西の募集要項をご覧いただけます。モバイル事業・イベント事業・法人営業の3事業部で新卒・中途採用を実施中。給与・福利厚生・選考フローの詳細はこちらからご確認ください。',
+        ),
+        'entry-form' => array(
+            'title' => 'エントリーフォーム｜テレックス関西',
+            'description' => 'テレックス関西へのエントリーはこちらから。お名前・連絡先・志望動機をご入力のうえ送信してください。ご応募後、担当者より順次ご連絡いたします。',
+        ),
+    );
 
-    if (is_front_page() || is_home()) {
-        $page_title = 'テレックス関西 採用サイト｜未来のあたりまえをつくる仲間を募集';
+    if (is_home()) {
+        $page_title = $seo_pages['people']['title'];
+        $site_description = $seo_pages['people']['description'];
+    } elseif (is_page()) {
+        $page_slug = get_post_field('post_name', get_queried_object_id());
+        if (isset($seo_pages[$page_slug])) {
+            $page_title = $seo_pages[$page_slug]['title'];
+            $site_description = $seo_pages[$page_slug]['description'];
+        }
     } elseif (is_404()) {
         $page_title = 'ページが見つかりません｜' . $site_name;
     } elseif (is_archive()) {

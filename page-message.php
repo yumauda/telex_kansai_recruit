@@ -25,7 +25,7 @@
         </div>
         <p class="p-message-statement__name js-opacity-word">代表取締役&nbsp;&nbsp;蓬莱 和真</p>
         <div class="p-message-statement__banner js-pro-img">
-          <a href="#" class="p-message-statement__banner-link">
+          <a href="<?php echo esc_url('https://note.com/ripe_tulip9235'); ?>" class="p-message-statement__banner-link" target="_blank" rel="noopener noreferrer">
             <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/message/banner.webp" alt="バナー" width="635" height="333">
           </a>
         </div>

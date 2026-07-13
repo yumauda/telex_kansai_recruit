@@ -33,7 +33,7 @@ if (! empty($args['class'])) {
                 <span><?php echo esc_html($line); ?></span>
             <?php endforeach; ?>
         </p>
-        <a class="p-top-entry__link" href="<?php echo esc_url($args['primary']['url']); ?>">
+        <a class="p-top-entry__link" href="<?php echo esc_url($args['primary']['url']); ?>"<?php echo ! empty($args['primary']['target']) ? ' target="' . esc_attr($args['primary']['target']) . '" rel="noopener noreferrer"' : ''; ?>>
             <span class="p-top-entry__link-text"><?php echo esc_html($args['primary']['text']); ?></span>
             <span class="p-top-entry__link-en">Entry</span>
         </a>

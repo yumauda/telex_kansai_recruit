@@ -106,7 +106,7 @@ if (! function_exists('telex_top_people_lines')) {
           </p>
         </div>
         <div class="p-mv__entry">
-          <a class="p-mv__entry-link" href="<?php echo esc_url(home_url('/entry-form/')); ?>">
+          <a class="p-mv__entry-link" href="<?php echo esc_url(home_url('/entry/')); ?>">
             <span class="p-mv__entry-text">募集要項・エントリーはこちら</span>
             <span class="p-mv__entry-en">Entry</span>
           </a>

@@ -195,8 +195,9 @@ $entry_flow = array(
                     'class'     => 'p-top-entry__content--entry-page',
                     'title'     => 'エントリー',
                     'primary'   => array(
-                        'text' => '公式LINEからエントリー',
-                        'url'  => '#',
+                        'text'   => '公式LINEからエントリー',
+                        'url'    => 'https://liff.line.me/2009004009-TF8NIpkS/landing?follow=%40286oemak&lp=y7jjYQ&liff_id=2009004009-TF8NIpkS',
+                        'target' => '_blank',
                     ),
                     'sub_links' => array(
                         array(

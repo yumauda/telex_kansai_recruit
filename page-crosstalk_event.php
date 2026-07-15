@@ -2,8 +2,8 @@
 <main>
   <section class="p-crosstalk-event-mv">
     <picture class="p-crosstalk-event-mv__image">
-      <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/main.webp" type="image/webp">
-      <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/main.jpg" alt="">
+      <source media="(min-width: 768px)" srcset="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/main.webp" type="image/webp">
+      <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/crosstalk_event/main_sp.webp" alt="クロストークイベントメインビジュアル">
     </picture>
     <div class="p-crosstalk-event-mv__content">
       <p class="p-crosstalk-event-mv__label js-pro-img">クロストーク</p>

@@ -8,7 +8,7 @@
                 </a>
                 <ul class="p-footer__utility">
                     <li class="p-footer__utility-item">
-                        <a class="p-footer__utility-link p-footer__utility-link--external" href="#">コーポレートサイト</a>
+                        <a class="p-footer__utility-link p-footer__utility-link--external" href="https://arrow-group.jp/telexkansai/" target="_blank" rel="noopener noreferrer">コーポレートサイト</a>
                     </li>
                     <li class="p-footer__utility-item">
                         <a class="p-footer__utility-link p-footer__utility-link--external" href="<?php echo esc_url('https://arrow-group.jp/telexkansai/privacy/'); ?>" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>

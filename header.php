@@ -98,10 +98,8 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="<?php echo esc_url($og_image); ?>">
 
-    <!-- ogp -->
     <!-- ファビコン -->
-    <link rel="icon" href="<?php echo esc_url(get_template_directory_uri()); ?>/images/common/favicon.svg" type="image/svg+xml" />
-    <link rel="icon" href="<?php echo esc_url(get_template_directory_uri()); ?>/images/common/favicon-32x32.png" sizes="32x32" type="image/png" />
+    
     <link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url(get_template_directory_uri()); ?>/images/common/apple-touch-icon.png">
     <!-- css -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

@@ -15,7 +15,7 @@
   box-shadow: 0 rem(8) rem(18) rgba(#000, 0.12);
   transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 
-  @include mq(lg) {
+  @include mq(header) {
     display: none;
   }
 }
@@ -84,7 +84,7 @@
   transform: translateY(rem(-12));
   transition: opacity 0.24s ease, visibility 0.24s ease, transform 0.24s ease;
 
-  @include mq(lg) {
+  @include mq(header) {
     display: none;
   }
 }

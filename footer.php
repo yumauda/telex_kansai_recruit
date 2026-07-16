@@ -32,6 +32,7 @@
                 </ul>
                 <ul class="p-footer__nav-list">
                     <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="<?php echo esc_url(home_url('/people/')); ?>">人を知る</a></li>
+                    <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="<?php echo esc_url(home_url('/movie/')); ?>">動画ギャラリー</a></li>
                     <li class="p-footer__nav-item"><a class="p-footer__nav-link p-footer__nav-link--parent" href="<?php echo esc_url(home_url('/crosstalk_event/')); ?>">クロストーク</a></li>
                     <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="<?php echo esc_url(home_url('/crosstalk_event/')); ?>">-イノベーションセレモニー対談</a></li>
                     <li class="p-footer__nav-item"><a class="p-footer__nav-link" href="<?php echo esc_url(home_url('/crosstalk_unofficial-person/')); ?>">-内定者対談</a></li>

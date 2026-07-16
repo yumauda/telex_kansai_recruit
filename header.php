@@ -174,6 +174,12 @@
                                 <span class="p-header__nav-en">People</span>
                             </a>
                         </li>
+                        <li class="p-header__nav-item">
+                            <a class="p-header__nav-link" href="<?php echo esc_url(home_url('/movie/')); ?>">
+                                <span class="p-header__nav-ja">動画ギャラリー</span>
+                                <span class="p-header__nav-en">Movie</span>
+                            </a>
+                        </li>
                         <li class="p-header__nav-item p-header__nav-item--mega">
                             <button class="p-header__nav-link p-header__nav-link--button p-header__nav-link--parent" type="button" aria-haspopup="true">
                                 <span class="p-header__nav-ja">クロストーク</span>

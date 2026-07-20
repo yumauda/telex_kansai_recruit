@@ -35,16 +35,16 @@
           <div class="p-data-overview-card__icon">
             <img class="p-data-overview-card__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-2.webp" alt="売上高" width="133" height="117" loading="lazy" decoding="async">
           </div>
-          <p class="p-data-overview-card__value"><span class="p-data-overview-card__number">19億5,000</span><span class="p-data-overview-card__unit">万円</span></p>
-          <p class="p-data-overview-card__note">(2023年度実績)</p>
+          <p class="p-data-overview-card__value"><span class="p-data-overview-card__number">36億7,280</span><span class="p-data-overview-card__unit">万円</span></p>
+          <p class="p-data-overview-card__note">(2025年度実績)</p>
         </li>
         <li class="p-data-overview-card js-opacity-word">
           <h3 class="p-data-overview-card__title">従業員数</h3>
           <div class="p-data-overview-card__icon">
             <img class="p-data-overview-card__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-3.webp" alt="従業員数" width="174" height="130" loading="lazy" decoding="async">
           </div>
-          <p class="p-data-overview-card__value"><span class="p-data-overview-card__number">111</span><span class="p-data-overview-card__unit">名</span></p>
-          <p class="p-data-overview-card__note">(2025年11月時点)</p>
+          <p class="p-data-overview-card__value"><span class="p-data-overview-card__number">153</span><span class="p-data-overview-card__unit">名</span></p>
+          <p class="p-data-overview-card__note">(2026年4月1日時点)</p>
         </li>
         <li class="p-data-overview-card js-opacity-word">
           <h3 class="p-data-overview-card__title">男女比</h3>

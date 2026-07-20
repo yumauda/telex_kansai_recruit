@@ -5007,6 +5007,10 @@ input::placeholder {
   }
 }
 
+.p-loading__char {
+  display: inline-block;
+}
+
 .p-message-entry {
   padding-top: 4rem;
   padding-bottom: 4rem;

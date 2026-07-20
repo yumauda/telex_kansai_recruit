@@ -58,7 +58,7 @@
               <ul class="p-career-path__step-list">
                 <li class="p-career-path__box">人事</li>
                 <li class="p-career-path__box">広報</li>
-                <li class="p-career-path__box">管理本部</li>
+                <li class="p-career-path__box">管理部</li>
               </ul>
             </section>
             <section class="p-career-path__plan">

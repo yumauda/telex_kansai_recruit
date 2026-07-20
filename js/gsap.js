@@ -15,12 +15,40 @@ var webStorage = function () {
       opacity: 0,
       visibility: 'hidden',
     });
+    const loadingText = document.querySelector(".p-loading__text");
+
+    if (loadingText) {
+      loadingText.querySelectorAll('br').forEach((lineBreak) => {
+        lineBreak.replaceWith('\n');
+      });
+
+      const textLines = loadingText.textContent.split('\n');
+      const fragment = document.createDocumentFragment();
+
+      loadingText.textContent = '';
+
+      textLines.forEach((line, lineIndex) => {
+        Array.from(line).forEach((char) => {
+          const span = document.createElement('span');
+          span.className = 'p-loading__char';
+          span.textContent = char;
+          fragment.appendChild(span);
+        });
+
+        if (lineIndex < textLines.length - 1) {
+          fragment.appendChild(document.createElement('br'));
+        }
+      });
+
+      loadingText.appendChild(fragment);
+    }
+
     gsap.set(".p-loading__text", {
+      visibility: 'visible',
+    });
+    gsap.set(".p-loading__char", {
       opacity: 0,
-      visibility: 'hidden',
-      color: 'transparent',
-      '-webkit-text-stroke': '0px rgba(255, 255, 255, 0)',
-      textShadow: '0 0 0 rgba(255, 255, 255, 0)',
+      y: 6,
     });
 
     const loadingLogo = document.querySelector(".p-loading__logo-img");
@@ -60,41 +88,19 @@ var webStorage = function () {
         ease: 'power2.inOut',
         delay: 0.2,
       });
-      opening.to(".p-loading__text", {
-        visibility: 'visible',
+      opening.to(".p-loading__char", {
         opacity: 1,
-        '-webkit-text-stroke': '1px rgba(255, 255, 255, 1)',
-        textShadow: '0 0 14px rgba(255, 255, 255, 0.5)',
+        y: 0,
         duration: 0.45,
         ease: 'power2.out',
+        stagger: 0.08,
         delay: 0.2,
-      });
-      opening.to(".p-loading__text", {
-        x: 'random(-4, 4)',
-        y: 'random(-3, 3)',
-        skewX: 'random(-4, 4)',
-        duration: 0.06,
-        repeat: 9,
-        yoyo: true,
-        ease: 'sine.inOut',
-      }, "<");
-      opening.to(".p-loading__text", {
-        x: 0,
-        y: 0,
-        skewX: 0,
-        color: '#fff',
-        '-webkit-text-stroke': '1px rgba(255, 255, 255, 0)',
-        textShadow: '0 0 0 rgba(255, 255, 255, 0)',
-        visibility: 'visible',
-        duration: 0.9,
-        ease: 'power2.out',
       });
       opening.to(".p-loading", {
         opacity: 0,
-        duration: 1.5,
+        duration: 0.9,
         ease: 'power2.inOut',
-        delay: 0.2,
-      }, "+=1.5");
+      }, "+=0.4");
       opening.to(".p-loading", {
         display: 'none',
       });

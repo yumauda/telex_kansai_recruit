@@ -214,16 +214,16 @@ if (! function_exists('telex_top_people_lines')) {
             <div class="p-top-data-card__icon">
               <img class="p-top-data-card__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-2.webp" alt="売上高">
             </div>
-            <p class="p-top-data-card__value"><span class="p-top-data-card__number">19億5,000</span><span>万円</span></p>
-            <p class="p-top-data-card__note">(2023年度実績)</p>
+            <p class="p-top-data-card__value"><span class="p-top-data-card__number">36億7,280</span><span>万円</span></p>
+            <p class="p-top-data-card__note">(2025年度実績)</p>
           </li>
           <li class="p-top-data-card js-opacity-word">
             <h3 class="p-top-data-card__title">従業員数</h3>
             <div class="p-top-data-card__icon">
               <img class="p-top-data-card__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/data/icon-3.webp" alt="従業員数">
             </div>
-            <p class="p-top-data-card__value"><span class="p-top-data-card__number">111</span><span>名</span></p>
-            <p class="p-top-data-card__note">(2025年11月時点)</p>
+            <p class="p-top-data-card__value"><span class="p-top-data-card__number">153</span><span>名</span></p>
+            <p class="p-top-data-card__note">(2026年4月1日時点)</p>
           </li>
           <li class="p-top-data-card js-opacity-word">
             <h3 class="p-top-data-card__title">男女比</h3>

@@ -15,40 +15,9 @@ var webStorage = function () {
       opacity: 0,
       visibility: 'hidden',
     });
-    const loadingText = document.querySelector(".p-loading__text");
-
-    if (loadingText) {
-      loadingText.querySelectorAll('br').forEach((lineBreak) => {
-        lineBreak.replaceWith('\n');
-      });
-
-      const textLines = loadingText.textContent.split('\n');
-      const fragment = document.createDocumentFragment();
-
-      loadingText.textContent = '';
-
-      textLines.forEach((line, lineIndex) => {
-        Array.from(line).forEach((char) => {
-          const span = document.createElement('span');
-          span.className = 'p-loading__char';
-          span.textContent = char;
-          fragment.appendChild(span);
-        });
-
-        if (lineIndex < textLines.length - 1) {
-          fragment.appendChild(document.createElement('br'));
-        }
-      });
-
-      loadingText.appendChild(fragment);
-    }
-
     gsap.set(".p-loading__text", {
-      visibility: 'visible',
-    });
-    gsap.set(".p-loading__char", {
       opacity: 0,
-      y: 6,
+      visibility: 'visible',
     });
 
     const loadingLogo = document.querySelector(".p-loading__logo-img");
@@ -88,14 +57,11 @@ var webStorage = function () {
         ease: 'power2.inOut',
         delay: 0.2,
       });
-      opening.to(".p-loading__char", {
+      opening.to(".p-loading__text", {
         opacity: 1,
-        y: 0,
-        duration: 0.45,
+        duration: 0.8,
         ease: 'power2.out',
-        stagger: 0.08,
-        delay: 0.2,
-      });
+      }, "-=0.1");
       opening.to(".p-loading", {
         opacity: 0,
         duration: 0.9,

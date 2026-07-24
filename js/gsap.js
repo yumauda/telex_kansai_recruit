@@ -59,12 +59,12 @@ var webStorage = function () {
       });
       opening.to(".p-loading__text", {
         opacity: 1,
-        duration: 0.8,
+        duration: 0.5,
         ease: 'power2.out',
-      }, "-=0.1");
+      }, "-=0.6");
       opening.to(".p-loading", {
         opacity: 0,
-        duration: 0.9,
+        duration: 0.7,
         ease: 'power2.inOut',
       }, "+=0.4");
       opening.to(".p-loading", {
